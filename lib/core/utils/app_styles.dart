@@ -1,26 +1,25 @@
 import 'package:flutter/material.dart';
 
 class AppStyles {
-
   // Regular font weight
   static const _regular = TextStyle(
-    fontFamily: 'Poppins',
+    fontFamily: 'Inter',
     fontWeight: FontWeight.w400,
   );
 
   // Medium font weight
   static const _medium = TextStyle(
-    fontFamily: 'Poppins',
+    fontFamily: 'Inter',
     fontWeight: FontWeight.w500,
   );
 
   // Bold font weight
   static const _bold = TextStyle(
-    fontFamily: 'Poppins',
+    fontFamily: 'Inter',
     fontWeight: FontWeight.w700,
   );
 
-  // Regular styles 
+  // Regular styles
   static final TextStyle regular12 = _regular.copyWith(
     fontSize: 12,
     color: const Color(0xFFFFFFFF),
