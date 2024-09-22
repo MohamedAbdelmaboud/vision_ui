@@ -57,5 +57,9 @@ class Assets {
   /// Assets for assetsImagesUsers
   /// assets/images/users.svg
   static const String assetsImagesUsers = "assets/images/users.svg";
+
+  /// Assets for assetsImagesVector
+  /// assets/images/Vector.svg
+  static const String assetsImagesVector = "assets/images/Vector.svg";
 }
 
