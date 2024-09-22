@@ -33,7 +33,7 @@ class DashboradView extends StatelessWidget {
                 children: [
                   const Gap(38),
                   Text(
-                    'VISION UI',
+                    'VISION UI FREE',
                     style: AppStyles.medium14,
                   ),
                   const Gap(28),
