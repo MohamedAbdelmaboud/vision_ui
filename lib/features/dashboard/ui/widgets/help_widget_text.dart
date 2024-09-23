@@ -1,6 +1,7 @@
-import '../../../../core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+
+import '../../../../core/utils/app_styles.dart';
 
 class HelpWidgetText extends StatelessWidget {
   const HelpWidgetText({
@@ -10,6 +11,7 @@ class HelpWidgetText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           'Need Help?',

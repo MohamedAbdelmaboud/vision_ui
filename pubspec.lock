@@ -99,6 +99,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.1"
+  glass:
+    dependency: "direct main"
+    description:
+      name: glass
+      sha256: "6b33f00a37f15c89b19ee29d1d234bdea221584010a7d53fd220657e475a6a3b"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0+1"
   http:
     dependency: transitive
     description:

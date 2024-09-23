@@ -1,17 +1,17 @@
+import '../../../../core/themes/app_dark_colors.dart';
+import '../../data/models/dashboard_item_model.dart';
+import 'dashboard_icon_component.dart';
+import 'dashboard_item_text.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:vision_ui/core/themes/app_dark_colors.dart';
-import 'package:vision_ui/features/dashboard/data/models/dashboard_item_model.dart';
-import 'package:vision_ui/features/dashboard/ui/widgets/dashboard_icon_component.dart';
-import 'package:vision_ui/features/dashboard/ui/widgets/dashboard_item_text.dart';
 
-class DashboardItem extends StatelessWidget {
-  const DashboardItem({
+class DrawerItem extends StatelessWidget {
+  const DrawerItem({
     super.key,
     required this.model,
     this.isActivated = false,
   });
-  final DashboardItemModel model;
+  final DrawerItemModel model;
   final bool isActivated;
 
   @override

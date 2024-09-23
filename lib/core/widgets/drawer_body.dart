@@ -1,10 +1,11 @@
-import '../../features/dashboard/ui/widgets/dashboard_items_list.dart';
-import '../../features/dashboard/ui/widgets/help_widget.dart';
-import '../utils/app_images.dart';
-import '../utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
+
+import '../../features/dashboard/ui/widgets/drawer_list_items.dart';
+import '../../features/dashboard/ui/widgets/help_widget.dart';
+import '../utils/app_images.dart';
+import '../utils/app_styles.dart';
 
 class DrawerBody extends StatelessWidget {
   const DrawerBody({
@@ -25,7 +26,7 @@ class DrawerBody extends StatelessWidget {
           const Gap(28),
           SvgPicture.asset(Assets.assetsImagesVector),
           const Gap(22),
-          const DashboardItemsList(),
+          const DrawerListItems(),
           const Spacer(),
           const HelpWidget(),
           const Gap(23.5)
