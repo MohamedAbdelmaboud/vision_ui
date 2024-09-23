@@ -61,5 +61,10 @@ class Assets {
   /// Assets for assetsImagesVector
   /// assets/images/Vector.svg
   static const String assetsImagesVector = "assets/images/Vector.svg";
+
+  /// Assets for assetsImagesHelp
+  /// assets/images/Background.svg
+  static const String assetsImagesBackground = "assets/images/Background.png";
+
 }
 
