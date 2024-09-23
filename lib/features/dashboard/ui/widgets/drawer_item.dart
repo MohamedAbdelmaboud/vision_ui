@@ -1,9 +1,10 @@
+import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
+
 import '../../../../core/themes/app_dark_colors.dart';
 import '../../data/models/dashboard_item_model.dart';
 import 'dashboard_icon_component.dart';
 import 'dashboard_item_text.dart';
-import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 
 class DrawerItem extends StatelessWidget {
   const DrawerItem({
