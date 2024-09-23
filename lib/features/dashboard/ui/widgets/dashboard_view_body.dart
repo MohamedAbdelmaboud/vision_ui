@@ -30,8 +30,10 @@ class DashboardViewBody extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(27),
                 height: 300,
+                width: 320,
                 decoration: buildCommonDecoration(),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       'Satisfaction Rate',
@@ -45,76 +47,78 @@ class DashboardViewBody extends StatelessWidget {
                       ),
                     ),
                     const Gap(11.5),
-                    Stack(
-                      clipBehavior: Clip.none,
-                      alignment: Alignment.bottomCenter,
-                      children: [
-                        CircularPercentIndicator(
-                          animation: true,
-                          circularStrokeCap: CircularStrokeCap.round,
-                          linearGradient: LinearGradient(
-                            colors: [
-                              //0075FF ,0075FF
-                              const Color(0xFF0075FF),
-                              const Color(0xFF0075FF).withOpacity(0.8),
-                            ],
-                            stops: const [0.0, 1.0],
-                          ),
-                          radius: 90.0,
-                          lineWidth: 9.0,
-                          percent: 0.55,
-                          startAngle: 270,
-                          backgroundColor: const Color(0xff22234B),
-                          center: Container(
-                            padding: const EdgeInsets.all(9),
-                            height: 48,
-                            width: 48,
-                            decoration: const BoxDecoration(
-                              color: AppDarkColors.activeIconColor,
-                              shape: BoxShape.circle,
-                            ),
-                            child:
-                                SvgPicture.asset(Assets.assetsImagesTagFaces),
-                          ),
-                        ),
-                        Positioned(
-                          bottom: -15,
-                          child: Container(
-                            padding: const EdgeInsets.symmetric(
-                              vertical: 10,
-                            ),
-                            alignment: Alignment.center,
-                            width: 200,
-                            height: 70,
-                            decoration: BoxDecoration(
-                              gradient: LinearGradient(
-                                colors: [
-                                  //0A0E23 ,060B28
-                                  const Color(0xFF0A0E23).withOpacity(0.5),
-                                  const Color(0xFF060B28).withOpacity(0.4),
-                                ],
-                                stops: const [0.0, 1.0],
-                              ),
-                              borderRadius: BorderRadius.circular(15),
-                            ),
-                            child: Column(
-                              children: [
-                                Text(
-                                  '55%',
-                                  style: AppStyles.bold20,
-                                ),
-                                const Gap(3.5),
-                                Text(
-                                  'Based on likes',
-                                  style: AppStyles.regular12.copyWith(
-                                    color: AppDarkColors.greyColor,
-                                  ),
-                                ),
+                    Center(
+                      child: Stack(
+                        clipBehavior: Clip.none,
+                        alignment: Alignment.bottomCenter,
+                        children: [
+                          CircularPercentIndicator(
+                            animation: true,
+                            circularStrokeCap: CircularStrokeCap.round,
+                            linearGradient: LinearGradient(
+                              colors: [
+                                //0075FF ,0075FF
+                                const Color(0xFF0075FF),
+                                const Color(0xFF0075FF).withOpacity(0.8),
                               ],
+                              stops: const [0.0, 1.0],
+                            ),
+                            radius: 90.0,
+                            lineWidth: 9.0,
+                            percent: 0.55,
+                            startAngle: 270,
+                            backgroundColor: const Color(0xff22234B),
+                            center: Container(
+                              padding: const EdgeInsets.all(9),
+                              height: 48,
+                              width: 48,
+                              decoration: const BoxDecoration(
+                                color: AppDarkColors.activeIconColor,
+                                shape: BoxShape.circle,
+                              ),
+                              child:
+                                  SvgPicture.asset(Assets.assetsImagesTagFaces),
                             ),
                           ),
-                        )
-                      ],
+                          Positioned(
+                            bottom: -15,
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(
+                                vertical: 10,
+                              ),
+                              alignment: Alignment.center,
+                              width: 200,
+                              height: 70,
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  colors: [
+                                    //0A0E23 ,060B28
+                                    const Color(0xFF0A0E23).withOpacity(0.5),
+                                    const Color(0xFF060B28).withOpacity(0.4),
+                                  ],
+                                  stops: const [0.0, 1.0],
+                                ),
+                                borderRadius: BorderRadius.circular(15),
+                              ),
+                              child: Column(
+                                children: [
+                                  Text(
+                                    '55%',
+                                    style: AppStyles.bold20,
+                                  ),
+                                  const Gap(3.5),
+                                  Text(
+                                    'Based on likes',
+                                    style: AppStyles.regular12.copyWith(
+                                      color: AppDarkColors.greyColor,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ],
                 ),
