@@ -4,6 +4,7 @@ import 'package:gap/gap.dart';
 import '../../../../core/themes/app_dark_colors.dart';
 import '../../../../core/utils/app_styles.dart';
 import '../../data/models/today_item_model.dart';
+import 'build_common_decoration.dart';
 import 'today_dashboard_item_icon.dart';
 import 'today_dashboard_item_rich_text.dart';
 
@@ -22,7 +23,7 @@ class TodayDashboardItem extends StatelessWidget {
         vertical: 16,
         horizontal: 20,
       ),
-      decoration: buildDashboardDecoration(),
+      decoration: buildCommonDecoration(),
       child: Row(
         children: [
           Column(
@@ -44,21 +45,6 @@ class TodayDashboardItem extends StatelessWidget {
             icon: model.icon,
           )
         ],
-      ),
-    );
-  }
-
-  BoxDecoration buildDashboardDecoration() {
-    return BoxDecoration(
-      borderRadius: BorderRadius.circular(12),
-      gradient: const LinearGradient(
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-        colors: [
-          Color(0xFF060B26),
-          Color(0xFF1A1F37),
-        ],
-        stops: [0.0, 1.0],
       ),
     );
   }
