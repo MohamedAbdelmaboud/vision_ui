@@ -31,6 +31,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.1.6
   flutter_svg: ^2.0.10+1
   gap: ^3.0.1
   glass: ^2.0.0+1
