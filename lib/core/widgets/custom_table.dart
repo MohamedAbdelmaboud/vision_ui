@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../themes/app_dark_colors.dart';
+import '../utils/app_styles.dart';
 
 class CustomTable extends StatelessWidget {
   const CustomTable({
@@ -44,28 +45,37 @@ class CustomTable extends StatelessWidget {
         ),
         borderRadius: BorderRadius.circular(raduis!),
       ),
-      child: Column(
-        children: [
-          Text(title!),
-          const Gap(10),
-          DataTable(
-            columnSpacing: 30,
-            headingTextStyle: TextStyle(
-              color: textColor,
-              fontWeight: fontWeight,
-              fontSize: fontSize,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 15),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Gap(15),
+            Text(
+              title!,
+              style: AppStyles.bold20,
             ),
-            columns: columns(
-              labelColum1,
-              labelColum2,
-              labelColum3,
-              labelColum4,
-              labelColum5,
-              style,
+            const Gap(10),
+            DataTable(
+              columnSpacing: 30,
+              headingTextStyle: TextStyle(
+                color: textColor,
+                fontWeight: fontWeight,
+                fontSize: fontSize,
+              ),
+              columns: columns(
+                labelColum1,
+                labelColum2,
+                labelColum3,
+                labelColum4,
+                labelColum5,
+                style,
+              ),
+              rows: rows,
             ),
-            rows: rows,
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

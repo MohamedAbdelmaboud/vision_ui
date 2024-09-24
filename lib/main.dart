@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Vision UI',
+      debugShowCheckedModeBanner: false,
       scrollBehavior: CustomScrollBehavior(),
       home: BlocProvider(
         create: (context) => DashCubit(),

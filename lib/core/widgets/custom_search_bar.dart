@@ -8,16 +8,19 @@ class CustomSearchBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Text(
-          "Pages  /  Tables",
-          style: AppStyles.medium24,
-        ),
-        const Spacer(),
-        const SearchBoxAndSignInInfoAndSettingsAbdNotifSection()
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 10),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            "Pages  /  Tables",
+            style: AppStyles.medium24,
+          ),
+          const Spacer(),
+          const SearchBoxAndSignInInfoAndSettingsAbdNotifSection()
+        ],
+      ),
     );
   }
 }
