@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import 'build_common_decoration.dart';
 import 'satisfaction_widget.dart';
 import 'today_items_list.dart';
 import 'tracking_widget.dart';
@@ -13,13 +14,13 @@ class DashboardViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Expanded(
+    return Expanded(
       child: Column(
         children: [
-          Gap(12),
-          TodayItemsList(),
-          Gap(15),
-          Row(
+          const Gap(12),
+          const TodayItemsList(),
+          const Gap(15),
+          const Row(
             children: [
               WelcomeContainer(),
               Gap(16),
@@ -28,6 +29,16 @@ class DashboardViewBody extends StatelessWidget {
               TrackingWidget(),
             ],
           ),
+          Row(
+            children: [
+              Container(
+                height: 400,
+                decoration: buildCommonDecoration(),
+                child: const Text('Graph goes here'),
+              ),
+              const Gap(16),
+            ],
+          )
         ],
       ),
     );
