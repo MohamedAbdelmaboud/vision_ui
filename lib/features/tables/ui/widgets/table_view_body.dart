@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart';
+
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -12,8 +12,8 @@ class TableViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        CustomSearchBar(),
-        Gap(16),
+       
+     
         AutherTableListView(),
         Gap(16),
       ],

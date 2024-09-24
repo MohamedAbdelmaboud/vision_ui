@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:vision_ui/core/themes/app_dark_colors.dart';
 import 'package:vision_ui/core/utils/app_images.dart';
 
 class TablesViewDesktop extends StatelessWidget {
@@ -12,7 +11,7 @@ class TablesViewDesktop extends StatelessWidget {
       body: Container(
         height: double.infinity,
         width: double.infinity,
-        decoration: const BoxDecoration(
+        decoration:  BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
               Assets.assetsImagesBackground,
