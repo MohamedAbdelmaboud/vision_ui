@@ -42,6 +42,7 @@ class TodayItemsList extends StatelessWidget {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: items.map((item) {
           return Padding(
             padding: const EdgeInsets.only(
