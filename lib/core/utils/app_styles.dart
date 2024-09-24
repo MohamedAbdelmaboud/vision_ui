@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../themes/app_dark_colors.dart';
+
 class AppStyles {
   // Regular font weight
   static const _regular = TextStyle(
@@ -62,6 +64,11 @@ class AppStyles {
     color: const Color(0xFFFFFFFF),
   );
 
+  static final TextStyle bold12 = _bold.copyWith(
+    fontSize: 12,
+    color: const Color(0xFFFFFFFF),
+  );
+
   static final TextStyle bold14 = _bold.copyWith(
     fontSize: 14,
     color: const Color(0xFFFFFFFF),
@@ -80,5 +87,14 @@ class AppStyles {
   static final TextStyle bold20 = _bold.copyWith(
     fontSize: 20,
     color: const Color(0xFFFFFFFF),
+  );
+  // 28
+  static final TextStyle bold28 = _bold.copyWith(
+    fontSize: 28,
+    color: const Color(0xFFFFFFFF),
+  );
+  static final TextStyle medium40 = _medium.copyWith(
+    fontSize: 40,
+    color: AppDarkColors.greyColor,
   );
 }
