@@ -4,6 +4,7 @@ import 'package:gap/gap.dart';
 
 import '../../../../core/utils/app_images.dart';
 import '../../../../core/widgets/custom_drawer.dart';
+import '../../../tables/ui/widgets/table_view_body.dart';
 import '../../logic/cubit/dash_cubit.dart';
 
 class MainDashboardView extends StatelessWidget {
@@ -25,11 +26,17 @@ class MainDashboardView extends StatelessWidget {
           children: [
             const CustomDrawer(),
             const Gap(24),
-            BlocBuilder<DashCubit, DashState>(
-              builder: (context, state) {
-                final cubit = DashCubit.get(context);
-                return cubit.currentDesktopView();
-              },
+            Column(
+              children: [
+                const CustomSearchBar(),
+                   const Gap(16),
+                BlocBuilder<DashCubit, DashState>(
+                  builder: (context, state) {
+                    final cubit = DashCubit.get(context);
+                    return cubit.currentDesktopView();
+                  },
+                ),
+              ],
             ),
           ],
         ),

@@ -1,3 +1,4 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -6,7 +7,9 @@ import 'features/dashboard/logic/cubit/dash_cubit.dart';
 import 'features/dashboard/ui/views/main_dashboard_view.dart';
 
 void main() {
-  runApp(const MyApp());
+  DevicePreview(
+    builder: (context) => const MyApp(), // Wrap your app
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -15,6 +18,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
       title: 'Vision UI',
       scrollBehavior: CustomScrollBehavior(),
       home: BlocProvider(
