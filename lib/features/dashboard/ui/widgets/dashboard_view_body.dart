@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import 'build_common_decoration.dart';
+import 'order_over_view.dart';
 import 'satisfaction_widget.dart';
 import 'today_items_list.dart';
 import 'tracking_widget.dart';
@@ -14,13 +14,13 @@ class DashboardViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
+    return const Expanded(
       child: Column(
         children: [
-          const Gap(12),
-          const TodayItemsList(),
-          const Gap(15),
-          const Row(
+          Gap(12),
+          TodayItemsList(),
+          Gap(15),
+          Row(
             children: [
               WelcomeContainer(),
               Gap(16),
@@ -29,14 +29,19 @@ class DashboardViewBody extends StatelessWidget {
               TrackingWidget(),
             ],
           ),
+          Gap(16),
           Row(
             children: [
-              Container(
-                height: 400,
-                decoration: buildCommonDecoration(),
-                child: const Text('Graph goes here'),
+              Expanded(
+                flex: 3,
+                child: OrderOverView(), //TODO: Add OrderOverView Table 
+              
               ),
-              const Gap(16),
+              Gap(16),
+              Expanded(
+                flex: 2,
+                child: OrderOverView(),
+              ),
             ],
           )
         ],
