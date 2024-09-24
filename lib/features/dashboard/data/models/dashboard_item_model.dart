@@ -1,8 +1,8 @@
-class DashboardItemModel {
+class DrawerItemModel {
   final String title;
   final String icon;
 
-  DashboardItemModel({
+  DrawerItemModel({
     required this.title,
     required this.icon,
   });

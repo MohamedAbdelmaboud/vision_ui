@@ -8,7 +8,7 @@ class TablesViewDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppDarkColors.backgroundColor,
+      //backgroundColor: AppDarkColors.backgroundColor,
       body: Container(
         height: double.infinity,
         width: double.infinity,
@@ -17,10 +17,11 @@ class TablesViewDesktop extends StatelessWidget {
             image: AssetImage(
               Assets.assetsImagesBackground,
             ),
-            fit: BoxFit.cover
+            fit: BoxFit.fill
           ),
-        ),
-
+        ),child: Row(children: [
+          Container(width: 200,)
+        ],),
       ),
     );
   }

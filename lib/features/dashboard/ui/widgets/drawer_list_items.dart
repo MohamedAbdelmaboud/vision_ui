@@ -1,35 +1,35 @@
 import 'package:flutter/material.dart';
-import 'package:vision_ui/core/utils/app_images.dart';
-import 'package:vision_ui/features/dashboard/data/models/dashboard_item_model.dart';
 
-import 'dashboard_item.dart';
+import '../../../../core/utils/app_images.dart';
+import '../../data/models/dashboard_item_model.dart';
+import 'drawer_item.dart';
 
-class DashboardItemsList extends StatefulWidget {
-  const DashboardItemsList({
+class DrawerListItems extends StatefulWidget {
+  const DrawerListItems({
     super.key,
   });
 
   @override
-  State<DashboardItemsList> createState() => _DashboardItemsListState();
+  State<DrawerListItems> createState() => _DrawerListItemsState();
 }
 
-class _DashboardItemsListState extends State<DashboardItemsList> {
+class _DrawerListItemsState extends State<DrawerListItems> {
   int currentIndex = 0;
-  List<DashboardItemModel> get items {
+  List<DrawerItemModel> get items {
     return [
-      DashboardItemModel(
+      DrawerItemModel(
         icon: Assets.assetsImagesHome,
         title: 'Dashboard',
       ),
-      DashboardItemModel(
+      DrawerItemModel(
         icon: Assets.assetsImagesTables,
         title: 'Tables',
       ),
-      DashboardItemModel(
+      DrawerItemModel(
         icon: Assets.assetsImagesBilling,
         title: 'Billing',
       ),
-      DashboardItemModel(
+      DrawerItemModel(
         icon: Assets.assetsImagesProfile,
         title: 'Profile',
       ),
@@ -51,8 +51,8 @@ class _DashboardItemsListState extends State<DashboardItemsList> {
             }
           },
           child: Padding(
-            padding: const EdgeInsets.only(bottom:12.0),
-            child: DashboardItem(
+            padding: const EdgeInsets.only(bottom: 12.0),
+            child: DrawerItem(
               model: item,
               isActivated: currentIndex == index,
             ),
