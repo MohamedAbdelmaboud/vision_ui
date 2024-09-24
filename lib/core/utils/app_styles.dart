@@ -93,8 +93,8 @@ class AppStyles {
     fontSize: 28,
     color: const Color(0xFFFFFFFF),
   );
-  static final TextStyle medium40 = _medium.copyWith(
-    fontSize: 40,
+  static final TextStyle medium24 = _medium.copyWith(
+    fontSize: 24,
     color: AppDarkColors.greyColor,
   );
 }

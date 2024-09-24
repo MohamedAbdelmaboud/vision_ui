@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../features/tables/ui/widgets/searchbox.dart';
 import '../utils/app_styles.dart';
+import 'search_box_and_sign_in_info_and_settings_abd_notif_section.dart';
 
 class CustomSearchBar extends StatelessWidget {
   const CustomSearchBar({super.key});
@@ -9,13 +9,14 @@ class CustomSearchBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
           "Pages  /  Tables",
-          style: AppStyles.medium40,
+          style: AppStyles.medium24,
         ),
-        //Spacer(),
-        const Searchbox()
+        const Spacer(),
+        const SearchBoxAndSignInInfoAndSettingsAbdNotifSection()
       ],
     );
   }

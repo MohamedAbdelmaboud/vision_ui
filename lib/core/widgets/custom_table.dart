@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 import '../themes/app_dark_colors.dart';
 
@@ -13,7 +14,9 @@ class CustomTable extends StatelessWidget {
     this.fontSize = 14,
     this.style,
     required this.rows,
+    this.title = "title",
   });
+  final String? title;
   final Color? color1;
   final Color? color2;
   final double? raduis;
@@ -24,7 +27,7 @@ class CustomTable extends StatelessWidget {
   final String? labelColum2 = "label2";
   final String? labelColum3 = "label3";
   final String? labelColum4 = "label4";
-  final String? labelColum5 = "label5";
+  final String? labelColum5 = "";
   final TextStyle? style;
   final List<DataRow> rows;
   @override
@@ -41,22 +44,28 @@ class CustomTable extends StatelessWidget {
         ),
         borderRadius: BorderRadius.circular(raduis!),
       ),
-      child: DataTable(
-        columnSpacing: 30,
-        headingTextStyle: TextStyle(
-          color: textColor,
-          fontWeight: fontWeight,
-          fontSize: fontSize,
-        ),
-        columns: columns(
-          labelColum1,
-          labelColum2,
-          labelColum3,
-          labelColum4,
-          labelColum5,
-          style,
-        ),
-        rows: rows,
+      child: Column(
+        children: [
+          Text(title!),
+          const Gap(10),
+          DataTable(
+            columnSpacing: 30,
+            headingTextStyle: TextStyle(
+              color: textColor,
+              fontWeight: fontWeight,
+              fontSize: fontSize,
+            ),
+            columns: columns(
+              labelColum1,
+              labelColum2,
+              labelColum3,
+              labelColum4,
+              labelColum5,
+              style,
+            ),
+            rows: rows,
+          ),
+        ],
       ),
     );
   }

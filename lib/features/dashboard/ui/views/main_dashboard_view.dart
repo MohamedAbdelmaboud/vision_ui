@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
 
 import '../../../../core/utils/app_images.dart';
 import '../../../../core/widgets/custom_drawer.dart';
 import '../../../../core/widgets/custom_search_bar.dart';
-import '../../logic/cubit/dash_cubit.dart';
+import '../../../tables/ui/views/tables_view_desktop.dart';
 
 class MainDashboardView extends StatelessWidget {
   const MainDashboardView({super.key});
@@ -22,21 +21,16 @@ class MainDashboardView extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        child: Row(
+        child: const Row(
           children: [
-            const CustomDrawer(),
-            const Gap(24),
+            CustomDrawer(),
+            Gap(24),
             Expanded(
               child: Column(
                 children: [
-                  const CustomSearchBar(),
-                  const Gap(16),
-                  BlocBuilder<DashCubit, DashState>(
-                    builder: (context, state) {
-                      final cubit = DashCubit.get(context);
-                      return cubit.currentDesktopView();
-                    },
-                  ),
+                  CustomSearchBar(),
+                  Gap(16),
+                  TablesView(),
                 ],
               ),
             ),

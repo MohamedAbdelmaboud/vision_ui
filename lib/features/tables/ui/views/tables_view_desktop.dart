@@ -1,27 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:vision_ui/core/utils/app_images.dart';
+import 'package:gap/gap.dart';
 
-class TablesViewDesktop extends StatelessWidget {
-  const TablesViewDesktop({super.key});
+import '../widgets/auther_table.dart';
+import '../widgets/project_table.dart';
+
+class TablesView extends StatelessWidget {
+  const TablesView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      //backgroundColor: AppDarkColors.backgroundColor,
-      body: Container(
-        height: double.infinity,
-        width: double.infinity,
-        decoration:  BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage(
-              Assets.assetsImagesBackground,
-            ),
-            fit: BoxFit.fill
-          ),
-        ),child: Row(children: [
-          Container(width: 200,)
-        ],),
-      ),
+    return const Column(
+      children: [
+        AutherTable(),
+        Gap(20),
+        ProjectTable(),
+      ],
     );
   }
 }
