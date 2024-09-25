@@ -1,8 +1,8 @@
+import 'package:flutter/material.dart';
+
 import '../../../../core/utils/app_images.dart';
 import '../../data/models/active_user_model.dart';
 import 'active_user_item.dart';
-import 'dashboard_view_body.dart';
-import 'package:flutter/material.dart';
 
 class ActiveUserlist extends StatelessWidget {
   const ActiveUserlist({
@@ -39,15 +39,19 @@ class ActiveUserlist extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: items.map(
-        (item) {
-          return Padding(
-            padding: const EdgeInsets.only(right: 50.0),
-            child: ActiveUserItem(model: item),
-          );
-        },
-      ).toList(),
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: items.map(
+          (item) {
+            return Padding(
+              padding: const EdgeInsets.only(right: 30.0),
+              child: ActiveUserItem(model: item),
+            );
+          },
+        ).toList(),
+      ),
     );
   }
 }
