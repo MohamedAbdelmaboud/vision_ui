@@ -7,8 +7,11 @@ import 'features/dashboard/logic/cubit/dash_cubit.dart';
 import 'features/dashboard/ui/views/main_dashboard_view.dart';
 
 void main() {
-  DevicePreview(
-    builder: (context) => const MyApp(), // Wrap your app
+  runApp(
+    DevicePreview(
+      enabled: true,
+      builder: (context) => const MyApp(), // Wrap your app
+    ),
   );
 }
 
