@@ -31,7 +31,7 @@ class SignInButton extends StatelessWidget {
           ),
           const Gap(5),
           Text(
-            "Signin",
+            "Sign in",
             style: AppStyles.medium12.copyWith(
               color: AppDarkColors.greyColor,
             ),
