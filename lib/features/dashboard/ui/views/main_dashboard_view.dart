@@ -40,9 +40,7 @@ class MainDashboardView extends StatelessWidget {
                     child: BlocBuilder<DashCubit, DashState>(
                       builder: (context, state) {
                         final cubit = DashCubit.get(context);
-                        return Expanded(
-                          child: cubit.currentDesktopView(),
-                        );
+                        return cubit.currentDesktopView();
                       },
                     ),
                   ),

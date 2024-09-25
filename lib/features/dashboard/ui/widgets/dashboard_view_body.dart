@@ -41,15 +41,9 @@ class DashboardViewBody extends StatelessWidget {
         Gap(16),
         Row(
           children: [
-            Expanded(
-              flex: 3,
-              child: OrderOverView(), //TODO: Add OrderOverView Table
-            ),
+            OrderOverView(),
             Gap(16),
-            Expanded(
-              flex: 2,
-              child: OrderOverView(),
-            ),
+            OrderOverView(),
           ],
         )
       ],

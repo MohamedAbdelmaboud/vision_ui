@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/utils/app_images.dart';
 import '../../../billing/ui/views/billing_view.dart';
+import '../../../tables/ui/views/tables_view.dart';
 import '../../data/models/dashboard_item_model.dart';
 import '../../ui/views/dashboard_view.dart';
 
@@ -24,7 +25,7 @@ class DashCubit extends Cubit<DashState> {
         icon: Assets.assetsImagesTables,
         title: 'Tables',
         //TODO: TableView
-        page: const Placeholder(),
+        page: const TablesView(),
       ),
       DrawerItemModel(
         icon: Assets.assetsImagesBilling,
