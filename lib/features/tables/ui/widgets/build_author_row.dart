@@ -6,8 +6,8 @@ import 'function_and_department_cell.dart';
 import 'image_and_name_and_email_cell.dart';
 import 'online_and_offline_cell.dart';
 
-class BuildDataRow {
-  DataRow buildDataRow(
+class BuildAuthorRow {
+  DataRow buildAuthorRow(
     double screenWidth,
     String imagePath,
     String name,

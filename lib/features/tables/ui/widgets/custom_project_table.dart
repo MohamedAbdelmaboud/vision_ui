@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../../../../core/themes/app_dark_colors.dart';
-import '../../../../core/utils/app_styles.dart';
+import 'build_data_column.dart';
+import 'project_table_header.dart';
 
-class CustomTable extends StatelessWidget {
-  const CustomTable({
+class CustomProjectTable extends StatelessWidget {
+  const CustomProjectTable({
     super.key,
     this.color1 = AppDarkColors.gradiantTableColor1,
     this.color2 = AppDarkColors.gradiantTableColor2,
@@ -57,13 +58,7 @@ class CustomTable extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Gap(15),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8),
-              child: Text(
-                title!,
-                style: AppStyles.bold14,
-              ),
-            ),
+            ProjectTableHeader(title: title),
             const Gap(10),
             DataTable(
               dataRowMaxHeight: 50,
@@ -73,7 +68,7 @@ class CustomTable extends StatelessWidget {
                 fontWeight: fontWeight,
                 fontSize: fontSize,
               ),
-              columns: columns(
+              columns: BuildDataColumn().columns(
                 labelColum1,
                 labelColum2,
                 labelColum3,
@@ -88,46 +83,4 @@ class CustomTable extends StatelessWidget {
       ),
     );
   }
-}
-
-List<DataColumn> columns(
-  dynamic labelColum1,
-  dynamic labelColum2,
-  dynamic labelColum3,
-  dynamic labelColum4,
-  dynamic labelColum5,
-  dynamic style,
-) {
-  return [
-    DataColumn(
-      label: Text(
-        labelColum1!,
-        style: style,
-      ),
-    ),
-    DataColumn(
-      label: Text(
-        labelColum2!,
-        style: style,
-      ),
-    ),
-    DataColumn(
-      label: Text(
-        labelColum3!,
-        style: style,
-      ),
-    ),
-    DataColumn(
-      label: Text(
-        labelColum4!,
-        style: style,
-      ),
-    ),
-    DataColumn(
-      label: Text(
-        labelColum5!,
-        style: style,
-      ),
-    ),
-  ];
 }
