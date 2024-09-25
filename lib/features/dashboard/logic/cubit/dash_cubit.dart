@@ -2,6 +2,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/utils/app_images.dart';
+import '../../../billing/ui/views/billing_view.dart';
 import '../../data/models/dashboard_item_model.dart';
 import '../../ui/views/dashboard_view.dart';
 
@@ -27,7 +28,7 @@ class DashCubit extends Cubit<DashState> {
       DrawerItemModel(
         icon: Assets.assetsImagesBilling,
         title: 'Billing',
-        page: const Placeholder(),
+        page: const BillingView(),
       ),
       DrawerItemModel(
         icon: Assets.assetsImagesProfile,
