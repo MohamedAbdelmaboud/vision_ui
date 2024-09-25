@@ -25,7 +25,7 @@ class MainDashboardView extends StatelessWidget {
         child: Row(
           children: [
             const CustomDrawer(),
-            const Gap(24),
+            const Gap(20),
             Expanded(
               child: CustomScrollView(
                 slivers: [
@@ -47,6 +47,7 @@ class MainDashboardView extends StatelessWidget {
                 ],
               ),
             ),
+            const Gap(20),
           ],
         ),
       ),
