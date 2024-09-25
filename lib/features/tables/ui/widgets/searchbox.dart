@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 
 import '../../../../core/themes/app_dark_colors.dart';
 import '../../../../core/utils/app_styles.dart';
@@ -10,10 +9,7 @@ class TableViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Column(
-      children: [
-        AutherTableListView(),
-        Gap(16),
-      ],
+      children: [],
     );
   }
 }
@@ -27,7 +23,7 @@ class CustomSearchBar extends StatelessWidget {
       children: [
         Text(
           "Pages  /  Tables",
-          style: AppStyles.medium40,
+          style: AppStyles.medium24,
         ),
         //Spacer(),
         const Searchbox()
@@ -73,14 +69,5 @@ class Searchbox extends StatelessWidget {
         ),
       ),
     );
-  }
-}
-
-class AutherTableListView extends StatelessWidget {
-  const AutherTableListView({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
   }
 }

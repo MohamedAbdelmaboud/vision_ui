@@ -4,7 +4,7 @@ import 'package:gap/gap.dart';
 
 import '../../../../core/utils/app_images.dart';
 import '../../../../core/widgets/custom_drawer.dart';
-import '../../../tables/ui/widgets/table_view_body.dart';
+import '../../../../core/widgets/custom_search_bar.dart';
 import '../../logic/cubit/dash_cubit.dart';
 
 class MainDashboardView extends StatelessWidget {
