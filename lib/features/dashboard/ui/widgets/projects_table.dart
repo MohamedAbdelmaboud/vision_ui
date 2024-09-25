@@ -51,7 +51,7 @@ class ProjectsTable extends StatelessWidget {
                 Assets.assetsImagesAvatar1,
               ),
               Image.asset(
-                Assets.assetsImagesAvatar,
+                Assets.assetsImagesAvatar1,
               ),
               Image.asset(
                 Assets.assetsImagesAvatar2,
