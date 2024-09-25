@@ -23,6 +23,7 @@ class DashCubit extends Cubit<DashState> {
       DrawerItemModel(
         icon: Assets.assetsImagesTables,
         title: 'Tables',
+        //TODO: TableView
         page: const Placeholder(),
       ),
       DrawerItemModel(
