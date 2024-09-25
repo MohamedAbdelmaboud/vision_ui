@@ -41,16 +41,21 @@ class TodayItemsList extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: items.map((item) {
-          return Padding(
-            padding: const EdgeInsets.only(
-              right: 22.0,
-            ),
-            child: TodayDashboardItem(model: item),
-          );
-        }).toList(),
+      child: ConstrainedBox(
+        constraints: BoxConstraints(
+          minWidth: MediaQuery.of(context).size.width,
+        ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: items.map((item) {
+            return Padding(
+              padding: const EdgeInsets.only(
+                right: 22.0,
+              ),
+              child: TodayDashboardItem(model: item),
+            );
+          }).toList(),
+        ),
       ),
     );
   }

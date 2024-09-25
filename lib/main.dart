@@ -1,3 +1,4 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -6,7 +7,9 @@ import 'features/dashboard/logic/cubit/dash_cubit.dart';
 import 'features/dashboard/ui/views/main_dashboard_view.dart';
 
 void main() {
-  runApp(const MyApp()); // Wrap your app
+  DevicePreview(
+    builder: (context) => const MyApp(), // Wrap your app
+  );
 }
 
 class MyApp extends StatelessWidget {

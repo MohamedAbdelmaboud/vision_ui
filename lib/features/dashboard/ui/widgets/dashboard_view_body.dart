@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import 'active_users_widget.dart';
 import 'order_over_view.dart';
+import 'sales_over_view_widget.dart';
 import 'satisfaction_widget.dart';
 import 'today_items_list.dart';
 import 'tracking_widget.dart';
@@ -32,10 +34,17 @@ class DashboardViewBody extends StatelessWidget {
           Gap(16),
           Row(
             children: [
+              SalesOverViewWidget(),
+              Gap(16),
+              ActiveUsersWidget(),
+            ],
+          ),
+          Gap(16),
+          Row(
+            children: [
               Expanded(
                 flex: 3,
-                child: OrderOverView(), //TODO: Add OrderOverView Table 
-              
+                child: OrderOverView(), //TODO: Add OrderOverView Table
               ),
               Gap(16),
               Expanded(

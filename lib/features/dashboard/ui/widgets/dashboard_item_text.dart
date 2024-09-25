@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:vision_ui/core/utils/app_styles.dart';
+
+import '../../../../core/utils/app_styles.dart';
 
 class DashboardItemText extends StatelessWidget {
   const DashboardItemText({
