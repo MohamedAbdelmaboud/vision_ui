@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:vision_ui/core/utils/app_images.dart';
+
+import '../../../../core/utils/app_images.dart';
 
 class TablesViewDesktop extends StatelessWidget {
   const TablesViewDesktop({super.key});
@@ -11,16 +12,20 @@ class TablesViewDesktop extends StatelessWidget {
       body: Container(
         height: double.infinity,
         width: double.infinity,
-        decoration:  BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage(
-              Assets.assetsImagesBackground,
-            ),
-            fit: BoxFit.fill
-          ),
-        ),child: Row(children: [
-          Container(width: 200,)
-        ],),
+              image: AssetImage(
+                Assets.assetsImagesBackground,
+              ),
+              fit: BoxFit.fill),
+        ),
+        child: Row(
+          children: [
+            Container(
+              width: 200,
+            )
+          ],
+        ),
       ),
     );
   }
