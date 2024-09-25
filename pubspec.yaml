@@ -31,6 +31,7 @@ dependencies:
   animate_do: ^3.3.4
   cupertino_icons: ^1.0.8
   device_preview: ^1.2.0
+  fl_chart: ^0.69.0
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.6

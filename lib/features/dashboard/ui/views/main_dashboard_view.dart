@@ -26,17 +26,19 @@ class MainDashboardView extends StatelessWidget {
           children: [
             const CustomDrawer(),
             const Gap(24),
-            Column(
-              children: [
-                const CustomSearchBar(),
-                   const Gap(16),
-                BlocBuilder<DashCubit, DashState>(
-                  builder: (context, state) {
-                    final cubit = DashCubit.get(context);
-                    return cubit.currentDesktopView();
-                  },
-                ),
-              ],
+            Expanded(
+              child: Column(
+                children: [
+                  const CustomSearchBar(),
+                  const Gap(16),
+                  BlocBuilder<DashCubit, DashState>(
+                    builder: (context, state) {
+                      final cubit = DashCubit.get(context);
+                      return cubit.currentDesktopView();
+                    },
+                  ),
+                ],
+              ),
             ),
           ],
         ),

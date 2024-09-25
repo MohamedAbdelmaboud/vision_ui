@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:vision_ui/core/themes/app_dark_colors.dart';
+
+import '../../../../core/themes/app_dark_colors.dart';
 
 class DashboardIcon extends StatelessWidget {
   const DashboardIcon({

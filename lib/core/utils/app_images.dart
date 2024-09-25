@@ -2,6 +2,10 @@
 class Assets {
   Assets._();
   
+  /// Assets for assetsImagesBackground
+  /// assets/images/Background.png
+  static const String assetsImagesBackground = "assets/images/Background.png";
+
   /// Assets for assetsImagesBilling
   /// assets/images/billing.svg
   static const String assetsImagesBilling = "assets/images/billing.svg";
@@ -13,6 +17,10 @@ class Assets {
   /// Assets for assetsImagesCard
   /// assets/images/card.svg
   static const String assetsImagesCard = "assets/images/card.svg";
+
+  /// Assets for assetsImagesClicks
+  /// assets/images/clicks.svg
+  static const String assetsImagesClicks = "assets/images/clicks.svg";
 
   /// Assets for assetsImagesClients
   /// assets/images/clients.svg
@@ -50,6 +58,10 @@ class Assets {
   /// assets/images/indicator.svg
   static const String assetsImagesIndicator = "assets/images/indicator.svg";
 
+  /// Assets for assetsImagesItems
+  /// assets/images/items.svg
+  static const String assetsImagesItems = "assets/images/items.svg";
+
   /// Assets for assetsImagesMoney
   /// assets/images/money.svg
   static const String assetsImagesMoney = "assets/images/money.svg";
@@ -77,6 +89,10 @@ class Assets {
   /// Assets for assetsImagesSales
   /// assets/images/sales.svg
   static const String assetsImagesSales = "assets/images/sales.svg";
+
+  /// Assets for assetsImagesSalesFolder
+  /// assets/images/sales_folder.svg
+  static const String assetsImagesSalesFolder = "assets/images/sales_folder.svg";
 
   /// Assets for assetsImagesServer
   /// assets/images/server.svg
@@ -114,6 +130,10 @@ class Assets {
   /// assets/images/users.svg
   static const String assetsImagesUsers = "assets/images/users.svg";
 
+  /// Assets for assetsImagesUsersFolder
+  /// assets/images/users_folder.svg
+  static const String assetsImagesUsersFolder = "assets/images/users_folder.svg";
+
   /// Assets for assetsImagesVector
   /// assets/images/Vector.svg
   static const String assetsImagesVector = "assets/images/Vector.svg";
@@ -121,9 +141,5 @@ class Assets {
   /// Assets for assetsImagesXd
   /// assets/images/xd.svg
   static const String assetsImagesXd = "assets/images/xd.svg";
-  /// Assets for assetsImagesHelp
-  /// assets/images/Background.svg
-  static const String assetsImagesBackground = "assets/images/Background.png";
-
 }
 
