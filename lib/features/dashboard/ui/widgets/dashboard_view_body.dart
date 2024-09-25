@@ -16,45 +16,37 @@ class DashboardViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Expanded(
-      child: Column(
-        children: [
-          Gap(12),
-          TodayItemsList(),
-          Gap(15),
-          Row(
-            children: [
-              WelcomeContainer(),
-              Gap(16),
-              SatisfactionWidget(),
-              Gap(16),
-              TrackingWidget(),
-            ],
-          ),
-          Gap(16),
-          Row(
-            children: [
-              SalesOverViewWidget(),
-              Gap(16),
-              ActiveUsersWidget(),
-            ],
-          ),
-          Gap(16),
-          Row(
-            children: [
-              Expanded(
-                flex: 3,
-                child: OrderOverView(), //TODO: Add OrderOverView Table
-              ),
-              Gap(16),
-              Expanded(
-                flex: 2,
-                child: OrderOverView(),
-              ),
-            ],
-          )
-        ],
-      ),
+    return const Column(
+      children: [
+        Gap(12),
+        TodayItemsList(),
+        Gap(15),
+        Row(
+          children: [
+            WelcomeContainer(),
+            Gap(16),
+            SatisfactionWidget(),
+            Gap(16),
+            TrackingWidget(),
+          ],
+        ),
+        Gap(16),
+        Row(
+          children: [
+            SalesOverViewWidget(),
+            Gap(16),
+            ActiveUsersWidget(),
+          ],
+        ),
+        Gap(16),
+        Row(
+          children: [
+            OrderOverView(),
+            Gap(16),
+            OrderOverView(),
+          ],
+        )
+      ],
     );
   }
 }
