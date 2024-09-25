@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../../core/themes/app_dark_colors.dart';
 import '../../../../core/utils/app_images.dart';
 import '../../../../core/utils/app_styles.dart';
-import 'build_data_row.dart';
-import 'custom_table.dart';
+import 'build_author_row.dart';
+import 'custom_author_table.dart';
 
 class AutherTable extends StatelessWidget {
   const AutherTable({super.key});
@@ -12,7 +12,7 @@ class AutherTable extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.sizeOf(context).width * 0.69;
-    return CustomTable(
+    return CustomAuthorTable(
       labelColum1: "AUTHOR",
       labelColum2: "FUNCTION",
       labelColum3: "STATUS",
@@ -22,7 +22,7 @@ class AutherTable extends StatelessWidget {
       ),
       title: "Authors Table ",
       rows: [
-        BuildDataRow().buildDataRow(
+        BuildAuthorRow().buildAuthorRow(
           screenWidth,
           Assets.assetsImagesAvatartable1,
           'Esthera Jackson',
@@ -32,7 +32,7 @@ class AutherTable extends StatelessWidget {
           'Online',
           '14/06/21',
         ),
-        BuildDataRow().buildDataRow(
+        BuildAuthorRow().buildAuthorRow(
           screenWidth,
           Assets.assetsImagesAvatartable2,
           'Alexa Liras',
@@ -42,7 +42,7 @@ class AutherTable extends StatelessWidget {
           'Offline',
           '14/06/21',
         ),
-        BuildDataRow().buildDataRow(
+        BuildAuthorRow().buildAuthorRow(
           screenWidth,
           Assets.assetsImagesAvatartable3,
           'Laurent Michael',
@@ -52,7 +52,7 @@ class AutherTable extends StatelessWidget {
           'Online',
           '14/06/21',
         ),
-        BuildDataRow().buildDataRow(
+        BuildAuthorRow().buildAuthorRow(
           screenWidth,
           Assets.assetsImagesAvatartable4,
           'Freduardo Hill',
@@ -62,7 +62,7 @@ class AutherTable extends StatelessWidget {
           'Online',
           '14/06/21',
         ),
-        BuildDataRow().buildDataRow(
+        BuildAuthorRow().buildAuthorRow(
           screenWidth,
           Assets.assetsImagesAvatartable5,
           'Daniel Thomas',
@@ -72,7 +72,7 @@ class AutherTable extends StatelessWidget {
           'Offline',
           '14/06/21',
         ),
-        BuildDataRow().buildDataRow(
+        BuildAuthorRow().buildAuthorRow(
           screenWidth,
           Assets.assetsImagesAvatartable6,
           'Mark Wilson',
