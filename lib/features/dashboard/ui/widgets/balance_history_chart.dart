@@ -25,7 +25,7 @@ class BalanceHistoryChart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 260,
+      height: 296,
       width: double.infinity,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
@@ -53,11 +53,14 @@ class BalanceHistoryChart extends StatelessWidget {
               }).toList();
             },
             touchTooltipData: LineTouchTooltipData(
-                tooltipRoundedRadius: 5, // Rounded corners for the tooltip
-                tooltipPadding: const EdgeInsets.all(8),
-                tooltipMargin: 10,
-                getTooltipColor: (touchedSpot) => Colors.white10,
-                tooltipBorder: const BorderSide(color: Color(0xff0075FF))),
+              tooltipRoundedRadius: 5,
+              tooltipPadding: const EdgeInsets.all(8),
+              tooltipMargin: 10,
+              getTooltipColor: (touchedSpot) => Colors.white10,
+              tooltipBorder: const BorderSide(
+                color: Color(0xff0075FF),
+              ),
+            ),
           ),
           clipData: const FlClipData.horizontal(),
           titlesData: FlTitlesData(
@@ -143,50 +146,58 @@ class BalanceHistoryChart extends StatelessWidget {
             ),
           ),
           minX: 0,
-          maxX: 10,
+          maxX: 7,
           minY: 0,
           maxY: 50,
           borderData: FlBorderData(show: true),
           lineBarsData: [
-            LineChartBarData(
-              spots: spots,
-              isCurved: true,
-              barWidth: 3,
-              color: const Color(0xff0075FF),
-              belowBarData: BarAreaData(
-                show: true,
-                gradient: LinearGradient(
-                  colors: [
-                    const Color(0xff0075FF).withOpacity(0.3),
-                    const Color(0xff0075FF).withOpacity(0.2),
-                    const Color(0xff0075FF).withOpacity(0.1),
-                    const Color(0xff0075FF).withOpacity(0.0),
-                  ],
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                ),
-              ),
-            ),
-            LineChartBarData(
-              spots: spots2,
-              isCurved: true,
-              barWidth: 3,
-              color: const Color(0xff2CD9FF),
-              belowBarData: BarAreaData(
-                show: true,
-                gradient: LinearGradient(
-                  colors: [
-                    const Color(0xff2CD9FF).withOpacity(0.3),
-                    const Color(0xff2CD9FF).withOpacity(0.2),
-                    const Color(0xff2CD9FF).withOpacity(0.1),
-                    const Color(0xff2CD9FF).withOpacity(0.0),
-                  ],
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                ),
-              ),
-            ),
+            buildLineChartBar1(),
+            buildLineChartBar2(),
           ],
+        ),
+      ),
+    );
+  }
+
+  LineChartBarData buildLineChartBar1() {
+    return LineChartBarData(
+      spots: spots,
+      isCurved: true,
+      barWidth: 3,
+      color: const Color(0xff0075FF),
+      belowBarData: BarAreaData(
+        show: true,
+        gradient: LinearGradient(
+          colors: [
+            const Color(0xff0075FF).withOpacity(0.3),
+            const Color(0xff0075FF).withOpacity(0.2),
+            const Color(0xff0075FF).withOpacity(0.1),
+            const Color(0xff0075FF).withOpacity(0.0),
+          ],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+        ),
+      ),
+    );
+  }
+
+  LineChartBarData buildLineChartBar2() {
+    return LineChartBarData(
+      spots: spots2,
+      isCurved: true,
+      barWidth: 3,
+      color: const Color(0xff2CD9FF),
+      belowBarData: BarAreaData(
+        show: true,
+        gradient: LinearGradient(
+          colors: [
+            const Color(0xff2CD9FF).withOpacity(0.3),
+            const Color(0xff2CD9FF).withOpacity(0.2),
+            const Color(0xff2CD9FF).withOpacity(0.1),
+            const Color(0xff2CD9FF).withOpacity(0.0),
+          ],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
         ),
       ),
     );
