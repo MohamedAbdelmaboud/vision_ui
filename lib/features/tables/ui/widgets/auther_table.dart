@@ -24,7 +24,7 @@ class AutherTable extends StatelessWidget {
       rows: [
         BuildDataRow().buildDataRow(
           screenWidth,
-          Assets.assetsImagesAvatar1,
+          Assets.assetsImagesAvatartable1,
           'Esthera Jackson',
           "esthera@simmmple.com",
           'Manager',
@@ -34,7 +34,7 @@ class AutherTable extends StatelessWidget {
         ),
         BuildDataRow().buildDataRow(
           screenWidth,
-          Assets.assetsImagesAvatar2,
+          Assets.assetsImagesAvatartable2,
           'Alexa Liras',
           "alexa@simmmple.com",
           'Programmer',
@@ -44,7 +44,7 @@ class AutherTable extends StatelessWidget {
         ),
         BuildDataRow().buildDataRow(
           screenWidth,
-          Assets.assetsImagesAvatar3,
+          Assets.assetsImagesAvatartable3,
           'Laurent Michael',
           "laurent@simmmple.com",
           'Executive',
@@ -54,7 +54,7 @@ class AutherTable extends StatelessWidget {
         ),
         BuildDataRow().buildDataRow(
           screenWidth,
-          Assets.assetsImagesAvatar4,
+          Assets.assetsImagesAvatartable4,
           'Freduardo Hill',
           "freduardo@simmmple.com",
           'Manager',
@@ -64,7 +64,7 @@ class AutherTable extends StatelessWidget {
         ),
         BuildDataRow().buildDataRow(
           screenWidth,
-          Assets.assetsImagesAvatar5,
+          Assets.assetsImagesAvatartable5,
           'Daniel Thomas',
           "daniel@simmmple.com",
           'Programmer',
@@ -74,7 +74,7 @@ class AutherTable extends StatelessWidget {
         ),
         BuildDataRow().buildDataRow(
           screenWidth,
-          Assets.assetsImagesAvatar6,
+          Assets.assetsImagesAvatartable6,
           'Mark Wilson',
           "mark@simmmple.com",
           'Designer',

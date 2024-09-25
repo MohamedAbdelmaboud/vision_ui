@@ -183,15 +183,27 @@ class Assets {
   /// assets/images/avatar3.png
   static const String assetsImagesAvatar3 = "assets/images/avatar3.png";
 
-  /// Assets for assetsImagesXd
-  /// assets/images/avatar4.png
-  static const String assetsImagesAvatar4 = "assets/images/avatar4.png";
+  /// assets/images/avatar_table_1.png
+  static const String assetsImagesAvatartable1 =
+      "assets/images/avatar_table_1.png";
 
-  /// Assets for assetsImagesXd
-  /// assets/images/avatar5.png
-  static const String assetsImagesAvatar5 = "assets/images/avatar5.png";
+  /// assets/images/avatar_table_2.png
+  static const String assetsImagesAvatartable2 =
+      "assets/images/avatar_table_2.png";
 
-  /// Assets for assetsImagesXd
-  /// assets/images/avatar6.png
-  static const String assetsImagesAvatar6 = "assets/images/avatar6.png";
+  /// assets/images/avatar_table_3.png
+  static const String assetsImagesAvatartable3 =
+      "assets/images/avatar_table_3.png";
+
+  /// assets/images/avatar_table_4.png
+  static const String assetsImagesAvatartable4 =
+      "assets/images/avatar_table_4.png";
+
+  /// assets/images/avatar_table_5.png
+  static const String assetsImagesAvatartable5 =
+      "assets/images/avatar_table_5.png";
+
+  /// assets/images/avatar_table_6.png
+  static const String assetsImagesAvatartable6 =
+      "assets/images/avatar_table_6.png";
 }

@@ -14,11 +14,6 @@ void main() {
 
       builder: (context) => const MyApp(), // Wrap your app
     ),
-  runApp(
-    DevicePreview(
-      enabled: true,
-      builder: (context) => const MyApp(), // Wrap your app
-    ),
   );
 }
 
