@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import 'active_users_widget.dart';
+import 'dashboard_projects_table_widget.dart';
 import 'order_over_view.dart';
 import 'sales_over_view_widget.dart';
 import 'satisfaction_widget.dart';
@@ -41,11 +42,12 @@ class DashboardViewBody extends StatelessWidget {
         Gap(16),
         Row(
           children: [
-            OrderOverView(),
+            DashboardProjectsTableWidget(),
             Gap(16),
             OrderOverView(),
           ],
-        )
+        ),
+        Gap(16),
       ],
     );
   }
