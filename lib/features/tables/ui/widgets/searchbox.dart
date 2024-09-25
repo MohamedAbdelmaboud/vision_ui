@@ -63,7 +63,7 @@ class Searchbox extends StatelessWidget {
               Radius.circular(15),
             ),
           ),
-          hintText: "typing text ",
+          hintText: "Type here...",
           hintStyle:
               AppStyles.medium14.copyWith(color: AppDarkColors.greyColor),
         ),

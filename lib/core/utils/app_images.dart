@@ -2,6 +2,22 @@
 class Assets {
   Assets._();
   
+  /// Assets for assetsImagesAvatar
+  /// assets/images/Avatar.png
+  static const String assetsImagesAvatar = "assets/images/Avatar.png";
+
+  /// Assets for assetsImagesAvatar1
+  /// assets/images/Avatar1.png
+  static const String assetsImagesAvatar1 = "assets/images/Avatar1.png";
+
+  /// Assets for assetsImagesAvatar2
+  /// assets/images/Avatar2.png
+  static const String assetsImagesAvatar2 = "assets/images/Avatar2.png";
+
+  /// Assets for assetsImagesAvatar3
+  /// assets/images/Avatar3.png
+  static const String assetsImagesAvatar3 = "assets/images/Avatar3.png";
+
   /// Assets for assetsImagesBackground
   /// assets/images/Background.png
   static const String assetsImagesBackground = "assets/images/Background.png";
@@ -10,6 +26,10 @@ class Assets {
   /// assets/images/billing.svg
   static const String assetsImagesBilling = "assets/images/billing.svg";
 
+  /// Assets for assetsImagesBillingBackground
+  /// assets/images/billing_background.png
+  static const String assetsImagesBillingBackground = "assets/images/billing_background.png";
+
   /// Assets for assetsImagesBraden
   /// assets/images/braden.png
   static const String assetsImagesBraden = "assets/images/braden.png";
@@ -17,6 +37,14 @@ class Assets {
   /// Assets for assetsImagesCard
   /// assets/images/card.svg
   static const String assetsImagesCard = "assets/images/card.svg";
+
+  /// Assets for assetsImagesCardBackground
+  /// assets/images/card_background.png
+  static const String assetsImagesCardBackground = "assets/images/card_background.png";
+
+  /// Assets for assetsImagesCardIcon
+  /// assets/images/card_icon.svg
+  static const String assetsImagesCardIcon = "assets/images/card_icon.svg";
 
   /// Assets for assetsImagesClicks
   /// assets/images/clicks.svg
@@ -125,6 +153,14 @@ class Assets {
   /// Assets for assetsImagesTagFaces
   /// assets/images/tag_faces.svg
   static const String assetsImagesTagFaces = "assets/images/tag_faces.svg";
+
+  /// Assets for assetsImagesTaxes
+  /// assets/images/taxes.svg
+  static const String assetsImagesTaxes = "assets/images/taxes.svg";
+
+  /// Assets for assetsImagesTaxesBg
+  /// assets/images/taxes_bg.png
+  static const String assetsImagesTaxesBg = "assets/images/taxes_bg.png";
 
   /// Assets for assetsImagesUsers
   /// assets/images/users.svg
