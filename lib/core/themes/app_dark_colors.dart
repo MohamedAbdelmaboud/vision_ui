@@ -9,6 +9,8 @@ class AppDarkColors {
   static const Color searchIconColor = Color(0xff2D3748);
 
   static const Color greenColor = Color(0xff01B574);
+  static const Color whiteColor = Color(0xffffffff);
+
   static const Color gradiantTableColor1 = Color(0xff060B28);
   static const Color gradiantTableColor2 = Color(0xff0A0E23);
 }
