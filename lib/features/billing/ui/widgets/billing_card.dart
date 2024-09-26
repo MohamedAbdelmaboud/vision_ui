@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../../../../core/themes/app_dark_colors.dart';
-import 'card_sub_title.dart';
-import 'card_title_and_delete_and_edit.dart';
+import 'billing_card_sub_title.dart';
+import 'billing_card_title_and_delete_and_edit.dart';
 
 class BillingCard extends StatelessWidget {
   const BillingCard({
@@ -37,11 +37,11 @@ class BillingCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CardTitleAndDeleteAndEdit(
+            BillingCardTitleAndDeleteAndEdit(
               title: title,
             ),
             const Gap(4),
-            CardSubTitle(
+            BillingCardSubTitle(
               companyName: companyName,
               emailAddress: emailAddress,
               vatNum: vatNum,

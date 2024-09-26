@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import 'billing_information.dart';
-import 'transactions_information.dart';
+import 'billing_information_section.dart';
+import 'transactions_information_section.dart';
 
 class BillingAndTransactionSection extends StatelessWidget {
   const BillingAndTransactionSection({super.key});
@@ -10,10 +10,11 @@ class BillingAndTransactionSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Expanded(child: BillingInformation()),
+        Expanded(child: BillingInformationSection()),
         Gap(10),
-        Expanded(child: TransactionsInformation()),
+        Expanded(child: TransactionsInformationSection()),
       ],
     );
   }

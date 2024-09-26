@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../../../../core/utils/app_styles.dart';
-import 'delete_button.dart';
-import 'edit_button.dart';
+import 'billing_delete_button.dart';
+import 'billing_edit_button.dart';
 
-class CardTitleAndDeleteAndEdit extends StatelessWidget {
-  const CardTitleAndDeleteAndEdit({
+class BillingCardTitleAndDeleteAndEdit extends StatelessWidget {
+  const BillingCardTitleAndDeleteAndEdit({
     super.key,
     required this.title,
   });
@@ -20,8 +20,8 @@ class CardTitleAndDeleteAndEdit extends StatelessWidget {
           style: AppStyles.medium12,
         ),
         const Spacer(),
-        const DeleteButton(),
-        const EditButton(),
+        const BillingDeleteButton(),
+        const BillingEditButton(),
         const Gap(5)
       ],
     );

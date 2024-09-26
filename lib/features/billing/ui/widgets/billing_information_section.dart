@@ -5,8 +5,8 @@ import '../../../../core/themes/app_dark_colors.dart';
 import '../../../../core/utils/app_styles.dart';
 import 'billing_card.dart';
 
-class BillingInformation extends StatelessWidget {
-  const BillingInformation({super.key});
+class BillingInformationSection extends StatelessWidget {
+  const BillingInformationSection({super.key});
 
   @override
   Widget build(BuildContext context) {
