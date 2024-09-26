@@ -4,8 +4,8 @@ import 'package:gap/gap.dart';
 import '../../../../core/themes/app_dark_colors.dart';
 import '../../../../core/utils/app_styles.dart';
 
-class DeleteButton extends StatelessWidget {
-  const DeleteButton({
+class BillingEditButton extends StatelessWidget {
+  const BillingEditButton({
     super.key,
   });
 
@@ -16,15 +16,15 @@ class DeleteButton extends StatelessWidget {
       child: Row(
         children: [
           const Icon(
-            Icons.delete,
+            Icons.edit,
             size: 14,
-            color: AppDarkColors.redColor,
+            color: AppDarkColors.greyColor,
           ),
           const Gap(5),
           Text(
-            "Delete",
+            "Edit",
             style: AppStyles.medium12.copyWith(
-              color: AppDarkColors.redColor,
+              color: AppDarkColors.greyColor,
             ),
           ),
         ],

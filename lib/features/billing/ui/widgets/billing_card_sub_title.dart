@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../../core/themes/app_dark_colors.dart';
 import '../../../../core/utils/app_styles.dart';
 
-class CardSubTitle extends StatelessWidget {
-  const CardSubTitle(
+class BillingCardSubTitle extends StatelessWidget {
+  const BillingCardSubTitle(
       {super.key,
       required this.companyName,
       required this.emailAddress,
