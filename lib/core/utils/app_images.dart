@@ -206,4 +206,13 @@ class Assets {
   /// assets/images/avatar_table_6.png
   static const String assetsImagesAvatartable6 =
       "assets/images/avatar_table_6.png";
+
+  /// assets/images/scan.png
+  static const String assetsImagesScan = "assets/images/scan.png";
+
+  /// assets/images/modern.png
+  static const String assetsImagesmodern = "assets/images/modern.png";
+
+  /// assets/images/minimalist.png
+  static const String assetsImagesMinimalist = "assets/images/minimalist.png";
 }
