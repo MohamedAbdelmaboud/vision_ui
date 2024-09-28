@@ -16,7 +16,6 @@ class TrackingWidget extends StatelessWidget {
     return Expanded(
       flex: 2,
       child: Container(
-        height: 300,
         padding: const EdgeInsets.symmetric(horizontal: 31, vertical: 27),
         decoration: buildCommonDecoration(),
         child: const Column(

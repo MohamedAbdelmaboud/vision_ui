@@ -22,30 +22,36 @@ class DashboardViewBody extends StatelessWidget {
         Gap(12),
         TodayItemsList(),
         Gap(15),
-        Row(
-          children: [
-            WelcomeContainer(),
-            Gap(16),
-            SatisfactionWidget(),
-            Gap(16),
-            TrackingWidget(),
-          ],
+        IntrinsicHeight(
+          child: Row(
+            children: [
+              WelcomeContainer(),
+              Gap(16),
+              SatisfactionWidget(),
+              Gap(16),
+              TrackingWidget(),
+            ],
+          ),
         ),
         Gap(16),
-        Row(
-          children: [
-            SalesOverViewWidget(),
-            Gap(16),
-            ActiveUsersWidget(),
-          ],
+        IntrinsicHeight(
+          child: Row(
+            children: [
+              SalesOverViewWidget(),
+              Gap(16),
+              ActiveUsersWidget(),
+            ],
+          ),
         ),
         Gap(16),
-        Row(
-          children: [
-            DashboardProjectsTableWidget(),
-            Gap(16),
-            OrderOverView(),
-          ],
+        IntrinsicHeight(
+          child: Row(
+            children: [
+              DashboardProjectsTableWidget(),
+              Gap(16),
+              OrderOverView(),
+            ],
+          ),
         ),
         Gap(16),
       ],

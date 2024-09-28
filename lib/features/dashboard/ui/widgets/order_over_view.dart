@@ -15,7 +15,6 @@ class OrderOverView extends StatelessWidget {
     return Expanded(
       flex: 2,
       child: Container(
-        height: 440,
         padding: const EdgeInsets.symmetric(
           horizontal: 20,
           vertical: 20,

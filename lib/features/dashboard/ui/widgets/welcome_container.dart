@@ -14,7 +14,7 @@ class WelcomeContainer extends StatelessWidget {
       flex: 2,
       child: Container(
         alignment: Alignment.centerLeft,
-        height: 300,
+        // height: 300,
         padding: const EdgeInsets.symmetric(
           vertical: 36,
           horizontal: 31,

@@ -16,7 +16,6 @@ class ActiveUsersWidget extends StatelessWidget {
     return Expanded(
       flex: 2,
       child: Container(
-        height: 440,
         padding: const EdgeInsets.all(16),
         decoration: buildCommonDecoration(),
         child: const Column(
@@ -25,7 +24,9 @@ class ActiveUsersWidget extends StatelessWidget {
             Gap(24),
             ActiveUsersTitle(),
             Gap(24),
-            ActiveUserlist()
+            ActiveUserlist(),
+            Gap(10),
+          
           ],
         ),
       ),
