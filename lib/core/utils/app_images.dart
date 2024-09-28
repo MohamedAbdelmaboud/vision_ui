@@ -215,4 +215,7 @@ class Assets {
 
   /// assets/images/minimalist.png
   static const String assetsImagesMinimalist = "assets/images/minimalist.png";
+
+  /// assets/images/userprofile.png
+  static const String assetsImagesUserProfile = "assets/images/userprofile.png";
 }
