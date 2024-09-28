@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../../../../core/themes/app_dark_colors.dart';
-import 'build_common_decoration.dart';
 import 'order_over_view_item_list.dart';
 import 'order_over_view_title.dart';
 
@@ -32,7 +31,9 @@ class OrderOverView extends StatelessWidget {
         ),
       ),
     );
-  }  BoxDecoration buildDecorationTable() {
+  }
+
+  BoxDecoration buildDecorationTable() {
     return BoxDecoration(
       gradient: LinearGradient(
         colors: [

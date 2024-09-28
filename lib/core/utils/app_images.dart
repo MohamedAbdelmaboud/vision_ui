@@ -217,5 +217,49 @@ class Assets {
   /// Assets for assetsImagesXd
   /// assets/images/xd.svg
   static const String assetsImagesXd = "assets/images/xd.svg";
-}
 
+  /// Assets for assetsImagesXd
+  /// assets/images/avatar1.png
+  static const String assetsImagesAvatar1 = "assets/images/avatar1.png";
+
+  /// Assets for assetsImagesXd
+  /// assets/images/avatar2.png
+  static const String assetsImagesAvatar2 = "assets/images/avatar2.png";
+
+  /// Assets for assetsImagesXd
+  /// assets/images/avatar3.png
+  static const String assetsImagesAvatar3 = "assets/images/avatar3.png";
+
+  /// assets/images/avatar_table_1.png
+  static const String assetsImagesAvatartable1 =
+      "assets/images/avatar_table_1.png";
+
+  /// assets/images/avatar_table_2.png
+  static const String assetsImagesAvatartable2 =
+      "assets/images/avatar_table_2.png";
+
+  /// assets/images/avatar_table_3.png
+  static const String assetsImagesAvatartable3 =
+      "assets/images/avatar_table_3.png";
+
+  /// assets/images/avatar_table_4.png
+  static const String assetsImagesAvatartable4 =
+      "assets/images/avatar_table_4.png";
+
+  /// assets/images/avatar_table_5.png
+  static const String assetsImagesAvatartable5 =
+      "assets/images/avatar_table_5.png";
+
+  /// assets/images/avatar_table_6.png
+  static const String assetsImagesAvatartable6 =
+      "assets/images/avatar_table_6.png";
+
+  /// assets/images/scan.png
+  static const String assetsImagesScan = "assets/images/scan.png";
+
+  /// assets/images/modern.png
+  static const String assetsImagesmodern = "assets/images/modern.png";
+
+  /// assets/images/minimalist.png
+  static const String assetsImagesMinimalist = "assets/images/minimalist.png";
+}
