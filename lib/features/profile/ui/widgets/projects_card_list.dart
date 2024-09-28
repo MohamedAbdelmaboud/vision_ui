@@ -20,7 +20,7 @@ class ProjectsCardList extends StatelessWidget {
           projectDescription:
               'As Uber works through a huge amount of internal management turmoil.',
         ),
-        Gap(15),
+        Gap(25),
         ProjectCard(
           projectThumnail: Assets.assetsImagesScan,
           projectNumber: 2,
@@ -28,7 +28,7 @@ class ProjectsCardList extends StatelessWidget {
           projectDescription:
               'Music is something that every person has his or her own specific opinion about.',
         ),
-        Gap(15),
+        Gap(25),
         ProjectCard(
           projectThumnail: Assets.assetsImagesMinimalist,
           projectNumber: 2,
@@ -36,7 +36,7 @@ class ProjectsCardList extends StatelessWidget {
           projectDescription:
               'Different people have different taste, and various types of music.',
         ),
-        Gap(15),
+        Gap(25),
         ProjectCard(
           projectThumnail: Assets.assetsImagesModern,
           projectNumber: 1,

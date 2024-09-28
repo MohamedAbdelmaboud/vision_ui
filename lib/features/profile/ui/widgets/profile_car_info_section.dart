@@ -1,10 +1,10 @@
+import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
+
 import '../../../../core/themes/app_dark_colors.dart';
 import 'car_info_indicator.dart';
 import 'car_info_items_list.dart';
 import 'car_info_title.dart';
-import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
-import 'profile_view.dart';
 
 class ProfileCarInfoSection extends StatelessWidget {
   const ProfileCarInfoSection({

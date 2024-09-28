@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 
-import 'platform_settings_section.dart';
 import 'projects_section.dart';
 
 class PlatformSettingsAndProjectsSection extends StatelessWidget {
@@ -12,8 +10,8 @@ class PlatformSettingsAndProjectsSection extends StatelessWidget {
     return const Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        PlatformSettingsSection(),
-        Gap(20),
+        // PlatformSettingsSection(),
+        // Gap(20),
         Expanded(
           flex: 3,
           child: ProjectsSection(),
