@@ -1,67 +1,53 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
 
-import '../../../../core/utils/app_images.dart';
-import '../../../../core/utils/app_styles.dart';
-import 'billing_card_col.dart';
+import '../../../../core/themes/app_dark_colors.dart';
+import 'billing_card_sub_title.dart';
+import 'billing_card_title_and_delete_and_edit.dart';
 
 class BillingCard extends StatelessWidget {
   const BillingCard({
     super.key,
+    required this.title,
+    required this.companyName,
+    required this.emailAddress,
+    required this.vatNum,
   });
+  final String title;
+  final String companyName;
+  final String emailAddress;
+  final String vatNum;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 240,
-      width: 416,
-      padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        image: const DecorationImage(
-          image: AssetImage(
-            Assets.assetsImagesCardBackground,
-          ),
-          fit: BoxFit.cover,
+        gradient: LinearGradient(
+          colors: [
+            AppDarkColors.gradiantCardColor1.withOpacity(0.9),
+            AppDarkColors.gradiantCardColor2.withOpacity(0.5),
+          ],
+          begin: Alignment.topCenter,
+          end: Alignment.topLeft,
         ),
+        borderRadius: BorderRadius.circular(20),
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              Text(
-                'Vision UI',
-                style: AppStyles.bold14,
-              ),
-              const Spacer(),
-              SvgPicture.asset(
-                Assets.assetsImagesCardIcon,
-                height: 18,
-              ),
-            ],
-          ),
-          const Gap(70),
-          Text(
-            '7812 2139 0823 XXXX',
-            style: AppStyles.bold14,
-          ),
-          const Gap(10),
-          const Row(
-            children: [
-              BillingCardCol(
-                title: 'VALID THRU',
-                value: '05/24',
-              ),
-              Gap(40),
-              BillingCardCol(
-                title: 'CVV',
-                value: '09X',
-              ),
-            ],
-          ),
-        ],
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            BillingCardTitleAndDeleteAndEdit(
+              title: title,
+            ),
+            const Gap(4),
+            BillingCardSubTitle(
+              companyName: companyName,
+              emailAddress: emailAddress,
+              vatNum: vatNum,
+            )
+          ],
+        ),
       ),
     );
   }

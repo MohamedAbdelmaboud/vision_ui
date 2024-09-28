@@ -12,13 +12,10 @@ class PlatformSettingsAndProjectsSection extends StatelessWidget {
     return const Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Expanded(
-          flex: 4,
-          child: PlatformSettingsSection(),
-        ),
+        PlatformSettingsSection(),
         Gap(20),
         Expanded(
-          flex: 11,
+          flex: 3,
           child: ProjectsSection(),
         ),
       ],

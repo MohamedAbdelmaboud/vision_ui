@@ -1,7 +1,9 @@
-import '../../../../core/themes/app_dark_colors.dart';
-import '../../../../core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+
+import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/utils/app_styles.dart';
+import 'record_row.dart';
 
 class WelcomeContainerBody extends StatelessWidget {
   const WelcomeContainerBody({
@@ -32,20 +34,7 @@ class WelcomeContainerBody extends StatelessWidget {
           ),
         ),
         const Spacer(),
-        Row(
-          children: [
-            Text(
-              'Tap to record',
-              style: AppStyles.medium12,
-            ),
-            const Gap(10),
-            const Icon(
-              Icons.arrow_forward,
-              size: 14,
-              color: Colors.white,
-            ),
-          ],
-        )
+        const RecordRow()
       ],
     );
   }

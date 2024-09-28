@@ -14,7 +14,7 @@ class ProjectsCardList extends StatelessWidget {
     return const Row(
       children: [
         ProjectCard(
-          projectThumnail: Assets.assetsImagesmodern,
+          projectThumnail: Assets.assetsImagesModern,
           projectNumber: 1,
           projectName: 'Modern',
           projectDescription:
@@ -38,7 +38,7 @@ class ProjectsCardList extends StatelessWidget {
         ),
         Gap(15),
         ProjectCard(
-          projectThumnail: Assets.assetsImagesmodern,
+          projectThumnail: Assets.assetsImagesModern,
           projectNumber: 1,
           projectName: 'Modern',
           projectDescription:

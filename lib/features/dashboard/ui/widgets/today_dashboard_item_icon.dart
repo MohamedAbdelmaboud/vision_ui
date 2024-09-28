@@ -3,15 +3,15 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../../core/themes/app_dark_colors.dart';
 
-class TodayDashboardItemIcon extends StatelessWidget {
-  const TodayDashboardItemIcon({
+class DashboardItemIcon extends StatelessWidget {
+  const DashboardItemIcon({
     super.key,
     required this.icon,
   });
   final String icon;
   @override
   Widget build(BuildContext context) {
-    return Container( 
+    return Container(
       padding: const EdgeInsets.all(11.25),
       height: 45,
       width: 45,

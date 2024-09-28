@@ -20,12 +20,7 @@ class TrackingIndicator extends StatelessWidget {
           Assets.assetsImagesIndicator,
           height: 150,
         ),
-        // ).asGlass(
-        //   tintColor: const Color(0xFF06B88F),
-        //   clipBorderRadius: BorderRadius.circular(85),
-        //   tileMode: TileMode.mirror,
-        // ),
-        //    Safety
+      
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

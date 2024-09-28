@@ -12,6 +12,7 @@ class PlatformSettingsSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: 350,
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
