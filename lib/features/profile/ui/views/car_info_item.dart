@@ -1,12 +1,21 @@
-import '../../../../core/utils/app_images.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+
 import '../../../dashboard/ui/widgets/today_dashboard_item_icon.dart';
 import 'car_info_item_text.dart';
-import 'package:flutter/material.dart';
 
 class CarInfoItem extends StatelessWidget {
   const CarInfoItem({
     super.key,
+    required this.title,
+    required this.value,
+    required this.iconPath,
+    this.isChart = false,
   });
+  final String title;
+  final String value;
+  final String iconPath;
+  final bool isChart;
 
   @override
   Widget build(BuildContext context) {
@@ -17,13 +26,20 @@ class CarInfoItem extends StatelessWidget {
       ),
       decoration: buildDecoration(),
       width: 220,
-      child: const Row(
+      child: Row(
         children: [
-          CarInfoItemText(),
-          Spacer(),
-          DashboardItemIcon(
-            icon: Assets.assetsImagesCarHealth,
-          )
+          CarInfoItemText(
+            title: title,
+            value: value,
+          ),
+          const Spacer(),
+          !isChart
+              ? DashboardItemIcon(
+                  icon: iconPath,
+                )
+              : SvgPicture.asset(
+                  iconPath,
+                )
         ],
       ),
     );
