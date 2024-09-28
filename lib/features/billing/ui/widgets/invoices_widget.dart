@@ -48,6 +48,8 @@ class InvoicesWidget extends StatelessWidget {
         padding: const EdgeInsets.all(24),
         decoration: buildInvoicesDecoration(),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const InvoicesTitle(),

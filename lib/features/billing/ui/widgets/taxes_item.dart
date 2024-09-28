@@ -1,9 +1,10 @@
-import '../../../../core/themes/app_dark_colors.dart';
-import '../../../../core/utils/app_images.dart';
-import '../../../../core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
+
+import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/utils/app_images.dart';
+import '../../../../core/utils/app_styles.dart';
 
 class TaxesItem extends StatelessWidget {
   const TaxesItem({
@@ -34,9 +35,9 @@ class TaxesItem extends StatelessWidget {
                 color: AppDarkColors.greyColor,
               ),
             ),
-            // const Spacer(),
           ],
         ),
+        const Spacer(),
         Text(
           '-\$154.50',
           style: AppStyles.bold12,
