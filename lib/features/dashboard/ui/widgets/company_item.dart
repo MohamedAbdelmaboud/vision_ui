@@ -1,6 +1,7 @@
-import '../../../../core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+import '../../../../core/utils/app_styles.dart';
 
 class CompanyItem extends StatelessWidget {
   const CompanyItem({
@@ -19,9 +20,15 @@ class CompanyItem extends StatelessWidget {
           imagePath,
         ),
         const SizedBox(width: 8),
-        Text(
-          text,
-          style: AppStyles.bold12,
+        ConstrainedBox(
+          constraints: const BoxConstraints(
+            maxWidth: 150,
+          ),
+          child: Text(
+            text,
+            style: AppStyles.bold12,
+            overflow: TextOverflow.ellipsis,
+          ),
         ),
       ],
     );
