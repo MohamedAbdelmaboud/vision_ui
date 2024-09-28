@@ -20,7 +20,7 @@ class SatisfactionWidget extends StatelessWidget {
         // width: 320,
         decoration: buildCommonDecoration(),
         child: const Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             SatisfactionWidgetText(),
             Gap(11.5),

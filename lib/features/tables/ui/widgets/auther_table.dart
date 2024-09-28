@@ -4,7 +4,7 @@ import '../../../../core/themes/app_dark_colors.dart';
 import '../../../../core/utils/app_images.dart';
 import '../../../../core/utils/app_styles.dart';
 import 'build_data_row.dart';
-import 'custom_table.dart';
+import 'custom_Table.dart';
 
 class AutherTable extends StatelessWidget {
   const AutherTable({super.key});
@@ -24,7 +24,7 @@ class AutherTable extends StatelessWidget {
       rows: [
         BuildDataRow().buildDataRow(
           screenWidth,
-          Assets.assetsImagesAvatartable1,
+          Assets.assetsImagesAvatarTable1,
           'Esthera Jackson',
           "esthera@simmmple.com",
           'Manager',
@@ -34,7 +34,7 @@ class AutherTable extends StatelessWidget {
         ),
         BuildDataRow().buildDataRow(
           screenWidth,
-          Assets.assetsImagesAvatartable2,
+          Assets.assetsImagesAvatarTable2,
           'Alexa Liras',
           "alexa@simmmple.com",
           'Programmer',
@@ -44,7 +44,7 @@ class AutherTable extends StatelessWidget {
         ),
         BuildDataRow().buildDataRow(
           screenWidth,
-          Assets.assetsImagesAvatartable3,
+          Assets.assetsImagesAvatarTable3,
           'Laurent Michael',
           "laurent@simmmple.com",
           'Executive',
@@ -54,7 +54,7 @@ class AutherTable extends StatelessWidget {
         ),
         BuildDataRow().buildDataRow(
           screenWidth,
-          Assets.assetsImagesAvatartable4,
+          Assets.assetsImagesAvatarTable4,
           'Freduardo Hill',
           "freduardo@simmmple.com",
           'Manager',
@@ -64,7 +64,7 @@ class AutherTable extends StatelessWidget {
         ),
         BuildDataRow().buildDataRow(
           screenWidth,
-          Assets.assetsImagesAvatartable5,
+          Assets.assetsImagesAvatarTable5,
           'Daniel Thomas',
           "daniel@simmmple.com",
           'Programmer',
@@ -74,7 +74,7 @@ class AutherTable extends StatelessWidget {
         ),
         BuildDataRow().buildDataRow(
           screenWidth,
-          Assets.assetsImagesAvatartable6,
+          Assets.assetsImagesAvatarTable6,
           'Mark Wilson',
           "mark@simmmple.com",
           'Designer',

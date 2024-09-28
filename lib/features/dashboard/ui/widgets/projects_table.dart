@@ -44,22 +44,25 @@ class ProjectsTable extends StatelessWidget {
           ),
         ),
         DataCell(
-          Row(
-            // alignment: Alignment.centerLeft,
-            children: [
-              Image.asset(
-                Assets.assetsImagesAvatar1,
-              ),
-              Image.asset(
-                Assets.assetsImagesAvatar1,
-              ),
-              Image.asset(
-                Assets.assetsImagesAvatar2,
-              ),
-              Image.asset(
-                Assets.assetsImagesAvatar3,
-              ),
-            ],
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Row(
+              // alignment: Alignment.centerLeft,
+              children: [
+                Image.asset(
+                  Assets.assetsImagesAvatar3,
+                ),
+                Image.asset(
+                  Assets.assetsImagesAvatar2,
+                ),
+                Image.asset(
+                  Assets.assetsImagesAvatar2,
+                ),
+                Image.asset(
+                  Assets.assetsImagesAvatar3,
+                ),
+              ],
+            ),
           ),
         ),
         DataCell(
