@@ -18,8 +18,7 @@ class CarInfoTitle extends StatelessWidget {
           Assets.assetsImagesBmw,
           height: 100,
         ),
-        const Gap(20),
-        
+        const Gap(20),  
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

@@ -1,8 +1,8 @@
-import '../../../../core/themes/app_dark_colors.dart';
-import '../../../../core/utils/app_styles.dart';
-import 'credit_balance_container.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+
+import '../../../../core/themes/app_dark_colors.dart';
+import 'credit_balance_container.dart';
 import 'taxes_item.dart';
 
 class CreditBalanceWidget extends StatelessWidget {
@@ -14,23 +14,15 @@ class CreditBalanceWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-      height: 240,
-
+        height: 240,
         padding: const EdgeInsets.all(24),
         decoration: buildBalanceDecoration(),
-        child: Column(
+        child: const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const CreditBalanceContainer(),
-            const Gap(16),
-            Text(
-              'NEWSET',
-              style: AppStyles.medium10.copyWith(
-                color: AppDarkColors.greyColor,
-              ),
-            ),
-            const Gap(16),
-            const TaxesItem(),
+            CreditBalanceContainer(),
+            Gap(16),
+            TaxesItem(),
           ],
         ),
       ),

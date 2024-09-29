@@ -49,7 +49,6 @@ class InvoicesWidget extends StatelessWidget {
         decoration: buildInvoicesDecoration(),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const InvoicesTitle(),

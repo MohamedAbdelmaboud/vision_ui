@@ -13,9 +13,13 @@ class BillingAndTransactionSection extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Expanded(child: BillingInformationSection()),
+          Expanded(
+            child: BillingInformationSection(),
+          ),
           Gap(20),
-          Expanded(child: TransactionsInformationSection()),
+          Expanded(
+            child: TransactionsInformationSection(),
+          ),
         ],
       ),
     );

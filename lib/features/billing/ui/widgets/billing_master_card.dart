@@ -1,9 +1,10 @@
-import '../../../../core/utils/app_images.dart';
-import '../../../../core/utils/app_styles.dart';
-import 'billing_card_col.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
+
+import '../../../../core/utils/app_images.dart';
+import 'billing_card_col.dart';
+import 'billing_master_num.dart';
+import 'billing_master_upper_row.dart';
 
 class BillingMasterCard extends StatelessWidget {
   const BillingMasterCard({super.key});
@@ -23,29 +24,14 @@ class BillingMasterCard extends StatelessWidget {
           fit: BoxFit.cover,
         ),
       ),
-      child: Column(
+      child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          BillingMasterUpperRow(),
+          Gap(70),
+          BillingMasterNum(),
+          Gap(10),
           Row(
-            children: [
-              Text(
-                'Vision UI',
-                style: AppStyles.bold14,
-              ),
-              const Spacer(),
-              SvgPicture.asset(
-                Assets.assetsImagesCardIcon,
-                height: 18,
-              ),
-            ],
-          ),
-          const Gap(70),
-          Text(
-            '7812 2139 0823 XXXX',
-            style: AppStyles.bold14,
-          ),
-          const Gap(10),
-          const Row(
             children: [
               BillingCardCol(
                 title: 'VALID THRU',

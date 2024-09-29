@@ -1,11 +1,10 @@
-import '../../../../core/themes/app_dark_colors.dart';
-import '../../../../core/utils/app_images.dart';
-import '../../../../core/utils/app_styles.dart';
-import 'billing_view_body.dart';
-import 'custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/utils/app_images.dart';
+import '../../../../core/utils/app_styles.dart';
+import 'custom_button.dart';
 import 'payment_method_item.dart';
 
 class PaymentMethodWidget extends StatelessWidget {
@@ -16,8 +15,6 @@ class PaymentMethodWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // height: 180,
-
       padding: const EdgeInsets.all(24),
       decoration: buildPaymentMethodDecoration(),
       child: Column(
