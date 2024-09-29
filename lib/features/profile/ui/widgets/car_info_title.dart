@@ -24,12 +24,12 @@ class CarInfoTitle extends StatelessWidget {
           children: [
             Text(
               'Car Informations',
-              style: AppStyles.bold14,
+              style: AppStyles.bold14(context),
             ),
             const Gap(5),
             Text(
               'Hello, Abdelmaboud! Your Car is ready.',
-              style: AppStyles.medium12.copyWith(
+              style: AppStyles.medium12(context).copyWith(
                 color: AppDarkColors.greyColor,
               ),
             ),

@@ -34,7 +34,7 @@ class PlatformSwitchAndText extends StatelessWidget {
         const Gap(12),
         Text(
           text,
-          style: AppStyles.regular12.copyWith(
+          style: AppStyles.regular12(context).copyWith(
             color: AppDarkColors.greyColor,
           ),
         ),

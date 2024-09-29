@@ -14,11 +14,14 @@ class WelcomeProfileWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('Welcome back!', style: AppStyles.bold20),
+        Text(
+          'Welcome back!',
+          style: AppStyles.bold20(context),
+        ),
         const Gap(5),
         Text(
           'Nice to see you, Abdelmaboud 🦈💙',
-          style: AppStyles.regular12,
+          style: AppStyles.regular12(context),
         ),
         const Spacer(),
         const TurnOnWidget()

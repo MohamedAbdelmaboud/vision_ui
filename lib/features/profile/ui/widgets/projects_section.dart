@@ -29,12 +29,12 @@ class ProjectsSection extends StatelessWidget {
           children: [
             Text(
               "Projects",
-              style: AppStyles.bold14,
+              style: AppStyles.bold14(context),
             ),
             const Gap(15),
             Text(
               "Architects design houses",
-              style: AppStyles.medium12.copyWith(
+              style: AppStyles.medium12(context).copyWith(
                 color: AppDarkColors.greyColor,
               ),
             ),

@@ -17,7 +17,7 @@ class AutherTable extends StatelessWidget {
       labelColum2: "FUNCTION",
       labelColum3: "STATUS",
       labelColum4: "EMPLOYED",
-      style: AppStyles.regular10.copyWith(
+      style: AppStyles.regular10(context).copyWith(
         color: AppDarkColors.greyColor.withOpacity(0.8),
       ),
       title: "Authors Table ",
