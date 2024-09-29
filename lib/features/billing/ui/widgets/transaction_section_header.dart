@@ -15,7 +15,7 @@ class TransactionSectionHeader extends StatelessWidget {
       children: [
         Text(
           "Your Transactions",
-          style: AppStyles.bold14,
+          style: AppStyles.bold14(context),
         ),
         const Spacer(),
         const Icon(
@@ -26,7 +26,7 @@ class TransactionSectionHeader extends StatelessWidget {
         const Gap(5),
         Text(
           "23 - 30 March 2020",
-          style: AppStyles.medium12.copyWith(
+          style: AppStyles.medium12(context).copyWith(
             color: AppDarkColors.greyColor.withOpacity(0.8),
           ),
         )

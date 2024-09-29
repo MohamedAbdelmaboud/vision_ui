@@ -17,7 +17,7 @@ class NewestTransactions extends StatelessWidget {
       children: [
         Text(
           "NEWEST",
-          style: AppStyles.medium10.copyWith(
+          style: AppStyles.medium10(context).copyWith(
             color: AppDarkColors.greyColor.withOpacity(0.8),
           ),
         ),

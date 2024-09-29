@@ -11,7 +11,7 @@ class ActiveUserItemValue extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       value,
-      style: AppStyles.bold16,
+      style: AppStyles.bold16(context),
     );
   }
 }

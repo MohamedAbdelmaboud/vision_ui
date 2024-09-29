@@ -26,7 +26,7 @@ class HelpWidgetButton extends StatelessWidget {
       ),
       child: Text(
         'DOCUMENTATION',
-        style: AppStyles.bold10,
+        style: AppStyles.bold10(context),
       ),
     );
   }

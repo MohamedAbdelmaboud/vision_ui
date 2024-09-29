@@ -13,7 +13,7 @@ class CustomSearchBar extends StatelessWidget {
       children: [
         Text(
           "Pages  /  Tables",
-          style: AppStyles.medium24,
+          style: AppStyles.medium24(context),
         ),
         const Spacer(),
         const SearchBoxAndSignInInfoAndSettingsAbdNotifSection()

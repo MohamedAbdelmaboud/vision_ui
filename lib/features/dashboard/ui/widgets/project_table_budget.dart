@@ -8,7 +8,8 @@ class ProjectTableBudget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       budget,
-      style: AppStyles.bold12,
+      style: AppStyles.bold12(context),
+    
     );
   }
 }

@@ -18,7 +18,7 @@ class OrderOverViewTitle extends StatelessWidget {
       children: [
         Text(
           'Orders overview',
-          style: AppStyles.bold18,
+          style: AppStyles.bold18(context),
         ),
         const Gap(6),
         Row(
@@ -29,7 +29,7 @@ class OrderOverViewTitle extends StatelessWidget {
             const Gap(5),
             Text(
               '+30% this month',
-              style: AppStyles.bold14.copyWith(
+              style: AppStyles.bold14(context).copyWith(
                 color: AppDarkColors.greyColor,
               ),
             ),

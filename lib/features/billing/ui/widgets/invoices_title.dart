@@ -14,7 +14,7 @@ class InvoicesTitle extends StatelessWidget {
       children: [
         Text(
           'Invoices',
-          style: AppStyles.bold14,
+          style: AppStyles.bold14(context),
         ),
         const Spacer(),
         const CustomButton()

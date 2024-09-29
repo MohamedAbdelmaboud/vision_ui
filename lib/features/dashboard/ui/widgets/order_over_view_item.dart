@@ -25,12 +25,12 @@ class OrderOverViewItem extends StatelessWidget {
           children: [
             Text(
               model.title,
-              style: AppStyles.medium12,
+              style: AppStyles.medium12(context),
             ),
             const Gap(5),
             Text(
               model.date,
-              style: AppStyles.bold12.copyWith(
+              style: AppStyles.bold12(context).copyWith(
                 color: AppDarkColors.greyColor,
               ),
             ),

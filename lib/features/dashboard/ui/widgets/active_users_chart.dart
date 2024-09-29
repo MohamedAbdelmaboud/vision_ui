@@ -178,7 +178,7 @@ class ActiveUsersChartState extends State<ActiveUsersChart> {
 
     final Widget text = Text(
       days[value.toInt()],
-      style: AppStyles.regular12.copyWith(color: const Color(0Xff718EBF)),
+      style: AppStyles.regular12(context).copyWith(color: const Color(0Xff718EBF)),
     );
 
     return SideTitleWidget(

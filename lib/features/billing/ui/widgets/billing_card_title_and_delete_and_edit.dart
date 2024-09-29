@@ -17,7 +17,8 @@ class BillingCardTitleAndDeleteAndEdit extends StatelessWidget {
       children: [
         Text(
           title,
-          style: AppStyles.medium12,
+          style: AppStyles.medium12(context),
+        
         ),
         const Spacer(),
         const BillingDeleteButton(),

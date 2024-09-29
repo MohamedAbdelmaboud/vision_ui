@@ -13,7 +13,7 @@ class RecordRow extends StatelessWidget {
       children: [
         Text(
           'Tap to record',
-          style: AppStyles.medium12,
+          style: AppStyles.medium12(context),
         ),
         const Gap(10),
         const Icon(

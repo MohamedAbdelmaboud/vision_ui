@@ -28,12 +28,12 @@ class InvoicesItem extends StatelessWidget {
             children: [
               Text(
                 date,
-                style: AppStyles.medium14,
+                style: AppStyles.medium14(context)
               ),
               const Gap(5),
               Text(
                 code,
-                style: AppStyles.regular12.copyWith(
+                style: AppStyles.regular12(context).copyWith(
                   color: AppDarkColors.greyColor,
                 ),
               )
@@ -42,7 +42,7 @@ class InvoicesItem extends StatelessWidget {
           const Spacer(),
           Text(
             '\$$price',
-            style: AppStyles.regular12.copyWith(
+            style: AppStyles.regular12(context).copyWith(
               color: AppDarkColors.greyColor,
             ),
           ),
@@ -53,7 +53,7 @@ class InvoicesItem extends StatelessWidget {
           const Gap(3),
           Text(
             'PDF',
-            style: AppStyles.regular12.copyWith(
+            style: AppStyles.regular12(context).copyWith(
               color: AppDarkColors.greyColor,
             ),
           )
