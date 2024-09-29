@@ -35,21 +35,21 @@ class ProjectCard extends StatelessWidget {
           const Gap(15),
           Text(
             "Project #$projectNumber",
-            style: AppStyles.regular10.copyWith(
+            style: AppStyles.regular10(context).copyWith(
               color: AppDarkColors.greyColor,
             ),
           ),
           const Gap(5),
           Text(
             projectName,
-            style: AppStyles.bold18,
+            style: AppStyles.bold18(context),
           ),
           const Gap(10),
           Text(
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             projectDescription,
-            style: AppStyles.regular12.copyWith(
+            style: AppStyles.regular12(context).copyWith(
               color: AppDarkColors.greyColor,
             ),
           ),

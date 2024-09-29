@@ -1,8 +1,9 @@
-import '../../../../core/utils/app_images.dart';
-import '../../../../core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
+
+import '../../../../core/utils/app_images.dart';
+import '../../../../core/utils/app_styles.dart';
 
 class CreditBalanceContainer extends StatelessWidget {
   const CreditBalanceContainer({
@@ -29,7 +30,7 @@ class CreditBalanceContainer extends StatelessWidget {
             children: [
               Text(
                 'Credit Balance',
-                style: AppStyles.medium12,
+                style: AppStyles.medium12(context),
               ),
               const Spacer(),
               const Icon(
@@ -43,7 +44,9 @@ class CreditBalanceContainer extends StatelessWidget {
             children: [
               Text(
                 '\$17,203',
-                style: AppStyles.medium12,
+                style: AppStyles.medium12(context).copyWith(
+                  color: Colors.white,
+                ),
               ),
               const Spacer(),
               SvgPicture.asset(

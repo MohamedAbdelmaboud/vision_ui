@@ -21,12 +21,12 @@ class CarInfoCircleContainerBody extends StatelessWidget {
         const Gap(5),
         Text(
           '68%',
-          style: AppStyles.bold20,
+          style: AppStyles.bold20(context),
         ),
         const Gap(5),
         Text(
           'Current Load',
-          style: AppStyles.medium12.copyWith(
+          style: AppStyles.medium12(context).copyWith(
             color: AppDarkColors.greyColor,
           ),
         ),

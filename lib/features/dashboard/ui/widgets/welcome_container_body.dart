@@ -17,19 +17,20 @@ class WelcomeContainerBody extends StatelessWidget {
       children: [
         Text(
           'Welcome back,',
-          style: AppStyles.medium14.copyWith(
+          style: AppStyles.medium14(context).copyWith(
             color: AppDarkColors.greyColor,
           ),
         ),
         const Gap(10),
         Text(
           'Mohamed Abdelmaboud 🦈💙',
-          style: AppStyles.bold16,
+          style: AppStyles.bold16(context),
+        
         ),
         const Gap(10),
         Text(
           'Glad to see you again!\nAsk me anything.',
-          style: AppStyles.medium14.copyWith(
+          style: AppStyles.medium14(context).copyWith(
             color: AppDarkColors.greyColor,
           ),
         ),

@@ -16,7 +16,9 @@ class OverViewAndTeamsAndProjectSection extends StatelessWidget {
           buttonColor: AppDarkColors.activeIconColor,
           padingHorizental: 15,
           padingVeritical: 10,
-          style: AppStyles.medium10,
+          style: AppStyles.medium10(
+            context,
+          ),
           icon: Icons.view_carousel_rounded,
           iconColor: AppDarkColors.whiteColor,
           buttonText: "OVERVIEW",
@@ -26,7 +28,9 @@ class OverViewAndTeamsAndProjectSection extends StatelessWidget {
           buttonColor: Colors.transparent,
           padingHorizental: 15,
           padingVeritical: 10,
-          style: AppStyles.medium10,
+          style: AppStyles.medium10(
+            context,
+          ),
           icon: Icons.people_rounded,
           iconColor: AppDarkColors.whiteColor,
           buttonText: "TEAMS",
@@ -36,7 +40,9 @@ class OverViewAndTeamsAndProjectSection extends StatelessWidget {
           buttonColor: Colors.transparent,
           padingHorizental: 15,
           padingVeritical: 10,
-          style: AppStyles.medium10,
+          style: AppStyles.medium10(
+            context,
+          ),
           icon: Icons.file_copy_rounded,
           iconColor: AppDarkColors.whiteColor,
           buttonText: "PROJECTS",

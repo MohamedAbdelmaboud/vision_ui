@@ -26,7 +26,7 @@ class CompanyItem extends StatelessWidget {
           ),
           child: Text(
             text,
-            style: AppStyles.bold12,
+            style: AppStyles.bold12(context),
             overflow: TextOverflow.ellipsis,
           ),
         ),

@@ -29,7 +29,7 @@ class BillingInformationSection extends StatelessWidget {
           children: [
             Text(
               "Billing Information",
-              style: AppStyles.bold14,
+              style: AppStyles.bold14(context),
             ),
             const Gap(10),
             const Column(

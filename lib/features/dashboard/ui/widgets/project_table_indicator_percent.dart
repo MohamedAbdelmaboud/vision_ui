@@ -20,7 +20,8 @@ class ProjectTableIndicatorPercent extends StatelessWidget {
       children: [
         Text(
           percentText,
-          style: AppStyles.bold12,
+          style: AppStyles.bold12(context),
+        
         ),
         const Gap(5),
         ProjectTableIndicator(

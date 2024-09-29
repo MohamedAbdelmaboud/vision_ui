@@ -14,12 +14,12 @@ class SatisfactionWidgetText extends StatelessWidget {
       children: [
         Text(
           'Satisfaction Rate',
-          style: AppStyles.bold16,
+          style: AppStyles.bold16(context),
         ),
         const Gap(3.5),
         Text(
           'From all projects',
-          style: AppStyles.medium12.copyWith(
+          style: AppStyles.medium12(context).copyWith(
             color: AppDarkColors.greyColor,
           ),
         ),

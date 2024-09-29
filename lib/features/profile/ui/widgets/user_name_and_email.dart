@@ -15,13 +15,13 @@ class UserNameAndEmail extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "Mark Johnson",
-          style: AppStyles.medium16,
+          "Esraa Ehab",
+          style: AppStyles.medium16(context),
         ),
         const Gap(4),
         Text(
-          "mark@simmmple.com",
-          style: AppStyles.regular14.copyWith(
+          "Esraa Ehab@simmmple.com",
+          style: AppStyles.regular12(context).copyWith(
             color: AppDarkColors.greyColor,
           ),
         ),

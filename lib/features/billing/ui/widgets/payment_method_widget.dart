@@ -24,7 +24,7 @@ class PaymentMethodWidget extends StatelessWidget {
             children: [
               Text(
                 'PaymentMethod',
-                style: AppStyles.bold14,
+                style: (AppStyles.bold14(context)),
               ),
               const Spacer(),
               const CustomButton(

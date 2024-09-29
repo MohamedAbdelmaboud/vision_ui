@@ -12,7 +12,8 @@ class DashboardItemText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: AppStyles.medium14,
+      style: AppStyles.medium14(context),
+   
     );
   }
 }

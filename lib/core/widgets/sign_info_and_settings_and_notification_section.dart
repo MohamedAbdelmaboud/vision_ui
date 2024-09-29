@@ -20,7 +20,7 @@ class SignInfoAndSettingsAndNotificationSection extends StatelessWidget {
           iconColor: AppDarkColors.greyColor,
           padingHorizental: 5,
           padingVeritical: 5,
-          style: AppStyles.medium12.copyWith(
+          style: AppStyles.medium12(context).copyWith(
             color: AppDarkColors.greyColor,
           ),
         ),

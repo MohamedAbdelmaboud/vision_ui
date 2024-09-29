@@ -20,14 +20,15 @@ final String value;
       children: [
         Text(
           'Battery Health',
-          style: AppStyles.medium12.copyWith(
+          style: AppStyles.medium12(context).copyWith(
             color: AppDarkColors.greyColor,
           ),
         ),
         const Gap(5),
         Text(
           '76%',
-          style: AppStyles.bold20,
+          style: AppStyles.bold20(context),
+        
         ),
       ],
     );

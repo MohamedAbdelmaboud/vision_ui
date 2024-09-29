@@ -15,12 +15,15 @@ class HelpWidgetText extends StatelessWidget {
       children: [
         Text(
           'Need Help?',
-          style: AppStyles.bold14,
+          style: AppStyles.bold14(context),
+        
         ),
         const Gap(3.5),
         Text(
           'Please check our docs',
-          style: AppStyles.medium14,
+          style: AppStyles.medium14(context),
+        
+        
         ),
       ],
     );

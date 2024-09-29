@@ -31,7 +31,7 @@ class PaymentMethodItem extends StatelessWidget {
             const Gap(8),
             Text(
               cardNumber,
-              style: AppStyles.regular12.copyWith(
+              style: AppStyles.regular12(context).copyWith(
                 color: AppDarkColors.greyColor,
               ),
             ),

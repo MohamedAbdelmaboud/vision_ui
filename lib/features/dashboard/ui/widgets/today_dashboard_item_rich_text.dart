@@ -18,14 +18,15 @@ class TodayDashboardItemRichText extends StatelessWidget {
         children: [
           TextSpan(
             text: model.amount,
-            style: AppStyles.bold18,
+            style: AppStyles.bold18(context),
+          
           ),
           const TextSpan(
             text: ' ',
           ),
           TextSpan(
             text: model.percentageChange,
-            style: AppStyles.bold12.copyWith(
+            style: AppStyles.bold12(context).copyWith(
               color: model.percentageChange.contains('-')
                   ? Colors.red
                   : AppDarkColors.greenColor,

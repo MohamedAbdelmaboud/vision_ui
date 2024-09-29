@@ -20,12 +20,12 @@ class SatisfactionPercentage extends StatelessWidget {
           children: [
             Text(
               '55%',
-              style: AppStyles.bold20,
+              style: AppStyles.bold20(context),
             ),
             const Gap(3.5),
             Text(
               'Based on likes',
-              style: AppStyles.regular12.copyWith(
+              style: AppStyles.regular12(context).copyWith(
                 color: AppDarkColors.greyColor,
               ),
             ),

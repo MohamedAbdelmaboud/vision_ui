@@ -15,7 +15,7 @@ class ApplicationSettingsSection extends StatelessWidget {
       children: [
         Text(
           "APPLICATION",
-          style: AppStyles.regular10.copyWith(
+          style: AppStyles.regular10(context).copyWith(
             color: AppDarkColors.greyColor,
           ),
         ),

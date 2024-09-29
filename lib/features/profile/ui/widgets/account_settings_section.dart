@@ -17,7 +17,7 @@ class AccountSettingsSection extends StatelessWidget {
       children: [
         Text(
           "ACCOUNT",
-          style: AppStyles.regular10.copyWith(
+          style: AppStyles.regular10(context).copyWith(
             color: AppDarkColors.greyColor,
           ),
         ),

@@ -15,7 +15,10 @@ class EmployedCell extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: cellWidth,
-      child: Text(employed, style: AppStyles.medium12),
+      child: Text(
+        employed,
+        style: AppStyles.medium12(context),
+      ),
     );
   }
 }

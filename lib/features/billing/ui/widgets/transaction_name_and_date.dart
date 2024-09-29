@@ -19,12 +19,12 @@ class TransactionNameAndDate extends StatelessWidget {
       children: [
         Text(
           transactionName,
-          style: AppStyles.medium12,
+          style: AppStyles.medium12(context),
         ),
         const Gap(5),
         Text(
           transactionDate,
-          style: AppStyles.medium12.copyWith(
+          style: AppStyles.medium12(context).copyWith(
             color: AppDarkColors.greyColor.withOpacity(0.8),
           ),
         ),

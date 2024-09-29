@@ -30,7 +30,7 @@ class TaxesItemDetails extends StatelessWidget {
             const Gap(3),
             Text(
               'Today,16:36',
-              style: AppStyles.regular12.copyWith(
+              style: AppStyles.regular12(context).copyWith(
                 color: AppDarkColors.greyColor,
               ),
             ),
@@ -39,7 +39,7 @@ class TaxesItemDetails extends StatelessWidget {
         const Spacer(),
         Text(
           '-\$154.50',
-          style: AppStyles.bold12,
+          style: AppStyles.bold12(context),
         )
       ],
     );

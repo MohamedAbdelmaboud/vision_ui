@@ -1,6 +1,7 @@
-import '../../../../core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+
+import '../../../../core/utils/app_styles.dart';
 
 class TurnOnWidget extends StatelessWidget {
   const TurnOnWidget({
@@ -13,7 +14,7 @@ class TurnOnWidget extends StatelessWidget {
       children: [
         Text(
           'Turn on your car',
-          style: AppStyles.medium12,
+          style: (AppStyles.medium12(context)),
         ),
         const Gap(10),
         const Icon(

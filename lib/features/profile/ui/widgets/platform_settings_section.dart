@@ -31,7 +31,9 @@ class PlatformSettingsSection extends StatelessWidget {
           children: [
             Text(
               "Platform Settings",
-              style: AppStyles.bold14,
+              style: AppStyles.bold14(
+                context,
+              ),
             ),
             const Gap(25),
             const AccountSettingsSection(),

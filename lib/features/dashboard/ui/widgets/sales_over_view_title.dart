@@ -18,7 +18,7 @@ class SalesOverViewTitle extends StatelessWidget {
       children: [
         Text(
           'Sales overview',
-          style: AppStyles.bold18,
+          style: AppStyles.bold18(context),
         ),
         const Gap(6),
         Row(
@@ -32,13 +32,13 @@ class SalesOverViewTitle extends StatelessWidget {
                 children: [
                   TextSpan(
                     text: '(+5) more ',
-                    style: AppStyles.bold14.copyWith(
+                    style: AppStyles.bold14(context).copyWith(
                       color: AppDarkColors.greenColor,
                     ),
                   ),
                   TextSpan(
                     text: 'in 2024',
-                    style: AppStyles.bold14.copyWith(
+                    style: AppStyles.bold14(context).copyWith(
                       color: AppDarkColors.greyColor,
                     ),
                   )

@@ -19,7 +19,7 @@ class EditButton extends StatelessWidget {
         onPressed: () {},
         child: Text(
           'Edit',
-          style: AppStyles.medium12.copyWith(
+          style: AppStyles.medium12(context).copyWith(
             color: AppDarkColors.greyColor.withOpacity(0.8),
           ),
         ),

@@ -26,19 +26,19 @@ class TrackingIndicator extends StatelessWidget {
           children: [
             Text(
               'Safety',
-              style: AppStyles.medium12.copyWith(
+              style: AppStyles.medium12(context).copyWith(
                 color: AppDarkColors.greyColor,
               ),
             ),
             const Gap(5),
             Text(
               '9.3',
-              style: AppStyles.bold28,
+              style: AppStyles.bold28(context),
             ),
             const Gap(5),
             Text(
               'Total Score',
-              style: AppStyles.medium12.copyWith(
+              style: AppStyles.medium12(context).copyWith(
                 color: AppDarkColors.greyColor,
               ),
             ),

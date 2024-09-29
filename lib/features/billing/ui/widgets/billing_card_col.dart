@@ -17,12 +17,13 @@ class BillingCardCol extends StatelessWidget {
       children: [
         Text(
           title,
-          style: AppStyles.bold12,
+          style: AppStyles.bold12(context),
         ),
         const Gap(3),
         Text(
           value,
-          style: AppStyles.bold12,
+          style: AppStyles.bold12(context),
+       
         ),
       ],
     );

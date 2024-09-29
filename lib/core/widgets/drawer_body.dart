@@ -21,7 +21,8 @@ class DrawerBody extends StatelessWidget {
           const Gap(38),
           Text(
             'VISION UI FREE',
-            style: AppStyles.medium14,
+            style: AppStyles.medium14(context),
+          
           ),
           const Gap(28),
           SvgPicture.asset(Assets.assetsImagesVector),
