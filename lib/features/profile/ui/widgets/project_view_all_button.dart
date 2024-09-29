@@ -34,8 +34,6 @@ class ProjectViewAllButton extends StatelessWidget {
           ),
         ),
         const Spacer(),
-        // throw an exception
-        //TODO : Space between item
         Row(
           // alignment: Alignment.centerLeft,
           children: [

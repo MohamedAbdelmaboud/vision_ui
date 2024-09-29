@@ -32,7 +32,6 @@ class AccountSettingsSection extends StatelessWidget {
             ),
             const Gap(15),
             PlatformSwitchAndText(
-              //TODO : text is overflow
               text: 'Email me when someone answers to...',
               value: false,
               // here is bool i remove it as it give me warning
