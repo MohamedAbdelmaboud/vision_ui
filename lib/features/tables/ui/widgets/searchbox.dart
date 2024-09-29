@@ -23,7 +23,7 @@ class CustomSearchBar extends StatelessWidget {
       children: [
         Text(
           "Pages  /  Tables",
-          style: AppStyles.medium24,
+          style: AppStyles.medium24(context),
         ),
         //Spacer(),
         const Searchbox()
@@ -40,7 +40,7 @@ class Searchbox extends StatelessWidget {
     return SizedBox(
       width: 200,
       child: TextField(
-        style: AppStyles.medium14,
+        style: AppStyles.medium14(context),
         decoration: InputDecoration(
           filled: true,
           fillColor: AppDarkColors.searchBoxColor,
@@ -65,7 +65,7 @@ class Searchbox extends StatelessWidget {
           ),
           hintText: "Type here...",
           hintStyle:
-              AppStyles.medium14.copyWith(color: AppDarkColors.greyColor),
+              AppStyles.medium14(context).copyWith(color: AppDarkColors.greyColor),
         ),
       ),
     );

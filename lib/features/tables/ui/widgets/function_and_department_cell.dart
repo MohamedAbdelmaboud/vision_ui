@@ -25,11 +25,11 @@ class FunctionAndDepartment extends StatelessWidget {
         children: [
           Text(
             function,
-            style: AppStyles.medium12,
+            style: AppStyles.medium12(context),
           ),
           Text(
             department,
-            style: AppStyles.regular10.copyWith(
+            style: AppStyles.regular10(context).copyWith(
               color: AppDarkColors.greyColor.withOpacity(0.8),
             ),
           ),

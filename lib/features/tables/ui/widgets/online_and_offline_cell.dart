@@ -24,7 +24,7 @@ class OnlineAndOffline extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
       ),
       child: Text(status,
-          style: AppStyles.bold12.copyWith(color: AppDarkColors.whiteColor)),
+          style: AppStyles.bold12(context).copyWith(color: AppDarkColors.whiteColor)),
     );
   }
 }
