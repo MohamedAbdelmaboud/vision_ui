@@ -3,35 +3,6 @@ import 'package:flutter/material.dart';
 import '../../../../core/themes/app_dark_colors.dart';
 import '../../../../core/utils/app_styles.dart';
 
-class TableViewBody extends StatelessWidget {
-  const TableViewBody({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Column(
-      children: [],
-    );
-  }
-}
-
-class CustomSearchBar extends StatelessWidget {
-  const CustomSearchBar({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Text(
-          "Pages  /  Tables",
-          style: AppStyles.medium24(context),
-        ),
-        //Spacer(),
-        const Searchbox()
-      ],
-    );
-  }
-}
-
 class Searchbox extends StatelessWidget {
   const Searchbox({super.key});
 
@@ -64,8 +35,8 @@ class Searchbox extends StatelessWidget {
             ),
           ),
           hintText: "Type here...",
-          hintStyle:
-              AppStyles.medium14(context).copyWith(color: AppDarkColors.greyColor),
+          hintStyle: AppStyles.medium14(context)
+              .copyWith(color: AppDarkColors.greyColor),
         ),
       ),
     );
