@@ -234,6 +234,10 @@ class Assets {
   /// assets/images/taxes_bg.png
   static const String assetsImagesTaxesBg = "assets/images/taxes_bg.png";
 
+  /// Assets for assetsImagesUserprofile
+  /// assets/images/userprofile.png
+  static const String assetsImagesUserprofile = "assets/images/userprofile.png";
+
   /// Assets for assetsImagesUsers
   /// assets/images/users.svg
   static const String assetsImagesUsers = "assets/images/users.svg";
