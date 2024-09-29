@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../../../../core/themes/app_dark_colors.dart';
-import 'credit_balance_container.dart';
-import 'taxes_item.dart';
+import 'car_info_indicator.dart';
+import 'car_info_items_list.dart';
+import 'car_info_title.dart';
 
-class CreditBalanceWidget extends StatelessWidget {
-  const CreditBalanceWidget({
+class ProfileCarInfoSection extends StatelessWidget {
+  const ProfileCarInfoSection({
     super.key,
   });
 
@@ -14,22 +15,30 @@ class CreditBalanceWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        height: 240,
         padding: const EdgeInsets.all(24),
-        decoration: buildBalanceDecoration(),
+        decoration: buildCarInfoDecoration(),
         child: const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CreditBalanceContainer(),
-            Gap(16),
-            TaxesItem(),
+            CarInfoTitle(),
+            Gap(20),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  CarInfoIndicator(),
+                  Gap(30),
+                  CarInfoItemsList(),
+                ],
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 
-  BoxDecoration buildBalanceDecoration() {
+  BoxDecoration buildCarInfoDecoration() {
     return BoxDecoration(
       gradient: LinearGradient(
         colors: [

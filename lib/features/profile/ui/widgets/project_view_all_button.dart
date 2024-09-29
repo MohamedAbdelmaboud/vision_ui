@@ -33,9 +33,7 @@ class ProjectViewAllButton extends StatelessWidget {
             style: AppStyles.medium10,
           ),
         ),
-        //const Spacer(),
-        // throw an exception
-        //TODO : Space between item
+        const Spacer(),
         Row(
           // alignment: Alignment.centerLeft,
           children: [

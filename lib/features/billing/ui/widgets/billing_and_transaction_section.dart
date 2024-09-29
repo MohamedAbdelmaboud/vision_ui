@@ -9,13 +9,19 @@ class BillingAndTransactionSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Expanded(child: BillingInformationSection()),
-        Gap(20),
-        Expanded(child: TransactionsInformationSection()),
-      ],
+    return const IntrinsicHeight(
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(
+            child: BillingInformationSection(),
+          ),
+          Gap(20),
+          Expanded(
+            child: TransactionsInformationSection(),
+          ),
+        ],
+      ),
     );
   }
 }

@@ -41,7 +41,7 @@ class TodayDashboardItem extends StatelessWidget {
             ],
           ),
           const Spacer(),
-          TodayDashboardItemIcon(
+          DashboardItemIcon(
             icon: model.icon,
           )
         ],
