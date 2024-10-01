@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_single_quotes
 class Assets {
   Assets._();
-  
+
   /// Assets for assetsImagesAvatar
   /// assets/images/Avatar.png
   static const String assetsImagesAvatar = "assets/images/Avatar.png";
@@ -20,27 +20,33 @@ class Assets {
 
   /// Assets for assetsImagesAvatarTable1
   /// assets/images/avatar_table_1.png
-  static const String assetsImagesAvatarTable1 = "assets/images/avatar_table_1.png";
+  static const String assetsImagesAvatarTable1 =
+      "assets/images/avatar_table_1.png";
 
   /// Assets for assetsImagesAvatarTable2
   /// assets/images/avatar_table_2.png
-  static const String assetsImagesAvatarTable2 = "assets/images/avatar_table_2.png";
+  static const String assetsImagesAvatarTable2 =
+      "assets/images/avatar_table_2.png";
 
   /// Assets for assetsImagesAvatarTable3
   /// assets/images/avatar_table_3.png
-  static const String assetsImagesAvatarTable3 = "assets/images/avatar_table_3.png";
+  static const String assetsImagesAvatarTable3 =
+      "assets/images/avatar_table_3.png";
 
   /// Assets for assetsImagesAvatarTable4
   /// assets/images/avatar_table_4.png
-  static const String assetsImagesAvatarTable4 = "assets/images/avatar_table_4.png";
+  static const String assetsImagesAvatarTable4 =
+      "assets/images/avatar_table_4.png";
 
   /// Assets for assetsImagesAvatarTable5
   /// assets/images/avatar_table_5.png
-  static const String assetsImagesAvatarTable5 = "assets/images/avatar_table_5.png";
+  static const String assetsImagesAvatarTable5 =
+      "assets/images/avatar_table_5.png";
 
   /// Assets for assetsImagesAvatarTable6
   /// assets/images/avatar_table_6.png
-  static const String assetsImagesAvatarTable6 = "assets/images/avatar_table_6.png";
+  static const String assetsImagesAvatarTable6 =
+      "assets/images/avatar_table_6.png";
 
   /// Assets for assetsImagesBackground
   /// assets/images/Background.png
@@ -52,7 +58,8 @@ class Assets {
 
   /// Assets for assetsImagesBillingBackground
   /// assets/images/billing_background.png
-  static const String assetsImagesBillingBackground = "assets/images/billing_background.png";
+  static const String assetsImagesBillingBackground =
+      "assets/images/billing_background.png";
 
   /// Assets for assetsImagesBmw
   /// assets/images/bmw.png
@@ -72,7 +79,8 @@ class Assets {
 
   /// Assets for assetsImagesCardBackground
   /// assets/images/card_background.png
-  static const String assetsImagesCardBackground = "assets/images/card_background.png";
+  static const String assetsImagesCardBackground =
+      "assets/images/card_background.png";
 
   /// Assets for assetsImagesCardIcon
   /// assets/images/card_icon.svg
@@ -88,7 +96,8 @@ class Assets {
 
   /// Assets for assetsImagesDashboardBackground
   /// assets/images/dashboard_background.png
-  static const String assetsImagesDashboardBackground = "assets/images/dashboard_background.png";
+  static const String assetsImagesDashboardBackground =
+      "assets/images/dashboard_background.png";
 
   /// Assets for assetsImagesDone
   /// assets/images/done.svg
@@ -96,7 +105,8 @@ class Assets {
 
   /// Assets for assetsImagesDrawerBackground
   /// assets/images/drawer_background.png
-  static const String assetsImagesDrawerBackground = "assets/images/drawer_background.png";
+  static const String assetsImagesDrawerBackground =
+      "assets/images/drawer_background.png";
 
   /// Assets for assetsImagesError
   /// assets/images/error.svg
@@ -112,7 +122,8 @@ class Assets {
 
   /// Assets for assetsImagesHelpBackground
   /// assets/images/help_background.png
-  static const String assetsImagesHelpBackground = "assets/images/help_background.png";
+  static const String assetsImagesHelpBackground =
+      "assets/images/help_background.png";
 
   /// Assets for assetsImagesHome
   /// assets/images/home.svg
@@ -128,11 +139,13 @@ class Assets {
 
   /// Assets for assetsImagesLineChartBlue
   /// assets/images/Line_Chart_blue.svg
-  static const String assetsImagesLineChartBlue = "assets/images/Line_Chart_blue.svg";
+  static const String assetsImagesLineChartBlue =
+      "assets/images/Line_Chart_blue.svg";
 
   /// Assets for assetsImagesLineChartGreen
   /// assets/images/Line_Chart_green.svg
-  static const String assetsImagesLineChartGreen = "assets/images/Line_Chart_green.svg";
+  static const String assetsImagesLineChartGreen =
+      "assets/images/Line_Chart_green.svg";
 
   /// Assets for assetsImagesMastercard
   /// assets/images/Mastercard.svg
@@ -156,7 +169,8 @@ class Assets {
 
   /// Assets for assetsImagesNotification
   /// assets/images/notification.svg
-  static const String assetsImagesNotification = "assets/images/notification.svg";
+  static const String assetsImagesNotification =
+      "assets/images/notification.svg";
 
   /// Assets for assetsImagesPdf
   /// assets/images/pdf.svg
@@ -180,7 +194,8 @@ class Assets {
 
   /// Assets for assetsImagesProgressTrack
   /// assets/images/progress_track.svg
-  static const String assetsImagesProgressTrack = "assets/images/progress_track.svg";
+  static const String assetsImagesProgressTrack =
+      "assets/images/progress_track.svg";
 
   /// Assets for assetsImagesSales
   /// assets/images/sales.svg
@@ -188,7 +203,8 @@ class Assets {
 
   /// Assets for assetsImagesSalesFolder
   /// assets/images/sales_folder.svg
-  static const String assetsImagesSalesFolder = "assets/images/sales_folder.svg";
+  static const String assetsImagesSalesFolder =
+      "assets/images/sales_folder.svg";
 
   /// Assets for assetsImagesScan
   /// assets/images/scan.png
@@ -244,7 +260,8 @@ class Assets {
 
   /// Assets for assetsImagesUsersFolder
   /// assets/images/users_folder.svg
-  static const String assetsImagesUsersFolder = "assets/images/users_folder.svg";
+  static const String assetsImagesUsersFolder =
+      "assets/images/users_folder.svg";
 
   /// Assets for assetsImagesVector
   /// assets/images/Vector.svg
@@ -256,10 +273,15 @@ class Assets {
 
   /// Assets for assetsImagesWelcomeBackground
   /// assets/images/welcome_background.png
-  static const String assetsImagesWelcomeBackground = "assets/images/welcome_background.png";
+  static const String assetsImagesWelcomeBackground =
+      "assets/images/welcome_background.png";
 
   /// Assets for assetsImagesXd
   /// assets/images/xd.svg
   static const String assetsImagesXd = "assets/images/xd.svg";
-}
 
+  /// Assets for assetsImagessignInBackground
+  /// assets/images/signInBackground.png
+  static const String assetsImagessignInBackground =
+      "assets/images/signInBackground.png";
+}
