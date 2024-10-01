@@ -32,7 +32,7 @@ class TodayDashboardItem extends StatelessWidget {
               Text(
                 model.title,
                 style:
-                    AppStyles.medium12.copyWith(color: AppDarkColors.greyColor),
+                    AppStyles.medium12(context).copyWith(color: AppDarkColors.greyColor),
               ),
               const Gap(3),
               TodayDashboardItemRichText(
@@ -41,7 +41,7 @@ class TodayDashboardItem extends StatelessWidget {
             ],
           ),
           const Spacer(),
-          TodayDashboardItemIcon(
+          DashboardItemIcon(
             icon: model.icon,
           )
         ],

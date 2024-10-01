@@ -64,7 +64,7 @@ class CustomAuthorTable extends StatelessWidget {
                 children: [
                   Text(
                     title!,
-                    style: AppStyles.bold12,
+                    style: AppStyles.bold12(context),
                   ),
                   const Gap(10),
                   const Row()

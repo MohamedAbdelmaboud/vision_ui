@@ -17,7 +17,7 @@ class ProjectsTableTitle extends StatelessWidget {
       children: [
         Text(
           'Projects',
-          style: AppStyles.bold20,
+          style: AppStyles.bold20(context),
         ),
         const Gap(3),
         Row(
@@ -28,7 +28,7 @@ class ProjectsTableTitle extends StatelessWidget {
             const Gap(5),
             Text(
               '30 done this month',
-              style: AppStyles.bold14.copyWith(
+              style: AppStyles.bold14(context).copyWith(
                 color: AppDarkColors.greyColor,
               ),
             )

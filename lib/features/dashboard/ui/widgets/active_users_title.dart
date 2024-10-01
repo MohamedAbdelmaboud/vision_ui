@@ -1,9 +1,10 @@
-import '../../../../core/themes/app_dark_colors.dart';
-import '../../../../core/utils/app_images.dart';
-import '../../../../core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
+
+import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/utils/app_images.dart';
+import '../../../../core/utils/app_styles.dart';
 
 class ActiveUsersTitle extends StatelessWidget {
   const ActiveUsersTitle({
@@ -17,7 +18,7 @@ class ActiveUsersTitle extends StatelessWidget {
       children: [
         Text(
           'Active users',
-          style: AppStyles.bold18,
+          style: AppStyles.bold18(context),
         ),
         const Gap(6),
         Row(
@@ -29,13 +30,13 @@ class ActiveUsersTitle extends StatelessWidget {
             Text.rich(TextSpan(children: [
               TextSpan(
                 text: '(+23) ',
-                style: AppStyles.bold14.copyWith(
+                style: AppStyles.bold14(context).copyWith(
                   color: AppDarkColors.greenColor,
                 ),
               ),
               TextSpan(
                 text: 'than last week',
-                style: AppStyles.bold14.copyWith(
+                style: AppStyles.bold14(context).copyWith(
                   color: AppDarkColors.greyColor,
                 ),
               )

@@ -35,11 +35,11 @@ class ImageWithNameAndEmail extends StatelessWidget {
             children: [
               Text(
                 name,
-                style: AppStyles.medium12,
+                style: AppStyles.medium12(context),
               ),
               Text(
                 email,
-                style: AppStyles.regular10.copyWith(
+                style: AppStyles.regular10(context).copyWith(
                   color: AppDarkColors.greyColor.withOpacity(0.8),
                 ),
               )

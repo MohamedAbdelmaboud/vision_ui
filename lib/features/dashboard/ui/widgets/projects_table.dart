@@ -11,19 +11,16 @@ class ProjectsTable extends StatelessWidget {
   const ProjectsTable({
     super.key,
   });
-
+//TODO:I will solve this issue ♥
   @override
   Widget build(BuildContext context) {
     return DataTable(
-      columnSpacing: 80, //TODO:I will solve this issue ♥
-
+      columnSpacing: 80,
       dataRowMaxHeight: 55,
       dividerThickness: 1,
-      headingTextStyle: AppStyles.medium10.copyWith(
-        color: AppDarkColors.greyColor,
-      ),
+      headingTextStyle: columnStyles(context),
       horizontalMargin: 0,
-      columns: buildDataColumns(),
+      columns: buildDataColumns(context),
       rows: buildDataRows(),
     );
   }
@@ -44,22 +41,25 @@ class ProjectsTable extends StatelessWidget {
           ),
         ),
         DataCell(
-          Row(
-            // alignment: Alignment.centerLeft,
-            children: [
-              Image.asset(
-                Assets.assetsImagesAvatar1,
-              ),
-              Image.asset(
-                Assets.assetsImagesAvatar1,
-              ),
-              Image.asset(
-                Assets.assetsImagesAvatar2,
-              ),
-              Image.asset(
-                Assets.assetsImagesAvatar3,
-              ),
-            ],
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Row(
+              // alignment: Alignment.centerLeft,
+              children: [
+                Image.asset(
+                  Assets.assetsImagesAvatar3,
+                ),
+                Image.asset(
+                  Assets.assetsImagesAvatar2,
+                ),
+                Image.asset(
+                  Assets.assetsImagesAvatar2,
+                ),
+                Image.asset(
+                  Assets.assetsImagesAvatar3,
+                ),
+              ],
+            ),
           ),
         ),
         DataCell(
@@ -77,41 +77,39 @@ class ProjectsTable extends StatelessWidget {
     );
   }
 
-  List<DataColumn> buildDataColumns() {
+  List<DataColumn> buildDataColumns(context) {
     return [
       DataColumn(
         label: Text(
           'COMPANY',
-          style: AppStyles.medium10.copyWith(
-            color: AppDarkColors.greyColor,
-          ),
+          style: columnStyles(context),
         ),
       ),
       DataColumn(
         label: Text(
           'MEMBERS',
-          style: AppStyles.medium10.copyWith(
-            color: AppDarkColors.greyColor,
-          ),
+          style: columnStyles(context),
         ),
       ),
       DataColumn(
         label: Text(
           'BUDGET',
-          style: AppStyles.medium10.copyWith(
-            color: AppDarkColors.greyColor,
-          ),
+          style: columnStyles(context),
         ),
       ),
       DataColumn(
         label: Text(
           'COMPLATION',
-          style: AppStyles.medium10.copyWith(
-            color: AppDarkColors.greyColor,
-          ),
+          style: columnStyles(context),
         ),
       ),
     ];
+  }
+
+  TextStyle columnStyles(context) {
+    return AppStyles.medium10(context).copyWith(
+      color: AppDarkColors.greyColor,
+    );
   }
 
   List<DataRow> buildDataRows() {

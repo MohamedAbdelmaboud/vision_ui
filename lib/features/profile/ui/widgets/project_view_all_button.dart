@@ -30,12 +30,10 @@ class ProjectViewAllButton extends StatelessWidget {
           ),
           child: Text(
             "VIEW ALL",
-            style: AppStyles.medium10,
+            style: AppStyles.medium10(context),
           ),
         ),
-        //const Spacer(),
-        // throw an exception
-        //TODO : Space between item
+        const Spacer(),
         Row(
           // alignment: Alignment.centerLeft,
           children: [

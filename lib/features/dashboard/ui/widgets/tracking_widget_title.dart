@@ -15,9 +15,8 @@ class TrackingWidgetTitle extends StatelessWidget {
       children: [
         Text(
           'Referral Tracking',
-          style: AppStyles.bold14,
+          style: (AppStyles.bold14(context)),
         ),
-      
         const TrackingWidgetIcon(),
       ],
     );

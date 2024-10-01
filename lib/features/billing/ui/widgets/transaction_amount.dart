@@ -14,7 +14,7 @@ class TransactionAmount extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       amount,
-      style: AppStyles.medium12.copyWith(
+      style: AppStyles.medium12(context).copyWith(
         color: amountColor,
       ),
     );

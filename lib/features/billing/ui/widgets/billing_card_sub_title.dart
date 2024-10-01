@@ -20,17 +20,17 @@ class BillingCardSubTitle extends StatelessWidget {
       children: [
         Text(
           companyName,
-          style: AppStyles.regular9
+          style: AppStyles.regular9(context)
               .copyWith(color: AppDarkColors.greyColor.withOpacity(0.8)),
         ),
         Text(
           emailAddress,
-          style: AppStyles.regular9
+          style: AppStyles.regular9(context)
               .copyWith(color: AppDarkColors.greyColor.withOpacity(0.8)),
         ),
         Text(
           vatNum,
-          style: AppStyles.regular9
+          style: AppStyles.regular9(context)
               .copyWith(color: AppDarkColors.greyColor.withOpacity(0.8)),
         )
       ],

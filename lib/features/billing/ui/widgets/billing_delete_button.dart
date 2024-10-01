@@ -23,7 +23,7 @@ class BillingDeleteButton extends StatelessWidget {
           const Gap(5),
           Text(
             "Delete",
-            style: AppStyles.medium12.copyWith(
+            style: AppStyles.medium12(context).copyWith(
               color: AppDarkColors.redColor,
             ),
           ),

@@ -13,7 +13,6 @@ class DashboardProjectsTableWidget extends StatelessWidget {
     return Expanded(
       flex: 3,
       child: Container(
-        height: 440,
         decoration: buildDecorationTable(),
         child: const Padding(
           padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),

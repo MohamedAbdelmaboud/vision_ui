@@ -14,7 +14,6 @@ class SalesOverViewWidget extends StatelessWidget {
     return Expanded(
         flex: 3,
         child: Container(
-          height: 440,
           padding: const EdgeInsets.all(16),
           decoration: buildCommonDecoration(),
           child: const Column(

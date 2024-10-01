@@ -19,7 +19,9 @@ class UserDetailsImage extends StatelessWidget {
           child: const Image(
             height: 65,
             width: 65,
-            image: AssetImage(Assets.assetsImagesUserProfile),
+            image: AssetImage(
+              Assets.assetsImagesUserprofile,
+            ),
           ),
         ),
         const Positioned(

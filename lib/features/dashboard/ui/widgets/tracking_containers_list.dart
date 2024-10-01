@@ -18,11 +18,13 @@ class TrackingContainersList extends StatelessWidget {
         buildTrackingContainer(
           title: 'Invited',
           value: '279 people',
+          context: context,
         ),
         const Spacer(),
         buildTrackingContainer(
           title: 'Bonus',
           value: '172,003',
+          context: context,
         ),
       ],
     );
@@ -31,6 +33,7 @@ class TrackingContainersList extends StatelessWidget {
   Widget buildTrackingContainer({
     required String title,
     required String value,
+    required BuildContext context,
   }) {
     return DashCustomContainer(
       child: Column(
@@ -38,12 +41,13 @@ class TrackingContainersList extends StatelessWidget {
         children: [
           Text(
             title,
-            style: AppStyles.medium14,
+            style: AppStyles.medium14(context),
+
           ),
           const Gap(5),
           Text(
             value,
-            style: AppStyles.bold16,
+            style: AppStyles.bold16(context),
           ),
         ],
       ),

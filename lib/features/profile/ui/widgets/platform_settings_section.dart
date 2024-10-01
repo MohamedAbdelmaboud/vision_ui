@@ -12,6 +12,7 @@ class PlatformSettingsSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: 350,
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
@@ -30,7 +31,9 @@ class PlatformSettingsSection extends StatelessWidget {
           children: [
             Text(
               "Platform Settings",
-              style: AppStyles.bold14,
+              style: AppStyles.bold14(
+                context,
+              ),
             ),
             const Gap(25),
             const AccountSettingsSection(),

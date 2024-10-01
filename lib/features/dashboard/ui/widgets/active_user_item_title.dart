@@ -10,7 +10,7 @@ class ActiveUserItemTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: AppStyles.medium12.copyWith(
+      style: AppStyles.medium12(context).copyWith(
         color: AppDarkColors.greyColor,
       ),
     );

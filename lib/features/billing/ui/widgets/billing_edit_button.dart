@@ -23,7 +23,7 @@ class BillingEditButton extends StatelessWidget {
           const Gap(5),
           Text(
             "Edit",
-            style: AppStyles.medium12.copyWith(
+            style: AppStyles.medium12(context).copyWith(
               color: AppDarkColors.greyColor,
             ),
           ),
