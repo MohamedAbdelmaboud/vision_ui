@@ -1,4 +1,3 @@
-import '../../../../core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class BillingMasterNum extends StatelessWidget {
@@ -8,9 +7,10 @@ class BillingMasterNum extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
+    return const Text(
       '7812 2139 0823 XXXX',
-      style: AppStyles.bold14,
+      //TODO :
+      //style: AppStyles.bold14,
     );
   }
 }

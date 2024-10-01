@@ -10,8 +10,9 @@ class ProjectTable extends StatelessWidget {
     return const CustomProjectTable(
         labelColum1: "COMPANIES",
         labelColum2: "BUDGET",
-        labelColum3: "",
-        labelColum4: "",
+        labelColum3: "STATUS",
+        labelColum4: "COMPLETION",
+        //style: AppStyles.regular10,
         rows: []);
   }
 }
