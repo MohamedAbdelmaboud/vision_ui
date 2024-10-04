@@ -11,7 +11,7 @@ class TaxesItemTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       'NEWSET',
-      style: AppStyles.medium10.copyWith(
+      style: AppStyles.medium10(context).copyWith(
         color: AppDarkColors.greyColor,
       ),
     );

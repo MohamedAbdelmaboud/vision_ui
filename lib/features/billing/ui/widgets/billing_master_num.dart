@@ -1,5 +1,6 @@
-import '../../../../core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../core/utils/app_styles.dart';
 
 class BillingMasterNum extends StatelessWidget {
   const BillingMasterNum({
@@ -10,7 +11,7 @@ class BillingMasterNum extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       '7812 2139 0823 XXXX',
-      style: AppStyles.bold14,
+      style: AppStyles.bold14(context),
     );
   }
 }

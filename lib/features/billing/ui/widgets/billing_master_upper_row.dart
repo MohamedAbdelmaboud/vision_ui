@@ -14,7 +14,7 @@ class BillingMasterUpperRow extends StatelessWidget {
       children: [
         Text(
           'Vision UI',
-          style: AppStyles.bold14,
+          style: AppStyles.bold14(context),
         ),
         const Spacer(),
         SvgPicture.asset(
