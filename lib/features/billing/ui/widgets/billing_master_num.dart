@@ -9,7 +9,7 @@ class BillingMasterNum extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
+    return const Text(
       '7812 2139 0823 XXXX',
       style: AppStyles.bold14(context),
     );

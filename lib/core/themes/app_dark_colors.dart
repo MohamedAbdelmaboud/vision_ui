@@ -17,4 +17,8 @@ class AppDarkColors {
 
   static const Color gradiantCardColor1 = Color(0xff181D3C);
   static const Color gradiantCardColor2 = Color(0xff0A0E23);
+
+  static const Color gradiantBackgoundSigninColor1 = Color(0xff020515);
+  static const Color gradiantBackgoundSigninColor2 = Color(0xff090D2E);
+  static const Color gradiantBackgoundSigninColor3 = Color(0xff0F123B);
 }
