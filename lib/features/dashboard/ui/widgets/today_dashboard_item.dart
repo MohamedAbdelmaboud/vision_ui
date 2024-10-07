@@ -17,7 +17,8 @@ class TodayDashboardItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 500),
       width: 320,
       padding: const EdgeInsets.symmetric(
         vertical: 16,

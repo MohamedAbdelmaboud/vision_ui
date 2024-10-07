@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/utils/app_images.dart';
 import '../../logic/theme_cubit/theme_cubit.dart';
@@ -13,15 +14,20 @@ class WelcomeContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       flex: 2,
-      child: Container(
-        alignment: Alignment.centerLeft,
-        // height: 300,
-        padding: const EdgeInsets.symmetric(
-          vertical: 36,
-          horizontal: 31,
-        ),
-        decoration: buildDashboardDecoration(context),
-        child: const WelcomeContainerBody(),
+      child: BlocBuilder<ThemeCubit, ThemeState>(
+        builder: (context, state) {
+          return AnimatedContainer(
+            duration: const Duration(milliseconds: 200),
+            alignment: Alignment.centerLeft,
+            // height: 300,
+            padding: const EdgeInsets.symmetric(
+              vertical: 36,
+              horizontal: 31,
+            ),
+            decoration: buildDashboardDecoration(context),
+            child: const WelcomeContainerBody(),
+          );
+        },
       ),
     );
   }

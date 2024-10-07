@@ -14,7 +14,8 @@ class OrderOverView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       flex: 2,
-      child: Container(
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 500),
         padding: const EdgeInsets.symmetric(
           horizontal: 20,
           vertical: 20,

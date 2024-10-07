@@ -15,7 +15,8 @@ class TrackingWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       flex: 2,
-      child: Container(
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 500),
         padding: const EdgeInsets.symmetric(horizontal: 31, vertical: 27),
         decoration: buildCommonDecoration(context),
         child: const Column(
