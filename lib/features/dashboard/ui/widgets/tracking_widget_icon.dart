@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/themes/app_dark_colors.dart';
+
 class TrackingWidgetIcon extends StatelessWidget {
   const TrackingWidgetIcon({
     super.key,
@@ -12,12 +14,12 @@ class TrackingWidgetIcon extends StatelessWidget {
       height: 30,
       width: 30,
       decoration: BoxDecoration(
-        color: const Color(0xFF1A2644),
+        color: AppDarkColors.activeIconColor,
         borderRadius: BorderRadius.circular(8),
       ),
       child: const Icon(
         Icons.more_horiz,
-        color: Colors.deepPurple,
+        color: Colors.white,
       ),
     );
   }

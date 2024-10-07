@@ -17,6 +17,7 @@ class DashCustomContainer extends StatelessWidget {
       // alignment: Alignment.center,
       width: 190,
       child: child,
+      
     );
   }
 }

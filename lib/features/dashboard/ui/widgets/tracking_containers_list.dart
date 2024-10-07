@@ -54,6 +54,8 @@ class TrackingContainersList extends StatelessWidget {
     ).asGlass(
       tintColor: AppDarkColors.activeIconColor,
       clipBorderRadius: BorderRadius.circular(20),
+      blurY: 50,
+      blurX: 50,
       tileMode: TileMode.mirror,
     );
   }

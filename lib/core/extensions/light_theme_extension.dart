@@ -10,4 +10,5 @@ final lightThemeEx = CustomThemeExtension(
     AppLightColors.commonGredient1,
     AppLightColors.commonGredient2,
   ],
+  subTitleColor: AppLightColors.subtitleColor,
 );

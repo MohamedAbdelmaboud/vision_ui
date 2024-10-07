@@ -17,7 +17,7 @@ class SignInRightSide extends StatelessWidget {
         image: DecorationImage(
           fit: BoxFit.cover,
           image: AssetImage(
-            Assets.assetsImagessignInBackground,
+            Assets.assetsImagesSignInBackground,
           ),
         ),
       ),

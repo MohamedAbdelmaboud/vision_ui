@@ -10,4 +10,5 @@ final darkThemeEx = CustomThemeExtension(
     AppDarkColors.commonGradiant1,
     AppDarkColors.commonGradiant2,
   ],
+  subTitleColor: AppDarkColors.greyColor,
 );

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../themes/app_dark_colors.dart';
+import '../extensions/context_colors_extension.dart';
 import '../utils/app_styles.dart';
 import 'icon_text_button.dart';
 
@@ -17,29 +17,24 @@ class SignInfoAndSettingsAndNotificationSection extends StatelessWidget {
           buttonColor: Colors.transparent,
           buttonText: "Sign In",
           icon: Icons.person,
-          iconColor: AppDarkColors.greyColor,
-          padingHorizental: 5,
+          iconColor: context.theme.subTitleColor,
+          padingHorizental: 15,
           padingVeritical: 5,
-          style: AppStyles.medium12(context).copyWith(
-            color: AppDarkColors.greyColor,
+          style: AppStyles.bold12(context).copyWith(
+            color: context.theme.subTitleColor,
           ),
         ),
         const Gap(5),
-        IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.settings,
-            size: 16,
-            color: AppDarkColors.greyColor,
-          ),
+        Icon(
+          Icons.settings,
+          size: 16,
+          color: context.theme.subTitleColor,
         ),
-        IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.notifications,
-            size: 16,
-            color: AppDarkColors.greyColor,
-          ),
+        const Gap(15),
+        Icon(
+          Icons.notifications,
+          size: 16,
+          color: context.theme.subTitleColor,
         )
       ],
     );
