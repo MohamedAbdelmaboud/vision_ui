@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
 
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/themes/app_dark_colors.dart';
 import '../../../../core/utils/app_images.dart';
 import '../../../../core/utils/app_styles.dart';
@@ -37,7 +38,7 @@ class ActiveUsersTitle extends StatelessWidget {
               TextSpan(
                 text: 'than last week',
                 style: AppStyles.bold14(context).copyWith(
-                  color: AppDarkColors.greyColor,
+                  color: context.theme.subTitleColor.withOpacity(0.6),
                 ),
               )
             ])),

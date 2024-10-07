@@ -13,7 +13,7 @@ class DashboardProjectsTableWidget extends StatelessWidget {
     return Expanded(
       flex: 3,
       child: AnimatedContainer(
-            duration: const Duration(milliseconds: 500),
+        duration: const Duration(milliseconds: 500),
         decoration: buildDecorationTable(context),
         child: const Padding(
           padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),

@@ -37,7 +37,7 @@ class MainDashboardView extends StatelessWidget {
                       const SliverPadding(
                         padding: EdgeInsets.all(16.0),
                         sliver: SliverToBoxAdapter(
-                          child: CustomSearchBar(),
+                          child: CustomAppBar(),
                         ),
                       ),
                       const SliverGap(16),

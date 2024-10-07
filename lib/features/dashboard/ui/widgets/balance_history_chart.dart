@@ -38,12 +38,13 @@ class BalanceHistoryChart extends StatelessWidget {
               return indicators.map((int index) {
                 return TouchedSpotIndicatorData(
                   const FlLine(
-                      color: Colors.transparent), // Line above touch indicator
+                    color: Colors.transparent,
+                  ), 
                   FlDotData(
-                    show: true, // Show the dot at the touched point
+                    show: true, 
                     getDotPainter: (spot, percent, barData, index) =>
                         FlDotCirclePainter(
-                      radius: 8, // Size of the circle dot
+                      radius: 8, 
                       color: Colors.blueAccent,
                       strokeWidth: 2,
                       strokeColor: Colors.white,

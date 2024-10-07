@@ -21,7 +21,7 @@ class OrderOverViewItemList extends StatelessWidget {
       OverViewItemModel(
         title: "Server Payments for April",
         date: "21 Dec 9:28 PM",
-        icon: Assets.assetsImagesServer,
+        icon: Assets.assetsImagesMastercard,
       ),
       OverViewItemModel(
         title: "New card added for order #3210145",
@@ -36,7 +36,7 @@ class OrderOverViewItemList extends StatelessWidget {
       OverViewItemModel(
         title: "New order #9851258",
         date: "18 Dec 4:41 PM",
-        icon: Assets.assetsImagesServer,
+        icon: Assets.assetsImagesCard,
       ),
     ];
   }

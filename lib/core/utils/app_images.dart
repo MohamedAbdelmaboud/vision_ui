@@ -154,6 +154,10 @@ class Assets {
   /// assets/images/money.svg
   static const String assetsImagesMoney = "assets/images/money.svg";
 
+  /// Assets for assetsImagesMoon
+  /// assets/images/moon.png
+  static const String assetsImagesMoon = "assets/images/moon.png";
+
   /// Assets for assetsImagesNeworder
   /// assets/images/neworder.svg
   static const String assetsImagesNeworder = "assets/images/neworder.svg";

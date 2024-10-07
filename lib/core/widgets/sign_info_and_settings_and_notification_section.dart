@@ -18,7 +18,7 @@ class SignInfoAndSettingsAndNotificationSection extends StatelessWidget {
           buttonText: "Sign In",
           icon: Icons.person,
           iconColor: context.theme.subTitleColor,
-          padingHorizental: 15,
+          padingHorizental: 10,
           padingVeritical: 5,
           style: AppStyles.bold12(context).copyWith(
             color: context.theme.subTitleColor,

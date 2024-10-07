@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:gap/gap.dart';
 
 import '../../features/dashboard/logic/cubit/dash_cubit.dart';
-import '../../features/dashboard/logic/theme_cubit/theme_cubit.dart';
 import '../extensions/context_colors_extension.dart';
+import '../utils/app_images.dart';
 import '../utils/app_styles.dart';
 import 'app_right_section.dart';
+import 'custom_switch.dart';
 
-class CustomSearchBar extends StatelessWidget {
-  const CustomSearchBar({super.key});
+class CustomAppBar extends StatelessWidget {
+  const CustomAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,13 +28,15 @@ class CustomSearchBar extends StatelessWidget {
             );
           },
         ),
-        MaterialButton(
-          onPressed: () {
-            ThemeCubit.get(context).changeTheme();
-          },
-          child: const Text('change theme'),
-        ),
         const Spacer(),
+        const CustomSwitch(),
+        const Gap(8),
+        Image.asset(
+          Assets.assetsImagesMoon,
+          height: 25,
+          color: context.theme.commonGradientColors[0],
+        ),
+        const Gap(25),
         const AppRightSection()
       ],
     );
