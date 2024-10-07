@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import 'projects_table.dart';
 import 'projects_table_title.dart';
 
@@ -13,7 +13,7 @@ class DashboardProjectsTableWidget extends StatelessWidget {
     return Expanded(
       flex: 3,
       child: Container(
-        decoration: buildDecorationTable(),
+        decoration: buildDecorationTable(context),
         child: const Padding(
           padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
           child: Column(
@@ -37,13 +37,10 @@ class DashboardProjectsTableWidget extends StatelessWidget {
     );
   }
 
-  BoxDecoration buildDecorationTable() {
+  BoxDecoration buildDecorationTable(BuildContext context) {
     return BoxDecoration(
       gradient: LinearGradient(
-        colors: [
-          AppDarkColors.gradiantTableColor1,
-          AppDarkColors.gradiantTableColor1,
-        ],
+        colors: context.theme.gradientTableColors,
         begin: Alignment.bottomCenter,
         end: Alignment.topCenter,
       ),

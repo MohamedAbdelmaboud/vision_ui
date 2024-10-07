@@ -8,5 +8,6 @@ final darkThemeEx = CustomThemeExtension(
   ],
   commonGradientColors: [
     AppDarkColors.commonGradiant1,
+    AppDarkColors.commonGradiant2,
   ],
 );

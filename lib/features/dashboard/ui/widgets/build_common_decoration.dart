@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 
-BoxDecoration buildCommonDecoration() {
+BoxDecoration buildCommonDecoration(BuildContext context) {
   return BoxDecoration(
     borderRadius: BorderRadius.circular(12),
     gradient: LinearGradient(
       begin: Alignment.topLeft,
       end: Alignment.bottomRight,
-      colors: [
-        AppDarkColors.commonGradiant1,
-        AppDarkColors.commonGradiant2,
-      ],
+      colors: context.theme.commonGradientColors,
       stops: const [0.0, 1.0],
     ),
   );

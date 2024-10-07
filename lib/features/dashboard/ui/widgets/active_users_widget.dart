@@ -17,7 +17,7 @@ class ActiveUsersWidget extends StatelessWidget {
       flex: 2,
       child: Container(
         padding: const EdgeInsets.all(16),
-        decoration: buildCommonDecoration(),
+        decoration: buildCommonDecoration(context),
         child: const Column(
           children: [
             ActiveUsersChart(),
@@ -26,7 +26,6 @@ class ActiveUsersWidget extends StatelessWidget {
             Gap(24),
             ActiveUserlist(),
             Gap(10),
-          
           ],
         ),
       ),

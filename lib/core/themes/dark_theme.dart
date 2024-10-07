@@ -1,3 +1,9 @@
 import 'package:flutter/material.dart';
 
-final darkTheme = ThemeData.dark().copyWith(extensions: []);
+import '../extensions/dark_theme_extension.dart';
+
+final darkTheme = ThemeData.dark().copyWith(
+  extensions: [
+    darkThemeEx,
+  ],
+);

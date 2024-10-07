@@ -16,7 +16,7 @@ class SatisfactionWidget extends StatelessWidget {
     
       child: Container(
         padding: const EdgeInsets.all(27),
-        decoration: buildCommonDecoration(),
+        decoration: buildCommonDecoration(context),
         child: const Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [

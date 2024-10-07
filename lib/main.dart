@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'core/helper/custom_scroll_behavior.dart';
+import 'core/themes/dark_theme.dart';
+import 'core/themes/light_theme.dart';
 import 'features/dashboard/logic/cubit/dash_cubit.dart';
 import 'features/dashboard/ui/views/main_dashboard_view.dart';
 
@@ -23,12 +25,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Vision UI',
-        debugShowCheckedModeBanner: false,
-        scrollBehavior: CustomScrollBehavior(),
-        home: BlocProvider(
-          create: (context) => DashCubit(),
-          child: const MainDashboardView(),
-        ));
+      title: 'Vision UI',
+      debugShowCheckedModeBanner: false,
+      scrollBehavior: CustomScrollBehavior(),
+      themeMode: ThemeMode.dark,
+      darkTheme: darkTheme,
+      theme: lightTheme,
+      home: BlocProvider(
+        create: (context) => DashCubit(),
+        child: const MainDashboardView(),
+      ),
+    );
   }
 }
