@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../features/dashboard/logic/cubit/dash_cubit.dart';
 import '../utils/app_styles.dart';
-import 'search_box_and_sign_in_info_and_settings_abd_notif_section.dart';
+import 'app_right_section.dart';
 
 class CustomSearchBar extends StatelessWidget {
   const CustomSearchBar({super.key});
@@ -11,12 +13,17 @@ class CustomSearchBar extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(
-          "Pages  /  Tables",
-          style: AppStyles.medium24(context),
+        BlocBuilder<DashCubit, DashState>(
+          builder: (context, state) {
+            final cubit = DashCubit.get(context);
+            return Text(
+              cubit.title,
+              style: AppStyles.medium24(context),
+            );
+          },
         ),
         const Spacer(),
-        const SearchBoxAndSignInInfoAndSettingsAbdNotifSection()
+        const AppRightSection()
       ],
     );
   }

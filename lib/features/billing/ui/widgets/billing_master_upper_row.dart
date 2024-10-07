@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../../core/utils/app_images.dart';
+import '../../../../core/utils/app_styles.dart';
 
 class BillingMasterUpperRow extends StatelessWidget {
   const BillingMasterUpperRow({
@@ -12,7 +13,7 @@ class BillingMasterUpperRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const Text(
+        Text(
           'Vision UI',
           style: AppStyles.bold14(context),
         ),

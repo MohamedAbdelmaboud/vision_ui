@@ -36,8 +36,8 @@ class OrderOverView extends StatelessWidget {
     return BoxDecoration(
       gradient: LinearGradient(
         colors: [
-          AppDarkColors.gradiantTableColor1.withOpacity(0.7),
-          AppDarkColors.gradiantTableColor1.withOpacity(0.7),
+          AppDarkColors.gradiantTableColor1,
+          AppDarkColors.gradiantTableColor1,
         ],
         begin: Alignment.bottomCenter,
         end: Alignment.topCenter,
