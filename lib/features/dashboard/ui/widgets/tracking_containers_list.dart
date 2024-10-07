@@ -20,7 +20,7 @@ class TrackingContainersList extends StatelessWidget {
           value: '279 people',
           context: context,
         ),
-        const Spacer(),
+        const Gap(20),
         buildTrackingContainer(
           title: 'Bonus',
           value: '172,003',

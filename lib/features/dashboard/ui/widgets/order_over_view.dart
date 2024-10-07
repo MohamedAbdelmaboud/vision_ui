@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import 'order_over_view_item_list.dart';
 import 'order_over_view_title.dart';
 
@@ -19,7 +19,7 @@ class OrderOverView extends StatelessWidget {
           horizontal: 20,
           vertical: 20,
         ),
-        decoration: buildDecorationTable(),
+        decoration: buildDecorationTable(context),
         child: const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -32,13 +32,10 @@ class OrderOverView extends StatelessWidget {
     );
   }
 
-  BoxDecoration buildDecorationTable() {
+  BoxDecoration buildDecorationTable(BuildContext context) {
     return BoxDecoration(
       gradient: LinearGradient(
-        colors: [
-          AppDarkColors.gradiantTableColor1.withOpacity(0.7),
-          AppDarkColors.gradiantTableColor1.withOpacity(0.7),
-        ],
+        colors: context.theme.gradientTableColors,
         begin: Alignment.bottomCenter,
         end: Alignment.topCenter,
       ),

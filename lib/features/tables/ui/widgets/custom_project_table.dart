@@ -8,8 +8,6 @@ import 'project_table_header.dart';
 class CustomProjectTable extends StatelessWidget {
   const CustomProjectTable({
     super.key,
-    this.color1 = AppDarkColors.gradiantTableColor1,
-    this.color2 = AppDarkColors.gradiantTableColor2,
     this.raduis = 15,
     this.textColor = Colors.white,
     this.fontWeight = FontWeight.bold,
@@ -24,8 +22,7 @@ class CustomProjectTable extends StatelessWidget {
     this.labelColum5 = "",
   });
   final String? title;
-  final Color? color1;
-  final Color? color2;
+
   final double? raduis;
   final Color? textColor;
   final FontWeight? fontWeight;
@@ -43,8 +40,8 @@ class CustomProjectTable extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            color1!.withOpacity(0.7),
-            color2!.withOpacity(0.7),
+            AppDarkColors.gradiantTableColor1,
+            AppDarkColors.gradiantTableColor2
           ],
           begin: Alignment.bottomCenter,
           end: Alignment.topCenter,

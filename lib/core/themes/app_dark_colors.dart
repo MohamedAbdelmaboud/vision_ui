@@ -12,8 +12,8 @@ class AppDarkColors {
   static const Color redColor = Color(0xffF53C2B);
   static const Color whiteColor = Color(0xffffffff);
 
-  static const Color gradiantTableColor1 = Color(0xff060B28);
-  static const Color gradiantTableColor2 = Color(0xff0A0E23);
+  static Color gradiantTableColor1 = const Color(0xff060B28).withOpacity(0.7);
+  static Color gradiantTableColor2 = const Color(0xff0A0E23).withOpacity(0.7);
 
   static const Color gradiantCardColor1 = Color(0xff181D3C);
   static const Color gradiantCardColor2 = Color(0xff0A0E23);
@@ -21,4 +21,7 @@ class AppDarkColors {
   static const Color gradiantBackgoundSigninColor1 = Color(0xff020515);
   static const Color gradiantBackgoundSigninColor2 = Color(0xff090D2E);
   static const Color gradiantBackgoundSigninColor3 = Color(0xff0F123B);
+
+  static Color commonGradiant1 = const Color(0xff060B26).withOpacity(0.94);
+  static const Color commonGradiant2 = Color(0xff1A1F37);
 }

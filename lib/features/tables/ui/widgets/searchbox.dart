@@ -10,6 +10,7 @@ class Searchbox extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: 200,
+      height: 40,
       child: TextField(
         style: AppStyles.medium14(context),
         decoration: InputDecoration(

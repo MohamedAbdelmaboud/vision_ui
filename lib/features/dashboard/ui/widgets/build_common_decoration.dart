@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 
-BoxDecoration buildCommonDecoration() {
+import '../../../../core/extensions/context_colors_extension.dart';
+
+BoxDecoration buildCommonDecoration(BuildContext context) {
   return BoxDecoration(
     borderRadius: BorderRadius.circular(12),
     gradient: LinearGradient(
       begin: Alignment.topLeft,
       end: Alignment.bottomRight,
-      colors: [
-        const Color(0xFF060B26).withOpacity(0.94),
-        const Color(0xFF1A1F37),
-      ],
+      colors: context.theme.commonGradientColors,
       stops: const [0.0, 1.0],
     ),
   );

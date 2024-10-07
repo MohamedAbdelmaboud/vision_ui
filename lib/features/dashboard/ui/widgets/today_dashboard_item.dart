@@ -23,7 +23,7 @@ class TodayDashboardItem extends StatelessWidget {
         vertical: 16,
         horizontal: 20,
       ),
-      decoration: buildCommonDecoration(),
+      decoration: buildCommonDecoration(context),
       child: Row(
         children: [
           Column(

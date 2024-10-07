@@ -1,9 +1,13 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'core/helper/custom_scroll_behavior.dart';
-import 'features/auth/ui/views/sign_up_view.dart';
+import 'core/themes/dark_theme.dart';
+import 'core/themes/light_theme.dart';
+import 'features/dashboard/logic/cubit/dash_cubit.dart';
+import 'features/dashboard/ui/views/main_dashboard_view.dart';
 
 void main() {
   runApp(
@@ -24,11 +28,13 @@ class MyApp extends StatelessWidget {
       title: 'Vision UI',
       debugShowCheckedModeBanner: false,
       scrollBehavior: CustomScrollBehavior(),
-      home: const SignUpView(),
-      /**BlocProvider(
+      themeMode: ThemeMode.dark,
+      darkTheme: darkTheme,
+      theme: lightTheme,
+      home: BlocProvider(
         create: (context) => DashCubit(),
-        child: const MainDashboardView(),) 
-        */
+        child: const MainDashboardView(),
+      ),
     );
   }
 }

@@ -15,7 +15,7 @@ class SalesOverViewWidget extends StatelessWidget {
         flex: 3,
         child: Container(
           padding: const EdgeInsets.all(16),
-          decoration: buildCommonDecoration(),
+          decoration: buildCommonDecoration(context),
           child: const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

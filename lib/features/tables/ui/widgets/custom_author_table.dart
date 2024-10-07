@@ -7,8 +7,6 @@ import '../../../../core/utils/app_styles.dart';
 class CustomAuthorTable extends StatelessWidget {
   const CustomAuthorTable({
     super.key,
-    this.color1 = AppDarkColors.gradiantTableColor1,
-    this.color2 = AppDarkColors.gradiantTableColor2,
     this.raduis = 15,
     this.textColor = Colors.white,
     this.fontWeight = FontWeight.bold,
@@ -23,8 +21,6 @@ class CustomAuthorTable extends StatelessWidget {
     this.labelColum5 = "",
   });
   final String? title;
-  final Color? color1;
-  final Color? color2;
   final double? raduis;
   final Color? textColor;
   final FontWeight? fontWeight;
@@ -42,8 +38,8 @@ class CustomAuthorTable extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            color1!.withOpacity(0.7),
-            color2!.withOpacity(0.7),
+            AppDarkColors.gradiantTableColor1.withOpacity(0.7),
+            AppDarkColors.gradiantTableColor2.withOpacity(0.7),
           ],
           begin: Alignment.bottomCenter,
           end: Alignment.topCenter,
