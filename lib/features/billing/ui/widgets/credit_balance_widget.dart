@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import 'credit_balance_container.dart';
 import 'taxes_item.dart';
 
@@ -13,10 +13,11 @@ class CreditBalanceWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: Container(
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 500),
         height: 240,
         padding: const EdgeInsets.all(24),
-        decoration: buildBalanceDecoration(),
+        decoration: buildBalanceDecoration(context),
         child: const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -29,13 +30,10 @@ class CreditBalanceWidget extends StatelessWidget {
     );
   }
 
-  BoxDecoration buildBalanceDecoration() {
+  BoxDecoration buildBalanceDecoration(BuildContext context) {
     return BoxDecoration(
       gradient: LinearGradient(
-        colors: [
-          AppDarkColors.gradiantTableColor1.withOpacity(0.7),
-          AppDarkColors.gradiantTableColor1.withOpacity(0.7),
-        ],
+        colors: context.theme.gradientTableColors,
         begin: Alignment.bottomCenter,
         end: Alignment.topCenter,
       ),

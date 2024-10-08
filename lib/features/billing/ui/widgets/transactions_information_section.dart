@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import 'newest_transactions.dart';
 import 'other_transactions.dart';
 import 'transaction_section_header.dart';
@@ -11,13 +11,11 @@ class TransactionsInformationSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 500),
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [
-            AppDarkColors.gradiantCardColor1.withOpacity(0.9),
-            AppDarkColors.gradiantCardColor2.withOpacity(0.5),
-          ],
+          colors: context.theme.gradientTableColors,
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
@@ -31,7 +29,7 @@ class TransactionsInformationSection extends StatelessWidget {
             TransactionSectionHeader(),
             Gap(10),
             NewestTransactions(),
-            Gap(8),
+            Gap(10),
             OtherTransactions(),
           ],
         ),

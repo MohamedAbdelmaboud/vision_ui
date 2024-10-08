@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/utils/app_styles.dart';
 
 class TransactionSectionHeader extends StatelessWidget {
@@ -18,16 +18,16 @@ class TransactionSectionHeader extends StatelessWidget {
           style: AppStyles.bold14(context),
         ),
         const Spacer(),
-        const Icon(
+        Icon(
           Icons.calendar_month,
-          color: AppDarkColors.whiteColor,
+          color: context.theme.subTitleColor,
           size: 10,
         ),
         const Gap(5),
         Text(
           "23 - 30 March 2020",
           style: AppStyles.medium12(context).copyWith(
-            color: AppDarkColors.greyColor.withOpacity(0.8),
+            color: context.theme.subTitleColor.withOpacity(0.8),
           ),
         )
       ],

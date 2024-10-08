@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/utils/app_images.dart';
 import '../../../../core/utils/app_styles.dart';
 import 'custom_button.dart';
@@ -16,15 +16,15 @@ class PaymentMethodWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(24),
-      decoration: buildPaymentMethodDecoration(),
+      decoration: buildPaymentMethodDecoration(context),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             children: [
               Text(
-                'PaymentMethod',
-                style: (AppStyles.bold14(context)),
+                'Payment Method',
+                style: AppStyles.bold14(context),
               ),
               const Spacer(),
               const CustomButton(
@@ -51,13 +51,10 @@ class PaymentMethodWidget extends StatelessWidget {
     );
   }
 
-  BoxDecoration buildPaymentMethodDecoration() {
+  BoxDecoration buildPaymentMethodDecoration(BuildContext context) {
     return BoxDecoration(
       gradient: LinearGradient(
-        colors: [
-          AppDarkColors.gradiantTableColor1.withOpacity(0.7),
-          AppDarkColors.gradiantTableColor1.withOpacity(0.7),
-        ],
+        colors: context.theme.gradientTableColors,
         begin: Alignment.bottomCenter,
         end: Alignment.topCenter,
       ),

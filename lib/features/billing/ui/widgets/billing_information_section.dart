@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/utils/app_styles.dart';
 import 'billing_card.dart';
 
@@ -10,13 +10,11 @@ class BillingInformationSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 500),
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [
-            AppDarkColors.gradiantCardColor1.withOpacity(0.9),
-            AppDarkColors.gradiantCardColor2.withOpacity(0.5),
-          ],
+          colors: context.theme.gradientTableColors,
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
@@ -35,34 +33,34 @@ class BillingInformationSection extends StatelessWidget {
             const Column(
               children: [
                 BillingCard(
-                  title: 'Oliver Liam',
+                  title: 'Mohamed Abdelmaboud',
                   companyName: "Company Name: Viking Burrito",
                   vatNum: 'VAT Number: FRB1235476',
-                  emailAddress: "Email Address: oliver@burrito.com",
+                  emailAddress: "Email Address: mohamed@burrito.com",
                 ),
                 Gap(5),
                 BillingCard(
-                  title: 'Oliver Liam',
-                  companyName: "Company Name: Viking Burrito",
-                  vatNum: 'VAT Number: FRB1235476',
-                  emailAddress: "Email Address: oliver@burrito.com",
+                  title: 'Esraa Ehab',
+                  companyName: "Company Name: StoneTech",
+                  vatNum: 'VAT Number: GER8478392',
+                  emailAddress: "Email Address: esraa@stonetech.com",
                 ),
                 Gap(5),
                 BillingCard(
-                  title: 'Oliver Liam',
-                  companyName: "Company Name: Viking Burrito",
-                  vatNum: 'VAT Number: FRB1235476',
-                  emailAddress: "Email Address: oliver@burrito.com",
+                  title: 'Liam Johnson',
+                  companyName: "Company Name: Fresh Fruit Inc.",
+                  vatNum: 'VAT Number: USA5586394',
+                  emailAddress: "Email Address: liam@fruitinc.com",
                 ),
                 Gap(5),
                 BillingCard(
-                  title: 'Oliver Liam',
-                  companyName: "Company Name: Viking Burrito",
-                  vatNum: 'VAT Number: FRB1235476',
-                  emailAddress: "Email Address: oliver@burrito.com",
+                  title: 'Sophia Davis',
+                  companyName: "Company Name: Digital Solutions",
+                  vatNum: 'VAT Number: ITA9893847',
+                  emailAddress: "Email Address: sophia@digitalsolutions.com",
                 ),
               ],
-            )
+            ),
           ],
         ),
       ),

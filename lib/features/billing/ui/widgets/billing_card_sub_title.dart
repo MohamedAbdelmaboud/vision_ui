@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
-import '../../../../core/utils/app_styles.dart';
+import 'billing_card_sub_title_text.dart';
 
 class BillingCardSubTitle extends StatelessWidget {
   const BillingCardSubTitle(
@@ -18,21 +18,17 @@ class BillingCardSubTitle extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          companyName,
-          style: AppStyles.regular9(context)
-              .copyWith(color: AppDarkColors.greyColor.withOpacity(0.8)),
+        BillingCardSubTitleText(
+          text: companyName,
         ),
-        Text(
-          emailAddress,
-          style: AppStyles.regular9(context)
-              .copyWith(color: AppDarkColors.greyColor.withOpacity(0.8)),
+        const Gap(3),
+        BillingCardSubTitleText(
+          text: emailAddress,
         ),
-        Text(
-          vatNum,
-          style: AppStyles.regular9(context)
-              .copyWith(color: AppDarkColors.greyColor.withOpacity(0.8)),
-        )
+        const Gap(3),
+        BillingCardSubTitleText(
+          text: vatNum,
+        ),
       ],
     );
   }

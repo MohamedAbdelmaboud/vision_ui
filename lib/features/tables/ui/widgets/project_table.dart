@@ -8,11 +8,14 @@ class ProjectTable extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const CustomProjectTable(
-        labelColum1: "COMPANIES",
-        labelColum2: "BUDGET",
-        labelColum3: "STATUS",
-        labelColum4: "COMPLETION",
-        //style: AppStyles.regular10,
-        rows: []);
+      labelColum1: "COMPANIES",
+      labelColum2: "BUDGET",
+      labelColum3: "STATUS",
+      labelColum4: "COMPLETION",
+      //style: AppStyles.regular10,
+      rows: [
+        
+      ],
+    );
   }
 }

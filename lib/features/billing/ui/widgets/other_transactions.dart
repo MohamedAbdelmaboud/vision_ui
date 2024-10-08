@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/themes/app_dark_colors.dart';
 import '../../../../core/utils/app_styles.dart';
 import 'transaction_card.dart';
@@ -16,7 +17,7 @@ class OtherTransactions extends StatelessWidget {
         Text(
           "YESTERDAY",
           style: AppStyles.medium10(context).copyWith(
-            color: AppDarkColors.greyColor.withOpacity(0.8),
+            color: context.theme.subTitleColor.withOpacity(0.8),
           ),
         ),
         const Gap(12),
@@ -35,7 +36,7 @@ class OtherTransactions extends StatelessWidget {
           amount: r'+$1700',
           color: AppDarkColors.greenColor,
           icon: Icons.arrow_upward_rounded,
-          amountColor: AppDarkColors.greenColor,
+          amountColor: AppDarkColors.redColor,
         ),
         const Gap(15),
         TransactionCard(
@@ -44,16 +45,16 @@ class OtherTransactions extends StatelessWidget {
           amount: r'Pending',
           color: AppDarkColors.greyColor.withOpacity(0.8),
           icon: Icons.warning_amber,
-          amountColor: AppDarkColors.greyColor.withOpacity(0.8),
+          amountColor: AppDarkColors.redColor,
         ),
         const Gap(15),
-        TransactionCard(
+        const TransactionCard(
           transactionName: 'Microsoft',
           transactionDate: '25 March 2020, at 16:30 PM',
           amount: r'-$987',
           color: AppDarkColors.redColor,
           icon: Icons.arrow_downward_rounded,
-          amountColor: AppDarkColors.greyColor.withOpacity(0.8),
+          amountColor: AppDarkColors.redColor,
         ),
         const Gap(15),
       ],

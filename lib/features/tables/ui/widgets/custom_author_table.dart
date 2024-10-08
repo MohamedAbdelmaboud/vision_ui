@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/utils/app_styles.dart';
 
 class CustomAuthorTable extends StatelessWidget {
@@ -37,10 +37,7 @@ class CustomAuthorTable extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [
-            AppDarkColors.gradiantTableColor1.withOpacity(0.7),
-            AppDarkColors.gradiantTableColor2.withOpacity(0.7),
-          ],
+          colors: context.theme.gradientTableColors,
           begin: Alignment.bottomCenter,
           end: Alignment.topCenter,
         ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import 'invoices_item.dart';
 import 'invoices_title.dart';
 
@@ -43,10 +43,10 @@ class InvoicesWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      // flex: 2,
-      child: Container(
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 500),
         padding: const EdgeInsets.all(24),
-        decoration: buildInvoicesDecoration(),
+        decoration: buildInvoicesDecoration(context),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -60,13 +60,10 @@ class InvoicesWidget extends StatelessWidget {
     );
   }
 
-  BoxDecoration buildInvoicesDecoration() {
+  BoxDecoration buildInvoicesDecoration(BuildContext context) {
     return BoxDecoration(
       gradient: LinearGradient(
-        colors: [
-          AppDarkColors.gradiantTableColor1.withOpacity(0.7),
-          AppDarkColors.gradiantTableColor1.withOpacity(0.7),
-        ],
+        colors: context.theme.gradientTableColors,
         begin: Alignment.bottomCenter,
         end: Alignment.topCenter,
       ),
