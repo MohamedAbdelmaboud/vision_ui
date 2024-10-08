@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/themes/app_dark_colors.dart';
 import 'build_data_column.dart';
 import 'project_table_header.dart';
@@ -39,10 +40,7 @@ class CustomProjectTable extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [
-            AppDarkColors.gradiantTableColor1,
-            AppDarkColors.gradiantTableColor2
-          ],
+          colors: context.theme.gradientTableColors,
           begin: Alignment.bottomCenter,
           end: Alignment.topCenter,
         ),

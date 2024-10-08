@@ -4,7 +4,6 @@ import 'package:gap/gap.dart';
 import 'package:glass/glass.dart';
 
 import '../../../../core/extensions/context_colors_extension.dart';
-import '../../../../core/themes/app_dark_colors.dart';
 import '../../../../core/utils/app_styles.dart';
 
 class PaymentMethodItem extends StatelessWidget {

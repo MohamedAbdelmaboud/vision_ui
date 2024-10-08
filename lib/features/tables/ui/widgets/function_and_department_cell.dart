@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/themes/app_dark_colors.dart';
 import '../../../../core/utils/app_styles.dart';
 
@@ -30,7 +31,7 @@ class FunctionAndDepartment extends StatelessWidget {
           Text(
             department,
             style: AppStyles.regular10(context).copyWith(
-              color: AppDarkColors.greyColor.withOpacity(0.8),
+          color:context.theme.subTitleColor.withOpacity(0.8),
             ),
           ),
         ],
