@@ -13,7 +13,8 @@ class SalesOverViewWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
         flex: 3,
-        child: Container(
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 500),
           padding: const EdgeInsets.all(16),
           decoration: buildCommonDecoration(context),
           child: const Column(

@@ -1,3 +1,4 @@
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/themes/app_dark_colors.dart';
 import '../../../../core/utils/app_images.dart';
 import '../../../../core/utils/app_styles.dart';
@@ -39,7 +40,7 @@ class SalesOverViewTitle extends StatelessWidget {
                   TextSpan(
                     text: 'in 2024',
                     style: AppStyles.bold14(context).copyWith(
-                      color: AppDarkColors.greyColor,
+                      color: context.theme.subTitleColor.withOpacity(0.6),
                     ),
                   )
                 ],

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/utils/app_styles.dart';
 import '../../data/models/today_item_model.dart';
 import 'build_common_decoration.dart';
@@ -17,7 +17,8 @@ class TodayDashboardItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 500),
       width: 320,
       padding: const EdgeInsets.symmetric(
         vertical: 16,
@@ -31,8 +32,9 @@ class TodayDashboardItem extends StatelessWidget {
             children: [
               Text(
                 model.title,
-                style:
-                    AppStyles.medium12(context).copyWith(color: AppDarkColors.greyColor),
+                style: AppStyles.medium12(context).copyWith(
+                  color: context.theme.subTitleColor,
+                ),
               ),
               const Gap(3),
               TodayDashboardItemRichText(

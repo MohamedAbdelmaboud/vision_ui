@@ -1,6 +1,7 @@
-import 'build_common_decoration.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+
+import 'build_common_decoration.dart';
 import 'satisfaction_indicator.dart';
 import 'satisfaction_percentage.dart';
 import 'satisfaction_widget_text.dart';
@@ -13,8 +14,8 @@ class SatisfactionWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-    
-      child: Container(
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 500),
         padding: const EdgeInsets.all(27),
         decoration: buildCommonDecoration(context),
         child: const Column(

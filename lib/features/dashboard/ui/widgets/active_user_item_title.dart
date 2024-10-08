@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/utils/app_styles.dart';
 
 class ActiveUserItemTitle extends StatelessWidget {
@@ -11,7 +11,7 @@ class ActiveUserItemTitle extends StatelessWidget {
     return Text(
       title,
       style: AppStyles.medium12(context).copyWith(
-        color: AppDarkColors.greyColor,
+        color: context.theme.subTitleColor,
       ),
     );
   }

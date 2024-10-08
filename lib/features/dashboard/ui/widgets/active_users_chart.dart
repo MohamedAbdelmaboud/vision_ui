@@ -2,6 +2,7 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:glass/glass.dart';
 
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/themes/app_dark_colors.dart';
 import '../../../../core/utils/app_styles.dart';
 
@@ -151,8 +152,8 @@ class ActiveUsersChartState extends State<ActiveUsersChart> {
   }
 
   Widget leftTitles(double value, TitleMeta meta) {
-    const style = TextStyle(
-      color: Color(0xff7589a2),
+    final style = TextStyle(
+      color: context.theme.subTitleColor.withOpacity(0.6),
       fontWeight: FontWeight.bold,
       fontSize: 14,
     );
@@ -178,7 +179,9 @@ class ActiveUsersChartState extends State<ActiveUsersChart> {
 
     final Widget text = Text(
       days[value.toInt()],
-      style: AppStyles.regular12(context).copyWith(color: const Color(0Xff718EBF)),
+      style: AppStyles.regular12(context).copyWith(
+        color: context.theme.subTitleColor.withOpacity(0.6),
+      ),
     );
 
     return SideTitleWidget(

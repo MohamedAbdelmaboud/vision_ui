@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/utils/app_images.dart';
 import '../../../../core/utils/app_styles.dart';
 
@@ -20,14 +20,13 @@ class TrackingIndicator extends StatelessWidget {
           Assets.assetsImagesIndicator,
           height: 150,
         ),
-      
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               'Safety',
               style: AppStyles.medium12(context).copyWith(
-                color: AppDarkColors.greyColor,
+                color: context.theme.subTitleColor,
               ),
             ),
             const Gap(5),
@@ -39,7 +38,7 @@ class TrackingIndicator extends StatelessWidget {
             Text(
               'Total Score',
               style: AppStyles.medium12(context).copyWith(
-                color: AppDarkColors.greyColor,
+                color: context.theme.subTitleColor,
               ),
             ),
           ],

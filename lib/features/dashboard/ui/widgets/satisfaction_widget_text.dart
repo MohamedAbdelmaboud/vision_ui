@@ -1,7 +1,8 @@
-import '../../../../core/themes/app_dark_colors.dart';
-import '../../../../core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+
+import '../../../../core/extensions/context_colors_extension.dart';
+import '../../../../core/utils/app_styles.dart';
 
 class SatisfactionWidgetText extends StatelessWidget {
   const SatisfactionWidgetText({
@@ -20,7 +21,7 @@ class SatisfactionWidgetText extends StatelessWidget {
         Text(
           'From all projects',
           style: AppStyles.medium12(context).copyWith(
-            color: AppDarkColors.greyColor,
+            color: context.theme.subTitleColor,
           ),
         ),
       ],
