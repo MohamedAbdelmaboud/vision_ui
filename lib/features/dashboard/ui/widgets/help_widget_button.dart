@@ -10,7 +10,7 @@ class HelpWidgetButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(
-        horizontal: 48,
+        horizontal: 38,
         vertical: 12.5,
       ),
       decoration: BoxDecoration(

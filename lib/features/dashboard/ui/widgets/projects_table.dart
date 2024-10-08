@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/utils/app_images.dart';
 import '../../../../core/utils/app_styles.dart';
 import 'company_item.dart';
@@ -106,9 +106,9 @@ class ProjectsTable extends StatelessWidget {
     ];
   }
 
-  TextStyle columnStyles(context) {
+  TextStyle columnStyles(BuildContext context) {
     return AppStyles.medium10(context).copyWith(
-      color: AppDarkColors.greyColor,
+      color: context.theme.subTitleColor,
     );
   }
 
