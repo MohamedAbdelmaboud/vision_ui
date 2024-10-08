@@ -4,23 +4,25 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
   final List<Color> gradientTableColors;
   final List<Color> commonGradientColors;
   final Color subTitleColor;
+  final Color drawerItemColor;
 
-  CustomThemeExtension({
-    required this.gradientTableColors,
-    required this.commonGradientColors,
-    required this.subTitleColor,
-  });
+  CustomThemeExtension(
+      {required this.gradientTableColors,
+      required this.commonGradientColors,
+      required this.subTitleColor,
+      required this.drawerItemColor});
 
   @override
-  ThemeExtension<CustomThemeExtension> copyWith({
-    List<Color>? gradientTableColors,
-    List<Color>? commonGradientColors,
-    Color? textColor,
-  }) {
+  ThemeExtension<CustomThemeExtension> copyWith(
+      {List<Color>? gradientTableColors,
+      List<Color>? commonGradientColors,
+      Color? textColor,
+      Color? drawerItemColor}) {
     return CustomThemeExtension(
       gradientTableColors: gradientTableColors ?? this.gradientTableColors,
       commonGradientColors: commonGradientColors ?? this.commonGradientColors,
       subTitleColor: textColor ?? subTitleColor,
+      drawerItemColor: drawerItemColor ?? this.drawerItemColor,
     );
   }
 
@@ -41,6 +43,7 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
         Color.lerp(commonGradientColors[1], other.commonGradientColors[1], t)!,
       ],
       subTitleColor: Color.lerp(subTitleColor, other.subTitleColor, t)!,
+      drawerItemColor: Color.lerp(drawerItemColor, other.drawerItemColor, t)!,
     );
   }
 }

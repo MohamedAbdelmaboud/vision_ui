@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/themes/app_dark_colors.dart';
 import 'dashboard_icon.dart';
 
@@ -21,7 +22,7 @@ class DashboardIconComponent extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         color: isActivated
             ? AppDarkColors.activeIconColor
-            : AppDarkColors.inactiveIconColor,
+            : context.theme.drawerItemColor,
       ),
       child: DashboardIcon(
         icon: icon,

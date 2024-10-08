@@ -11,4 +11,5 @@ final darkThemeEx = CustomThemeExtension(
     AppDarkColors.commonGradiant2,
   ],
   subTitleColor: AppDarkColors.greyColor,
+  drawerItemColor: AppDarkColors.dashboardActiveItemColor,
 );

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../data/models/dashboard_item_model.dart';
 import 'dashboard_icon_component.dart';
 import 'dashboard_item_text.dart';
@@ -21,7 +21,7 @@ class DrawerItem extends StatelessWidget {
       height: 54,
       padding: const EdgeInsets.symmetric(horizontal: 12),
       decoration: BoxDecoration(
-        color: isActivated ? AppDarkColors.dashboardActiveItemColor : null,
+        color: isActivated ? context.theme.drawerItemColor : null,
         borderRadius: BorderRadius.circular(15),
       ),
       child: Row(

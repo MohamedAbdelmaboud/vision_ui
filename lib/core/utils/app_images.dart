@@ -98,6 +98,10 @@ class Assets {
   /// assets/images/drawer_background.png
   static const String assetsImagesDrawerBackground = "assets/images/drawer_background.png";
 
+  /// Assets for assetsImagesDrawerBackgroundLight
+  /// assets/images/drawer_background_light.png
+  static const String assetsImagesDrawerBackgroundLight = "assets/images/drawer_background_light.png";
+
   /// Assets for assetsImagesError
   /// assets/images/error.svg
   static const String assetsImagesError = "assets/images/error.svg";

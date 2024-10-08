@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../features/dashboard/logic/theme_cubit/theme_cubit.dart';
 import '../utils/app_images.dart';
 import 'drawer_body.dart';
 
@@ -10,19 +12,26 @@ class CustomDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 264,
-      decoration: buildDrawerDecoration(),
-      child: const DrawerBody(),
+    return BlocBuilder<ThemeCubit, ThemeState>(
+      builder: (context, state) {
+        return AnimatedContainer(
+          duration: const Duration(milliseconds: 500),
+          width: 264,
+          decoration: buildDrawerDecoration(context),
+          child: const DrawerBody(),
+        );
+      },
     );
   }
 
-  BoxDecoration buildDrawerDecoration() {
+  BoxDecoration buildDrawerDecoration(BuildContext context) {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(20),
-      image: const DecorationImage(
+      image: DecorationImage(
         image: AssetImage(
-          Assets.assetsImagesDrawerBackground,
+          isDarkMode(context)
+              ? Assets.assetsImagesDrawerBackground
+              : Assets.assetsImagesDrawerBackgroundLight,
         ),
         fit: BoxFit.cover,
       ),
