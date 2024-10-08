@@ -24,7 +24,6 @@ class CreditBalanceContainer extends StatelessWidget {
             image: DecorationImage(
               colorFilter: !isDarkMode(context)
                   ? ColorFilter.mode(
-                      //TODO: Add ColorFilter to the image
                       Colors.white.withOpacity(0.9),
                       BlendMode.softLight,
                     )

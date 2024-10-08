@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../widgets/auther_table.dart';
-import '../widgets/project_table.dart';
+import '../widgets/dashboard_companies_table_widget.dart';
 
 class TablesView extends StatelessWidget {
   const TablesView({super.key});
@@ -13,7 +13,8 @@ class TablesView extends StatelessWidget {
       children: [
         AutherTable(),
         Gap(20),
-        ProjectTable(),
+        DashboardCompaniesTableWidget(),
+        Gap(20),
       ],
     );
   }
