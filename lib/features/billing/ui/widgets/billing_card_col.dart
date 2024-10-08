@@ -1,6 +1,7 @@
-import '../../../../core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+
+import '../../../../core/utils/app_styles.dart';
 
 class BillingCardCol extends StatelessWidget {
   const BillingCardCol({
@@ -14,6 +15,7 @@ class BillingCardCol extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           title,
@@ -23,7 +25,6 @@ class BillingCardCol extends StatelessWidget {
         Text(
           value,
           style: AppStyles.bold12(context),
-       
         ),
       ],
     );

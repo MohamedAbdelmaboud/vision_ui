@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import 'billing_card_sub_title.dart';
 import 'billing_card_title_and_delete_and_edit.dart';
 
@@ -24,8 +24,8 @@ class BillingCard extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            AppDarkColors.gradiantCardColor1.withOpacity(0.9),
-            AppDarkColors.gradiantCardColor2.withOpacity(0.5),
+            context.theme.gradientTableColors[0].withOpacity(0.8),
+            context.theme.gradientTableColors[1].withOpacity(0.5),
           ],
           begin: Alignment.topCenter,
           end: Alignment.topLeft,

@@ -1,9 +1,11 @@
-import '../../../../core/themes/app_dark_colors.dart';
-import '../../../../core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
 import 'package:glass/glass.dart';
+
+import '../../../../core/extensions/context_colors_extension.dart';
+import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/utils/app_styles.dart';
 
 class PaymentMethodItem extends StatelessWidget {
   const PaymentMethodItem({
@@ -32,20 +34,20 @@ class PaymentMethodItem extends StatelessWidget {
             Text(
               cardNumber,
               style: AppStyles.regular12(context).copyWith(
-                color: AppDarkColors.greyColor,
+                color: context.theme.subTitleColor,
               ),
             ),
             const Spacer(),
-            const Icon(
+            Icon(
               Icons.edit,
-              color: AppDarkColors.greyColor,
+              color: context.theme.subTitleColor,
               size: 12,
             ),
           ],
         ),
       ).asGlass(
         clipBorderRadius: BorderRadius.circular(15),
-        tintColor: AppDarkColors.greyColor.withOpacity(0.2),
+        tintColor: context.theme.subTitleColor.withOpacity(0.2),
       ),
     );
   }

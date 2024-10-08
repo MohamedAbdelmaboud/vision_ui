@@ -1,9 +1,11 @@
-import '../../../../core/themes/app_dark_colors.dart';
-import '../../../../core/utils/app_images.dart';
-import '../../../../core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
+
+import '../../../../core/extensions/context_colors_extension.dart';
+import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/utils/app_images.dart';
+import '../../../../core/utils/app_styles.dart';
 
 class TaxesItemDetails extends StatelessWidget {
   const TaxesItemDetails({
@@ -31,7 +33,7 @@ class TaxesItemDetails extends StatelessWidget {
             Text(
               'Today,16:36',
               style: AppStyles.regular12(context).copyWith(
-                color: AppDarkColors.greyColor,
+                color: context.theme.subTitleColor.withOpacity(0.6),
               ),
             ),
           ],

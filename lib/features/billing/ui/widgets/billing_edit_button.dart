@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/utils/app_styles.dart';
 
 class BillingEditButton extends StatelessWidget {
@@ -15,16 +15,16 @@ class BillingEditButton extends StatelessWidget {
       onPressed: () {},
       child: Row(
         children: [
-          const Icon(
+          Icon(
             Icons.edit,
             size: 14,
-            color: AppDarkColors.greyColor,
+            color: context.theme.subTitleColor,
           ),
           const Gap(5),
           Text(
             "Edit",
             style: AppStyles.medium12(context).copyWith(
-              color: AppDarkColors.greyColor,
+              color: context.theme.subTitleColor,
             ),
           ),
         ],

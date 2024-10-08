@@ -16,7 +16,8 @@ class MainDashboardView extends StatelessWidget {
     return Scaffold(
       body: BlocBuilder<ThemeCubit, ThemeState>(
         builder: (context, state) {
-          return Container(
+          return AnimatedContainer(
+            duration: const Duration(milliseconds: 500),
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(

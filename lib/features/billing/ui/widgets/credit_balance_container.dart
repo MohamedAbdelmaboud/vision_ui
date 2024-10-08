@@ -4,6 +4,7 @@ import 'package:gap/gap.dart';
 
 import '../../../../core/utils/app_images.dart';
 import '../../../../core/utils/app_styles.dart';
+import '../../../dashboard/logic/theme_cubit/theme_cubit.dart';
 
 class CreditBalanceContainer extends StatelessWidget {
   const CreditBalanceContainer({
@@ -17,8 +18,14 @@ class CreditBalanceContainer extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
-        image: const DecorationImage(
-          image: AssetImage(
+        image: DecorationImage(
+          colorFilter: !isDarkMode(context)
+              ? ColorFilter.mode( //TODO: Add ColorFilter to the image
+                  Colors.white.withOpacity(0.9),
+                  BlendMode.softLight,
+                )
+              : null,
+          image: const AssetImage(
             Assets.assetsImagesTaxesBg,
           ),
           fit: BoxFit.cover,
