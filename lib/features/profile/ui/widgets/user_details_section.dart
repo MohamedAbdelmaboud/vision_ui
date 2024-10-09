@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import 'over_view_and_teams_and_project_section.dart';
 import 'user_details_image.dart';
 import 'user_name_and_email.dart';
@@ -11,13 +11,11 @@ class UserDetailsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 500),
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [
-            AppDarkColors.gradiantCardColor1.withOpacity(0.9),
-            AppDarkColors.gradiantCardColor2.withOpacity(0.5),
-          ],
+          colors: context.theme.commonGradientColors,
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),

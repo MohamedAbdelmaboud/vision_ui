@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/utils/app_styles.dart';
 import '../../../../core/widgets/text_button.dart';
 
@@ -23,8 +23,9 @@ class CheckAccountSection extends StatelessWidget {
       children: [
         Text(
           text,
-          style: AppStyles.medium10(context)
-              .copyWith(color: AppDarkColors.greyColor),
+          style: AppStyles.medium10(context).copyWith(
+            color: context.theme.subTitleColor,
+          ),
         ),
         CustomTextButton(
           borderRadius: 0,

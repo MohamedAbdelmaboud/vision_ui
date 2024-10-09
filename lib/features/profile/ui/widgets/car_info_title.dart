@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/utils/app_images.dart';
 import '../../../../core/utils/app_styles.dart';
 
@@ -18,7 +18,7 @@ class CarInfoTitle extends StatelessWidget {
           Assets.assetsImagesBmw,
           height: 100,
         ),
-        const Gap(20),  
+        const Gap(20),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -30,7 +30,7 @@ class CarInfoTitle extends StatelessWidget {
             Text(
               'Hello, Abdelmaboud! Your Car is ready.',
               style: AppStyles.medium12(context).copyWith(
-                color: AppDarkColors.greyColor,
+                color: context.theme.subTitleColor,
               ),
             ),
           ],
