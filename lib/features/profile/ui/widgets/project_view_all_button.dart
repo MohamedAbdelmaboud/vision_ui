@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/utils/app_images.dart';
 import '../../../../core/utils/app_styles.dart';
 
@@ -18,10 +18,10 @@ class ProjectViewAllButton extends StatelessWidget {
           onPressed: () {},
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.transparent,
-            foregroundColor: AppDarkColors.whiteColor,
+            foregroundColor: context.theme.subTitleColor,
             elevation: 0,
-            side: const BorderSide(
-              color: AppDarkColors.whiteColor,
+            side: BorderSide(
+              color: context.theme.subTitleColor,
               width: 2,
             ),
             shape: RoundedRectangleBorder(
@@ -30,7 +30,9 @@ class ProjectViewAllButton extends StatelessWidget {
           ),
           child: Text(
             "VIEW ALL",
-            style: AppStyles.medium10(context),
+            style: AppStyles.medium10(context).copyWith(
+              color: context.theme.subTitleColor,
+            ),
           ),
         ),
         const Spacer(),

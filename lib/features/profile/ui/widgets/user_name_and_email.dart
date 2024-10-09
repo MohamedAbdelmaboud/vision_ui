@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/utils/app_styles.dart';
 
 class UserNameAndEmail extends StatelessWidget {
@@ -16,13 +16,16 @@ class UserNameAndEmail extends StatelessWidget {
       children: [
         Text(
           "Esraa Ehab",
-          style: AppStyles.medium16(context),
+          style: AppStyles.medium16(context).copyWith(
+            color: context.theme.subTitleColor,
+          ),
         ),
         const Gap(4),
         Text(
           "Esraa Ehab@simmmple.com",
           style: AppStyles.regular12(context).copyWith(
-            color: AppDarkColors.greyColor,
+            color:
+                context.theme.subTitleColor, // make this nowwwwwwwwwwwwwwwwww
           ),
         ),
       ],

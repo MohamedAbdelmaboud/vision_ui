@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/themes/app_dark_colors.dart';
 import '../../../../core/utils/app_styles.dart';
 import '../../../../core/widgets/icon_text_button.dart';
+import '../views/sign_up_view.dart';
 
 class SignInAppBarMiddle extends StatelessWidget {
   const SignInAppBarMiddle({
@@ -45,7 +46,14 @@ class SignInAppBarMiddle extends StatelessWidget {
           icon: Icons.person_pin,
           iconColor: AppDarkColors.whiteColor,
           buttonText: "SIGN UP",
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const SignUpView(),
+              ),
+            );
+          },
           style: AppStyles.medium10(context).copyWith(
             color: AppDarkColors.whiteColor,
           ),

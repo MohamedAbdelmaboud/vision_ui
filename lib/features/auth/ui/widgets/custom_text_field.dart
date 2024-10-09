@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/themes/app_dark_colors.dart';
 import '../../../../core/utils/app_styles.dart';
 
@@ -30,7 +31,7 @@ class CustomTextField extends StatelessWidget {
             hintStyle: AppStyles.regular10(context)
                 .copyWith(color: AppDarkColors.greyColor),
             filled: true,
-            fillColor: AppDarkColors.gradiantBackgoundSigninColor2,
+            fillColor: context.theme.subTitleColor,
             contentPadding: const EdgeInsets.symmetric(
               vertical: 10,
               horizontal: 15,

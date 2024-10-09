@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../widgets/sign_in_app_bar.dart';
 import '../widgets/sign_in_right_side.dart';
 import '../widgets/sign_up_body.dart';
@@ -25,17 +25,7 @@ class SignUpView extends StatelessWidget {
                 child: Container(
                   height: double.infinity,
                   width: double.infinity,
-                  decoration: const BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: [
-                        AppDarkColors.gradiantBackgoundSigninColor1,
-                        AppDarkColors.gradiantBackgoundSigninColor2,
-                        AppDarkColors.gradiantBackgoundSigninColor3,
-                      ],
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                    ),
-                  ),
+                  decoration: buildSignUpSectionDecoration(context),
                   child: const SignUpBody(),
                 ),
               ),
@@ -43,6 +33,17 @@ class SignUpView extends StatelessWidget {
           ),
           const SignInAppBar()
         ],
+      ),
+    );
+  }
+
+  BoxDecoration buildSignUpSectionDecoration(BuildContext context) {
+    return BoxDecoration(
+      gradient: LinearGradient(
+        colors: context.theme.gradientTableColors,
+        // ignore color
+        begin: Alignment.bottomCenter,
+        end: Alignment.topCenter,
       ),
     );
   }

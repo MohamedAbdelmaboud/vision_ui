@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/utils/app_styles.dart';
 import 'projects_card_list.dart';
 
@@ -10,18 +10,9 @@ class ProjectsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            AppDarkColors.gradiantCardColor1.withOpacity(0.9),
-            AppDarkColors.gradiantCardColor2.withOpacity(0.5),
-          ],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-        borderRadius: BorderRadius.circular(20),
-      ),
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 500),
+      decoration: buildProjectSectionDecoration(context),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
         child: Column(
@@ -29,13 +20,15 @@ class ProjectsSection extends StatelessWidget {
           children: [
             Text(
               "Projects",
-              style: AppStyles.bold14(context),
+              style: AppStyles.bold16(context).copyWith(
+                color: context.theme.subTitleColor,
+              ),
             ),
             const Gap(15),
             Text(
               "Architects design houses",
               style: AppStyles.medium12(context).copyWith(
-                color: AppDarkColors.greyColor,
+                color: context.theme.subTitleColor,
               ),
             ),
             const Gap(15),
@@ -46,6 +39,18 @@ class ProjectsSection extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+
+  BoxDecoration buildProjectSectionDecoration(BuildContext context) {
+    return BoxDecoration(
+      gradient: LinearGradient(
+        colors: context.theme.gradientTableColors,
+        // ignore color
+        begin: Alignment.bottomCenter,
+        end: Alignment.topCenter,
+      ),
+      borderRadius: BorderRadius.circular(15),
     );
   }
 }

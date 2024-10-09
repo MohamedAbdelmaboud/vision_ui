@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/utils/app_styles.dart';
 import 'project_view_all_button.dart';
 
@@ -36,13 +36,15 @@ class ProjectCard extends StatelessWidget {
           Text(
             "Project #$projectNumber",
             style: AppStyles.regular10(context).copyWith(
-              color: AppDarkColors.greyColor,
+              color: context.theme.subTitleColor,
             ),
           ),
           const Gap(5),
           Text(
             projectName,
-            style: AppStyles.bold18(context),
+            style: AppStyles.bold18(context).copyWith(
+              color: context.theme.subTitleColor,
+            ),
           ),
           const Gap(10),
           Text(
@@ -50,7 +52,7 @@ class ProjectCard extends StatelessWidget {
             overflow: TextOverflow.ellipsis,
             projectDescription,
             style: AppStyles.regular12(context).copyWith(
-              color: AppDarkColors.greyColor,
+              color: context.theme.subTitleColor,
             ),
           ),
           const Gap(10),
