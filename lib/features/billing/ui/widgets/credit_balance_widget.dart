@@ -15,7 +15,7 @@ class CreditBalanceWidget extends StatelessWidget {
     return Expanded(
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 500),
-        height: 240,
+      
         padding: const EdgeInsets.all(24),
         decoration: buildBalanceDecoration(context),
         child: const Column(

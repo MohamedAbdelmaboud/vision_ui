@@ -23,15 +23,14 @@ class ProfileCarInfoSection extends StatelessWidget {
           children: [
             CarInfoTitle(),
             Gap(20),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  CarInfoIndicator(),
-                  Gap(30),
-                  CarInfoItemsList(),
-                ],
-              ),
+            Row(
+              children: [
+                CarInfoIndicator(),
+                Gap(30),
+                Expanded(
+                  child: CarInfoItemsList(),
+                ),
+              ],
             ),
           ],
         ),

@@ -24,4 +24,8 @@ class AppDarkColors {
 
   static Color commonGradiant1 = const Color(0xff060B26).withOpacity(0.94);
   static const Color commonGradiant2 = Color(0xff1A1F37);
+
+  static const Color carInfoCardGredient1 = Color(0xff060B28);
+  static Color carInfoCardGredient2 = const Color(0xff060B28).withOpacity(0.5);
+  static Color carInfoCardGredient3 = const Color(0xff060B28).withOpacity(0.2);
 }

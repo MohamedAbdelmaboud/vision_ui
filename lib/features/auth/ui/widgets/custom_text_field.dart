@@ -9,7 +9,6 @@ class CustomTextField extends StatelessWidget {
   const CustomTextField({super.key, required this.label, required this.hint});
   final String label;
   final String hint;
-//TODO : here the color want to change
   @override
   Widget build(BuildContext context) {
     return Column(

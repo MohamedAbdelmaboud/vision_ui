@@ -12,4 +12,9 @@ final lightThemeEx = CustomThemeExtension(
   ],
   subTitleColor: AppLightColors.subtitleColor,
   drawerItemColor: AppLightColors.commonGredient1,
+  carInfoGradientColors: [
+    AppLightColors.carInfoCardGredient1,
+    AppLightColors.carInfoCardGredient2,
+    AppLightColors.carInfoCardGredient3,
+  ],
 );

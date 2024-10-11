@@ -22,7 +22,9 @@ class SignInAppBarMiddle extends StatelessWidget {
           icon: Icons.dashboard_customize_rounded,
           iconColor: AppDarkColors.whiteColor,
           buttonText: "DASHBOARD",
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+          },
           style: AppStyles.medium10(context).copyWith(
             color: AppDarkColors.whiteColor,
           ),

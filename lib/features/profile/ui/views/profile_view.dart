@@ -3,8 +3,8 @@ import 'package:gap/gap.dart';
 
 import '../widgets/platform_settings_and_projects_section.dart';
 import '../widgets/profile_car_info_section.dart';
-import '../widgets/welcome_profile_right_section.dart';
 import '../widgets/user_details_section.dart';
+import '../widgets/welcome_profile_right_section.dart';
 
 class ProfileView extends StatelessWidget {
   const ProfileView({super.key});

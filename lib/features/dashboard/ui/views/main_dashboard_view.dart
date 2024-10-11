@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
 
+import '../../../../core/helper/size_config.dart';
 import '../../../../core/utils/app_images.dart';
+import '../../../../core/widgets/custom_app_bar.dart';
 import '../../../../core/widgets/custom_drawer.dart';
-import '../../../../core/widgets/custom_search_bar.dart';
 import '../../logic/cubit/dash_cubit.dart';
 import '../../logic/theme_cubit/theme_cubit.dart';
 
@@ -14,6 +15,10 @@ class MainDashboardView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // key: DashCubit.get(context).scaffoldKey,
+      drawer: MediaQuery.sizeOf(context).width < SizeConfig.tabletBreakPoint
+          ? const CustomDrawer()
+          : null,
       body: BlocBuilder<ThemeCubit, ThemeState>(
         builder: (context, state) {
           return AnimatedContainer(
@@ -30,7 +35,7 @@ class MainDashboardView extends StatelessWidget {
             ),
             child: Row(
               children: [
-                const CustomDrawer(),
+                const DesktopDrawer(),
                 const Gap(20),
                 Expanded(
                   child: CustomScrollView(
@@ -60,5 +65,16 @@ class MainDashboardView extends StatelessWidget {
         },
       ),
     );
+  }
+}
+
+class DesktopDrawer extends StatelessWidget {
+  const DesktopDrawer({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return const CustomDrawer();
   }
 }
