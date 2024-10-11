@@ -9,8 +9,6 @@ class AppRightSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Row(
       children: [
-        // Searchbox(), //TODO: i think tis is better
-        // Gap(5),
         SignInfoAndSettingsAndNotificationSection(),
       ],
     );

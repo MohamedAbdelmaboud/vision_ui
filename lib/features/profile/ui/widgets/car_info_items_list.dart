@@ -12,6 +12,7 @@ class CarInfoItemsList extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Row(
       children: [
+        Gap(30),
         Column(
           children: [
             CarInfoItem(
@@ -19,7 +20,7 @@ class CarInfoItemsList extends StatelessWidget {
               value: '76%',
               iconPath: Assets.assetsImagesCarHealth,
             ),
-            Gap(10),
+            Gap(20),
             CarInfoItem(
               title: 'Consumption',
               value: '163Wh/km',
@@ -27,7 +28,7 @@ class CarInfoItemsList extends StatelessWidget {
             ),
           ],
         ),
-        Gap(10),
+        Spacer(),
         Column(
           children: [
             CarInfoItem(
@@ -45,6 +46,7 @@ class CarInfoItemsList extends StatelessWidget {
             ),
           ],
         ),
+        Spacer(),
       ],
     );
   }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/themes/app_dark_colors.dart';
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/utils/app_styles.dart';
 
 class EditButton extends StatelessWidget {
@@ -20,7 +20,7 @@ class EditButton extends StatelessWidget {
         child: Text(
           'Edit',
           style: AppStyles.medium12(context).copyWith(
-            color: AppDarkColors.greyColor.withOpacity(0.8),
+            color: context.theme.subTitleColor.withOpacity(0.8),
           ),
         ),
       ),

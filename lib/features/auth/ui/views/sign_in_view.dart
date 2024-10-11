@@ -18,7 +18,7 @@ class SignInView extends StatelessWidget {
             children: [
               const Expanded(
                 flex: 1,
-                child: SignInRightSide(),
+                child: SignInLeftSide(),
               ),
               Expanded(
                 flex: 1,

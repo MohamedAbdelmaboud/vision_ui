@@ -10,8 +10,9 @@ import 'app_right_section.dart';
 import 'custom_switch.dart';
 
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key});
-
+  const CustomAppBar({
+    super.key,
+  });
   @override
   Widget build(BuildContext context) {
     return Row(

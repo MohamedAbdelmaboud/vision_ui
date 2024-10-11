@@ -1,4 +1,4 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/utils/app_images.dart';
@@ -13,7 +13,7 @@ part 'dash_state.dart';
 class DashCubit extends Cubit<DashState> {
   static DashCubit get(context) => BlocProvider.of(context);
   String title = 'Dashboard';
-
+  var scaffoldKey = GlobalKey<ScaffoldState>();
   int currentIndex = 0;
   List<DrawerItemModel> get items {
     return [

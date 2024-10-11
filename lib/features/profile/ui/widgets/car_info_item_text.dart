@@ -27,7 +27,7 @@ class CarInfoItemText extends StatelessWidget {
         const Gap(5),
         Text(
           value,
-          style: AppStyles.bold20(context),
+          style: AppStyles.bold14(context),
         ),
       ],
     );

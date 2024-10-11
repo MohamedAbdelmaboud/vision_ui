@@ -12,4 +12,9 @@ final darkThemeEx = CustomThemeExtension(
   ],
   subTitleColor: AppDarkColors.greyColor,
   drawerItemColor: AppDarkColors.dashboardActiveItemColor,
+  carInfoGradientColors: [
+    AppDarkColors.carInfoCardGredient1,
+    AppDarkColors.carInfoCardGredient2,
+    AppDarkColors.carInfoCardGredient3,
+  ],
 );

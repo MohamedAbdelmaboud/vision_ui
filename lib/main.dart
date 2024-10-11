@@ -6,9 +6,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'core/helper/custom_scroll_behavior.dart';
 import 'core/themes/dark_theme.dart';
 import 'core/themes/light_theme.dart';
-import 'core/views/dashboard_view.dart';
 import 'features/dashboard/logic/cubit/dash_cubit.dart';
 import 'features/dashboard/logic/theme_cubit/theme_cubit.dart';
+import 'features/dashboard/ui/views/main_dashboard_view.dart';
 
 void main() {
   runApp(
@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
                 ThemeCubit.get(context).themeMode, // Access ThemeCubit here
             darkTheme: darkTheme,
             theme: lightTheme,
-            home: const DashBoardView(),
+            home: const MainDashboardView(),
           );
         },
       ),

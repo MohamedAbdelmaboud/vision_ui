@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../dashboard/ui/widgets/today_dashboard_item_icon.dart';
 import 'car_info_item_text.dart';
 
@@ -19,12 +20,15 @@ class CarInfoItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 500),
       padding: const EdgeInsets.symmetric(
         vertical: 10,
         horizontal: 20,
       ),
-      decoration: buildDecoration(),
+      decoration: buildDecoration(
+        context,
+      ),
       width: 220,
       child: Row(
         children: [
@@ -45,14 +49,10 @@ class CarInfoItem extends StatelessWidget {
     );
   }
 
-  BoxDecoration buildDecoration() {
+  BoxDecoration buildDecoration(BuildContext context) {
     return BoxDecoration(
-      gradient: const LinearGradient(
-        colors: [
-          Color(0xff5190F2),
-          Color(0xff1B6FEE),
-          Color(0xff1763D2),
-        ],
+      gradient: LinearGradient(
+        colors: context.theme.gradientTableColors,
         begin: Alignment.bottomCenter,
         end: Alignment.topCenter,
       ),

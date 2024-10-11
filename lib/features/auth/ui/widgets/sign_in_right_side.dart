@@ -5,8 +5,8 @@ import '../../../../core/themes/app_dark_colors.dart';
 import '../../../../core/utils/app_images.dart';
 import '../../../../core/utils/app_styles.dart';
 
-class SignInRightSide extends StatelessWidget {
-  const SignInRightSide({
+class SignInLeftSide extends StatelessWidget {
+  const SignInLeftSide({
     super.key,
   });
 

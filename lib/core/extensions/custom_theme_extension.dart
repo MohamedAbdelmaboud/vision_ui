@@ -3,26 +3,33 @@ import 'package:flutter/material.dart';
 class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
   final List<Color> gradientTableColors;
   final List<Color> commonGradientColors;
+  final List<Color> carInfoGradientColors;
+
   final Color subTitleColor;
   final Color drawerItemColor;
 
-  CustomThemeExtension(
-      {required this.gradientTableColors,
-      required this.commonGradientColors,
-      required this.subTitleColor,
-      required this.drawerItemColor});
+  CustomThemeExtension({
+    required this.gradientTableColors,
+    required this.commonGradientColors,
+    required this.subTitleColor,
+    required this.drawerItemColor,
+    required this.carInfoGradientColors,
+  });
 
   @override
-  ThemeExtension<CustomThemeExtension> copyWith(
-      {List<Color>? gradientTableColors,
-      List<Color>? commonGradientColors,
-      Color? textColor,
-      Color? drawerItemColor}) {
+  ThemeExtension<CustomThemeExtension> copyWith({
+    List<Color>? gradientTableColors,
+    List<Color>? commonGradientColors,
+    Color? textColor,
+    Color? drawerItemColor,
+    List<Color>? carInfoGradientColors,
+  }) {
     return CustomThemeExtension(
       gradientTableColors: gradientTableColors ?? this.gradientTableColors,
       commonGradientColors: commonGradientColors ?? this.commonGradientColors,
       subTitleColor: textColor ?? subTitleColor,
       drawerItemColor: drawerItemColor ?? this.drawerItemColor,
+      carInfoGradientColors: carInfoGradientColors ?? this.carInfoGradientColors,
     );
   }
 
@@ -44,6 +51,11 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
       ],
       subTitleColor: Color.lerp(subTitleColor, other.subTitleColor, t)!,
       drawerItemColor: Color.lerp(drawerItemColor, other.drawerItemColor, t)!,
+      carInfoGradientColors: [
+        Color.lerp(carInfoGradientColors[0], other.carInfoGradientColors[0], t)!,
+        Color.lerp(carInfoGradientColors[1], other.carInfoGradientColors[1], t)!,
+        Color.lerp(carInfoGradientColors[2], other.carInfoGradientColors[2], t)!,
+      ],
     );
   }
 }
