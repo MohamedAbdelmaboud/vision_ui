@@ -1,9 +1,10 @@
-import '../../../../core/themes/app_dark_colors.dart';
-import '../../../../core/utils/app_images.dart';
-import '../../../../core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
+
+import '../../../../core/extensions/context_colors_extension.dart';
+import '../../../../core/utils/app_images.dart';
+import '../../../../core/utils/app_styles.dart';
 
 class CarInfoCircleContainerBody extends StatelessWidget {
   const CarInfoCircleContainerBody({
@@ -27,7 +28,7 @@ class CarInfoCircleContainerBody extends StatelessWidget {
         Text(
           'Current Load',
           style: AppStyles.medium12(context).copyWith(
-            color: AppDarkColors.greyColor,
+            color: context.theme.subTitleColor,
           ),
         ),
       ],

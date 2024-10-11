@@ -9,7 +9,7 @@ class CustomTextField extends StatelessWidget {
   const CustomTextField({super.key, required this.label, required this.hint});
   final String label;
   final String hint;
-
+//TODO : here the color want to change
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -30,8 +30,10 @@ class CustomTextField extends StatelessWidget {
             hintText: hint,
             hintStyle: AppStyles.regular10(context)
                 .copyWith(color: AppDarkColors.greyColor),
+            //heeeeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrreeeeeeeeeeeeeeeeeeee
             filled: true,
             fillColor: context.theme.subTitleColor,
+            //heeeeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrreeeeeeeeeeeeeeeeeeee
             contentPadding: const EdgeInsets.symmetric(
               vertical: 10,
               horizontal: 15,

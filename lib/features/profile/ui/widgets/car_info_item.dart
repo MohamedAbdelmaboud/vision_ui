@@ -47,11 +47,11 @@ class CarInfoItem extends StatelessWidget {
 
   BoxDecoration buildDecoration() {
     return BoxDecoration(
-      gradient: LinearGradient(
+      gradient: const LinearGradient(
         colors: [
-          const Color(0xff060B28),
-          const Color(0xff060B28).withOpacity(0.5),
-          const Color(0xff060B28).withOpacity(0.2),
+          Color(0xff5190F2),
+          Color(0xff1B6FEE),
+          Color(0xff1763D2),
         ],
         begin: Alignment.bottomCenter,
         end: Alignment.topCenter,
