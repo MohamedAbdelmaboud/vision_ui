@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/themes/app_dark_colors.dart';
 import '../../../../core/utils/app_styles.dart';
 import '../../../../core/widgets/text_button.dart';
@@ -30,9 +31,8 @@ class SignInBody extends StatelessWidget {
           Text(
             "Enter your email and password to sign in",
             style: AppStyles.regular10(context).copyWith(
-              decoration: TextDecoration.none,
-              color: AppDarkColors.greyColor,
-            ),
+                decoration: TextDecoration.none,
+                color: context.theme.subTitleColor),
           ),
           const Gap(25),
           const CustomTextField(

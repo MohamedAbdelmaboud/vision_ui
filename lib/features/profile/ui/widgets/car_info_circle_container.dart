@@ -1,5 +1,6 @@
-import 'car_info_circle_container_body.dart';
 import 'package:flutter/material.dart';
+
+import 'car_info_circle_container_body.dart';
 
 class CarInfoCircleContainer extends StatelessWidget {
   const CarInfoCircleContainer({
@@ -11,19 +12,23 @@ class CarInfoCircleContainer extends StatelessWidget {
     return Container(
       height: 150,
       width: 150,
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            const Color(0xff060B28),
-            const Color(0xff060B28).withOpacity(0.5),
-            const Color(0xff060B28).withOpacity(0.2),
-          ],
-          begin: Alignment.bottomCenter,
-          end: Alignment.topCenter,
-        ),
-        shape: BoxShape.circle,
-      ),
+      decoration: buildCarInfoCircleContainerDecoration(),
       child: const CarInfoCircleContainerBody(),
+    );
+  }
+
+  BoxDecoration buildCarInfoCircleContainerDecoration() {
+    return const BoxDecoration(
+      shape: BoxShape.circle,
+      gradient: LinearGradient(
+        colors: [
+          Color(0xff5190F2),
+          Color(0xff1763D2),
+        ],
+        begin: Alignment.bottomCenter,
+        end: Alignment.topCenter,
+      ),
+      //borderRadius: BorderRadius.circular(20),
     );
   }
 }

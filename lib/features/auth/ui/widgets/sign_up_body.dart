@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import '../../../../core/extensions/context_colors_extension.dart';
 import '../../../../core/themes/app_dark_colors.dart';
 import '../../../../core/utils/app_styles.dart';
 import '../../../../core/widgets/text_button.dart';
@@ -40,9 +41,8 @@ class SignUpBody extends StatelessWidget {
               textAlign: TextAlign.center,
               "Use these awesome forms to login or create new\n account in your project for free.",
               style: AppStyles.regular10(context).copyWith(
-                decoration: TextDecoration.none,
-                color: AppDarkColors.greyColor,
-              ),
+                  decoration: TextDecoration.none,
+                  color: context.theme.subTitleColor),
             ),
             const Gap(25),
             const CustomTextField(
