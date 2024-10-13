@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'balance_history_chart.dart';
-import 'build_common_decoration.dart';
-import 'sales_over_view_title.dart';
+import '../../../../../tablet_layout/features/dashborad/ui/widgets/tablet_sales_over_view_widget.dart';
 
 class SalesOverViewWidget extends StatelessWidget {
   const SalesOverViewWidget({
@@ -11,19 +9,9 @@ class SalesOverViewWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-        flex: 3,
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 500),
-          padding: const EdgeInsets.all(16),
-          decoration: buildCommonDecoration(context),
-          child: const Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SalesOverViewTitle(),
-              BalanceHistoryChart(),
-            ],
-          ),
-        ));
+    return const Expanded(
+      flex: 3,
+      child: TabletSalesOverViewWidget(),
+    );
   }
 }

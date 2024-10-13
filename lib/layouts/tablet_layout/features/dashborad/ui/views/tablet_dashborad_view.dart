@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../../../../../desktop_layout/features/dashboard/ui/widgets/active_users_widget.dart';
-import '../../../../../desktop_layout/features/dashboard/ui/widgets/dashboard_projects_table_widget.dart';
 import '../../../../../desktop_layout/features/dashboard/ui/widgets/order_over_view.dart';
-import '../../../../../desktop_layout/features/dashboard/ui/widgets/sales_over_view_widget.dart';
 import '../../../../../desktop_layout/features/dashboard/ui/widgets/satisfaction_widget.dart';
 import '../../../../../desktop_layout/features/dashboard/ui/widgets/today_items_list.dart';
 import '../../../../../desktop_layout/features/dashboard/ui/widgets/welcome_container.dart';
 import '../../../../../tablet_layout/features/dashborad/ui/widgets/tablet_tracking_widget.dart';
+import '../widgets/tablet_projects_table_widget.dart';
+import '../widgets/tablet_sales_over_view_widget.dart';
 
 class TabletDashboardView extends StatelessWidget {
   const TabletDashboardView({super.key});
@@ -32,12 +32,10 @@ class TabletDashboardView extends StatelessWidget {
         Gap(16),
         TabletTrackingWidget(),
         Gap(16),
-        IntrinsicHeight(
-          child: SalesOverViewWidget(),
-        ),
+        TabletSalesOverViewWidget(),
         Gap(16),
         IntrinsicHeight(
-          child: DashboardProjectsTableWidget(),
+          child: TabletProjectsTableWidget(),
         ),
         Gap(16),
         IntrinsicHeight(
