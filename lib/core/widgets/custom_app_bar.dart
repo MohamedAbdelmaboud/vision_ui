@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
 
 import '../../layouts/desktop_layout/features/dashboard/logic/cubit/dash_cubit.dart';
@@ -24,10 +25,14 @@ class CustomAppBar extends StatelessWidget {
         isTablet(context)
             ? IconButton(
                 padding: EdgeInsets.zero,
-                icon: Icon(
-                  Icons.menu,
-                  size: 30,
-                  color: context.theme.subTitleColor,
+                icon: SvgPicture.asset(
+                  Assets.assetsImagesMenu,
+                  colorFilter: ColorFilter.mode(
+                    context.theme.subTitleColor,
+                    BlendMode.srcIn,
+                  
+                  
+                  ),
                 ),
                 onPressed: onPressed,
               )
