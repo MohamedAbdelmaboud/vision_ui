@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../../core/utils/app_images.dart';
 import '../../../../../tablet_layout/features/billing/ui/views/tablet_billing_view.dart';
 import '../../../../../tablet_layout/features/dashborad/ui/views/tablet_dashborad_view.dart';
+import '../../../../../tablet_layout/features/profile/ui/views/tablet_profile_view.dart';
 import '../../../billing/ui/views/billing_view.dart';
 import '../../../profile/ui/views/profile_view.dart';
 import '../../../tables/ui/views/tables_view.dart';
@@ -62,7 +63,7 @@ class DashCubit extends Cubit<DashState> {
       DrawerItemModel(
         icon: Assets.assetsImagesProfile,
         title: 'Profile',
-        page: const ProfileView(),
+        page: const TabletProfileView(),
       ),
     ];
   }
