@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../features/dashboard/logic/theme_cubit/theme_cubit.dart';
+import '../../layouts/desktop_layout/features/dashboard/logic/theme_cubit/theme_cubit.dart';
 import '../utils/app_images.dart';
 import 'drawer_body.dart';
 

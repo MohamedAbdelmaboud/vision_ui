@@ -1,4 +1,4 @@
-import '../../features/dashboard/logic/theme_cubit/theme_cubit.dart';
+import '../../layouts/desktop_layout/features/dashboard/logic/theme_cubit/theme_cubit.dart';
 import '../utils/app_images.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_advanced_switch/flutter_advanced_switch.dart';

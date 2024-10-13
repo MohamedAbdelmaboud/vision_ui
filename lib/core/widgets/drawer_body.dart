@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gap/gap.dart';
 
-import '../../features/dashboard/ui/widgets/drawer_list_items.dart';
-import '../../features/dashboard/ui/widgets/help_widget.dart';
+import '../../layouts/desktop_layout/features/dashboard/ui/widgets/drawer_list_items.dart';
+import '../../layouts/desktop_layout/features/dashboard/ui/widgets/help_widget.dart';
 import '../utils/app_images.dart';
 import '../utils/app_styles.dart';
 
