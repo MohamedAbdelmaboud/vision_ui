@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../features/auth/ui/views/sign_in_view.dart';
+import '../../layouts/desktop_layout/features/auth/ui/views/sign_in_view.dart';
 import '../extensions/context_colors_extension.dart';
 import '../utils/app_styles.dart';
 import 'icon_text_button.dart';
