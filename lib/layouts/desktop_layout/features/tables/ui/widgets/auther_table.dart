@@ -11,7 +11,7 @@ class AutherTable extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double screenWidth = MediaQuery.sizeOf(context).width * 0.69;
+    double screenWidth = MediaQuery.sizeOf(context).width;
     return CustomAuthorTable(
       labelColum1: "AUTHOR",
       labelColum2: "FUNCTION",

@@ -15,13 +15,10 @@ class EditButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: cellWidth,
-      child: TextButton(
-        onPressed: () {},
-        child: Text(
-          'Edit',
-          style: AppStyles.medium12(context).copyWith(
-            color: context.theme.subTitleColor.withOpacity(0.8),
-          ),
+      child: Text(
+        'Edit',
+        style: AppStyles.medium12(context).copyWith(
+          color: context.theme.subTitleColor.withOpacity(0.8),
         ),
       ),
     );
