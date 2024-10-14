@@ -29,11 +29,11 @@ Vision UI Dashboard is a modern, sleek, and highly visual dashboard interface de
 ## Billing Information Screen
 - Purpose: Displays billing details, allowing users to manage payment methods and view billing history.
 - Layout:
- * Payment Methods: Lists current methods and options to add or remove.
- * Billing History: Shows past transactions and due dates.
+  * Payment Methods: Lists current methods and options to add or remove.
+  * Billing History: Shows past transactions and due dates.
 - Potential Improvements:
- * Add a summary of upcoming payments and alerts for overdue bills.
- * Include a secure area for users to download invoices.
+  * Add a summary of upcoming payments and alerts for overdue bills.
+  * Include a secure area for users to download invoices.
 ## Projects Overview Screen
 - Purpose: Displays a list of user projects, allowing for easy management and navigation.
 - Layout:
