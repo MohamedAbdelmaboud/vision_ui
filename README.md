@@ -5,6 +5,10 @@ Vision UI Dashboard is a modern, sleek, and highly visual dashboard interface de
 ![image](https://github.com/user-attachments/assets/d7704bf7-eabb-4b5a-bee8-e7ee7ad32629)
 
 ![image](https://github.com/user-attachments/assets/49cf8c4e-421b-4f10-a50e-00adadcd94da)
+### Tablet Layout
+![image](https://github.com/user-attachments/assets/fea92e30-a1e5-49bc-8992-6a5986fe07a2)
+![image](https://github.com/user-attachments/assets/5222d991-8949-4c00-a794-c76a8c3733e4)
+
 ## Dashboard Screen
 - Purpose: The dashboard screen provides a comprehensive overview of user account details, financial status, and transaction history.
 - Layout
