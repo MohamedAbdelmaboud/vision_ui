@@ -1,7 +1,11 @@
 # vision_ui
 
 Vision UI Dashboard is a modern, sleek, and highly visual dashboard interface designed to help users manage their projects, sales, clients, and billing efficiently. Built with a focus on data visualization, the dashboard provides a smooth user experience, blending critical business metrics with detailed project insights.
-
+### Desktop Layout
+![image](https://github.com/user-attachments/assets/77994d8c-c395-4461-bc0b-e704013fe69d)
+![image](https://github.com/user-attachments/assets/1cd352e7-9195-4e11-ad9c-6125946f13bd)
+### Tablet Layout
+![image](https://github.com/user-attachments/assets/cc497987-6932-4699-972a-e217389c44e0)![image](https://github.com/user-attachments/assets/689bd18b-ceca-4227-8e4b-31911f8a0391)
 
 ## Dashboard Screen
 - Purpose: The dashboard screen provides a comprehensive overview of user account details, financial status, and transaction history.
@@ -12,14 +16,6 @@ Vision UI Dashboard is a modern, sleek, and highly visual dashboard interface de
 - Potential Improvements:
   * Add visual elements like graphs for better data visualization.
   * Include quick action buttons for user convenience.
-## Sign-Up Screen
-- Purpose: Facilitates user registration, capturing essential information to create an account.
-- Layout:
-  * Form Fields: Includes email, password, and social media sign-in options.
-  * Call to Action: Prominent sign-up button.
-- Potential Improvements:
-  * Include a password strength indicator.
-  * Offer a “Show Password” toggle for user convenience.
 ## Welcome Screen
 - Purpose: Greets the user after registration, making them feel acknowledged and ready to engage.
 - Layout:
@@ -36,14 +32,6 @@ Vision UI Dashboard is a modern, sleek, and highly visual dashboard interface de
 - Potential Improvements:
  * Add a summary of upcoming payments and alerts for overdue bills.
  * Include a secure area for users to download invoices.
-## Profile Settings Screen
-- Purpose: Allows users to manage personal information and account settings.
-- Layout:
-  * Information Fields: Editable sections for personal data (name, email, etc.).
-  * Security Settings: Options for changing passwords and enabling two-factor authentication.
-- Potential Improvements:
-  * Introduce a feature for users to upload a profile picture.
-  * Provide a summary of recent account activity for security purposes.
 ## Projects Overview Screen
 - Purpose: Displays a list of user projects, allowing for easy management and navigation.
 - Layout:
