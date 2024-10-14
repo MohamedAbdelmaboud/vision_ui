@@ -5,6 +5,8 @@ import '../../../../../../core/utils/app_images.dart';
 import '../../../../../tablet_layout/features/billing/ui/views/tablet_billing_view.dart';
 import '../../../../../tablet_layout/features/dashborad/ui/views/tablet_dashborad_view.dart';
 import '../../../../../tablet_layout/features/profile/ui/views/tablet_profile_view.dart';
+import '../../../auth/ui/views/sign_in_view.dart';
+import '../../../auth/ui/views/sign_up_view.dart';
 import '../../../billing/ui/views/billing_view.dart';
 import '../../../profile/ui/views/profile_view.dart';
 import '../../../tables/ui/views/tables_view.dart';
@@ -40,6 +42,16 @@ class DashCubit extends Cubit<DashState> {
         title: 'Profile',
         page: const ProfileView(),
       ),
+      DrawerItemModel(
+        icon: Assets.assetsImagesProfile,
+        title: 'Sign In',
+        page: const SignInView(),
+      ),
+      DrawerItemModel(
+        icon: Assets.assetsImagesProfile,
+        title: 'Sign UP',
+        page: const SignUpView(),
+      ),
     ];
   }
 
@@ -64,6 +76,16 @@ class DashCubit extends Cubit<DashState> {
         icon: Assets.assetsImagesProfile,
         title: 'Profile',
         page: const TabletProfileView(),
+      ),
+      DrawerItemModel(
+        icon: Assets.assetsImagesProfile,
+        title: 'Sign In',
+        page: const SignInView(),
+      ),
+      DrawerItemModel(
+        icon: Assets.assetsImagesProfile,
+        title: 'Sign UP',
+        page: const SignUpView(),
       ),
     ];
   }

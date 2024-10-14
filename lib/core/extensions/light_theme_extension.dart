@@ -17,4 +17,5 @@ final lightThemeEx = CustomThemeExtension(
     AppLightColors.carInfoCardGredient2,
     AppLightColors.carInfoCardGredient3,
   ],
+  hintColor: AppLightColors.greyColor,
 );

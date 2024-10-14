@@ -4,11 +4,13 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
   final List<Color> gradientTableColors;
   final List<Color> commonGradientColors;
   final List<Color> carInfoGradientColors;
+  final Color hintColor;
 
   final Color subTitleColor;
   final Color drawerItemColor;
 
   CustomThemeExtension({
+    required this.hintColor,
     required this.gradientTableColors,
     required this.commonGradientColors,
     required this.subTitleColor,
@@ -17,19 +19,21 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
   });
 
   @override
-  ThemeExtension<CustomThemeExtension> copyWith({
-    List<Color>? gradientTableColors,
-    List<Color>? commonGradientColors,
-    Color? textColor,
-    Color? drawerItemColor,
-    List<Color>? carInfoGradientColors,
-  }) {
+  ThemeExtension<CustomThemeExtension> copyWith(
+      {List<Color>? gradientTableColors,
+      List<Color>? commonGradientColors,
+      Color? textColor,
+      Color? drawerItemColor,
+      List<Color>? carInfoGradientColors,
+      Color? hintColor}) {
     return CustomThemeExtension(
       gradientTableColors: gradientTableColors ?? this.gradientTableColors,
       commonGradientColors: commonGradientColors ?? this.commonGradientColors,
       subTitleColor: textColor ?? subTitleColor,
       drawerItemColor: drawerItemColor ?? this.drawerItemColor,
-      carInfoGradientColors: carInfoGradientColors ?? this.carInfoGradientColors,
+      carInfoGradientColors:
+          carInfoGradientColors ?? this.carInfoGradientColors,
+      hintColor: hintColor ?? this.hintColor,
     );
   }
 
@@ -52,10 +56,14 @@ class CustomThemeExtension extends ThemeExtension<CustomThemeExtension> {
       subTitleColor: Color.lerp(subTitleColor, other.subTitleColor, t)!,
       drawerItemColor: Color.lerp(drawerItemColor, other.drawerItemColor, t)!,
       carInfoGradientColors: [
-        Color.lerp(carInfoGradientColors[0], other.carInfoGradientColors[0], t)!,
-        Color.lerp(carInfoGradientColors[1], other.carInfoGradientColors[1], t)!,
-        Color.lerp(carInfoGradientColors[2], other.carInfoGradientColors[2], t)!,
+        Color.lerp(
+            carInfoGradientColors[0], other.carInfoGradientColors[0], t)!,
+        Color.lerp(
+            carInfoGradientColors[1], other.carInfoGradientColors[1], t)!,
+        Color.lerp(
+            carInfoGradientColors[2], other.carInfoGradientColors[2], t)!,
       ],
+      hintColor: Color.lerp(hintColor, other.hintColor, t)!,
     );
   }
 }

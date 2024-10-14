@@ -23,15 +23,13 @@ class SatisfactionWidget extends StatelessWidget {
           children: [
             SatisfactionWidgetText(),
             Gap(11.5),
-            Center(
-              child: Stack(
-                clipBehavior: Clip.none,
-                alignment: Alignment.bottomCenter,
-                children: [
-                  SatisfactionIndicator(),
-                  SatisfactionPercentage(),
-                ],
-              ),
+            Stack(
+              clipBehavior: Clip.none,
+              alignment: Alignment.bottomCenter,
+              children: [
+                SatisfactionIndicator(),
+                SatisfactionPercentage(),
+              ],
             ),
           ],
         ),

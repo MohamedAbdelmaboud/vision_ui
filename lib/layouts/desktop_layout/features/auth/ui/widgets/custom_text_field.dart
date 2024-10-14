@@ -22,17 +22,16 @@ class CustomTextField extends StatelessWidget {
         ),
         const Gap(8),
         TextField(
-          style: const TextStyle(
-            color: Colors.white,
+          style: TextStyle(
+            color: context.theme.hintColor,
           ),
           decoration: InputDecoration(
             hintText: hint,
-            hintStyle: AppStyles.regular10(context)
-                .copyWith(color: AppDarkColors.greyColor),
-            //heeeeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrreeeeeeeeeeeeeeeeeeee
+            hintStyle: AppStyles.regular10(context).copyWith(
+              color: context.theme.hintColor.withOpacity(0.8),
+            ),
             filled: true,
             fillColor: context.theme.subTitleColor,
-            //heeeeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrreeeeeeeeeeeeeeeeeeee
             contentPadding: const EdgeInsets.symmetric(
               vertical: 10,
               horizontal: 15,
