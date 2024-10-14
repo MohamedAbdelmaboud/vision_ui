@@ -19,7 +19,7 @@ class WelcomeContainer extends StatelessWidget {
           return AnimatedContainer(
             duration: const Duration(milliseconds: 200),
             alignment: Alignment.centerLeft,
-            // height: 300,
+            //height: 300,
             padding: const EdgeInsets.symmetric(
               vertical: 36,
               horizontal: 31,

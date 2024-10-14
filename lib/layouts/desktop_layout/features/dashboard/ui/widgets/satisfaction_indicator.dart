@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
@@ -21,7 +20,6 @@ class SatisfactionIndicator extends StatelessWidget {
           const Color(0xFF0075FF).withOpacity(0.8),
         ],
         stops: const [0.0, 1.0],
-        
       ),
       radius: 90.0,
       lineWidth: 9.0,

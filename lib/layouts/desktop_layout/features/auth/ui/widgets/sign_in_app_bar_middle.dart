@@ -49,7 +49,7 @@ class SignInAppBarMiddle extends StatelessWidget {
           iconColor: AppDarkColors.whiteColor,
           buttonText: "SIGN UP",
           onPressed: () {
-            Navigator.push(
+            Navigator.pushReplacement(
               context,
               MaterialPageRoute(
                 builder: (context) => const SignUpView(),
