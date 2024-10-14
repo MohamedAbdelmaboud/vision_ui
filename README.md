@@ -2,11 +2,9 @@
 
 Vision UI Dashboard is a modern, sleek, and highly visual dashboard interface designed to help users manage their projects, sales, clients, and billing efficiently. Built with a focus on data visualization, the dashboard provides a smooth user experience, blending critical business metrics with detailed project insights.
 ### Desktop Layout
-![image](https://github.com/user-attachments/assets/77994d8c-c395-4461-bc0b-e704013fe69d)
-![image](https://github.com/user-attachments/assets/1cd352e7-9195-4e11-ad9c-6125946f13bd)
-### Tablet Layout
-![image](https://github.com/user-attachments/assets/cc497987-6932-4699-972a-e217389c44e0)![image](https://github.com/user-attachments/assets/689bd18b-ceca-4227-8e4b-31911f8a0391)
+![image](https://github.com/user-attachments/assets/d7704bf7-eabb-4b5a-bee8-e7ee7ad32629)
 
+![image](https://github.com/user-attachments/assets/49cf8c4e-421b-4f10-a50e-00adadcd94da)
 ## Dashboard Screen
 - Purpose: The dashboard screen provides a comprehensive overview of user account details, financial status, and transaction history.
 - Layout
