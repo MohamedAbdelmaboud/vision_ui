@@ -17,4 +17,5 @@ final darkThemeEx = CustomThemeExtension(
     AppDarkColors.carInfoCardGredient2,
     AppDarkColors.carInfoCardGredient3,
   ],
+  hintColor: AppDarkColors.gradiantCardColor1,
 );

@@ -1,36 +1,40 @@
 # vision_ui
 
 Vision UI Dashboard is a modern, sleek, and highly visual dashboard interface designed to help users manage their projects, sales, clients, and billing efficiently. Built with a focus on data visualization, the dashboard provides a smooth user experience, blending critical business metrics with detailed project insights.
+### Desktop Layout
+![image](https://github.com/user-attachments/assets/d7704bf7-eabb-4b5a-bee8-e7ee7ad32629)
 
-## Main Dashboard:
-
-Top Info Cards: Displays quick metrics such as:
-Today’s Money
-New Clients
-Total Sales
-User Section: Displays the logged-in user ("Mark Johnson") with a welcome message. There is a visual representation (jellyfish) for branding or user engagement.
-Satisfaction Rate and Referral Tracking:
-Shows the project satisfaction rate (95%) and referral tracking stats (145 people invited, 1,465 bonuses).
-Sales Overview Chart: A line graph showing sales over time (with a positive trend of +$ more in 2021).
-Projects Overview: Lists ongoing or completed projects with the associated company, budget, and progress status.
-Orders Overview: Displays recent orders and associated details like design changes, payments, and unlock packages.
-Tables Screen (Second Image):
-
-Authors Table: Displays a list of team members, showing their name, role, status (online/offline), and employment date. It likely functions as a management tool for organizing team data.
-Projects Table: Shows a list of projects, their status (working, canceled, done), budget, and completion percentage. This is useful for tracking team progress and project health at a glance.
-Billing Screen (Third Image):
-
-Credit Card Information: Displays the user’s payment method (e.g., "Vision UI" card) and their billing balance (e.g., $25,215).
-Payment Method & Billing Info: Displays credit card details and allows users to edit/add payment methods. Shows billing history (address, VAT number, etc.).
-Invoices and Transactions: Displays recent invoices and transactions, each linked to specific amounts, companies, and dates.
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![image](https://github.com/user-attachments/assets/49cf8c4e-421b-4f10-a50e-00adadcd94da)
+## Dashboard Screen
+- Purpose: The dashboard screen provides a comprehensive overview of user account details, financial status, and transaction history.
+- Layout
+  * Header: The header section displays account information and quick navigation options.
+  * Main Section: This section features a summary of financial data, such as the balance and recent transactions.
+  * Side Navigation: The side navigation allows for easy access to billing and profile settings.
+- Potential Improvements:
+  * Add visual elements like graphs for better data visualization.
+  * Include quick action buttons for user convenience.
+## Welcome Screen
+- Purpose: Greets the user after registration, making them feel acknowledged and ready to engage.
+- Layout:
+  * Personalized Message: Welcomes users by name.
+  * Navigation Links: Directs users to their profiles and projects.
+- Potential Improvements:
+  * Incorporate tips or suggestions based on user preferences.
+  * Offer a brief tutorial of platform features.
+## Billing Information Screen
+- Purpose: Displays billing details, allowing users to manage payment methods and view billing history.
+- Layout:
+ * Payment Methods: Lists current methods and options to add or remove.
+ * Billing History: Shows past transactions and due dates.
+- Potential Improvements:
+ * Add a summary of upcoming payments and alerts for overdue bills.
+ * Include a secure area for users to download invoices.
+## Projects Overview Screen
+- Purpose: Displays a list of user projects, allowing for easy management and navigation.
+- Layout:
+  * Project Cards: Visual cards for each project with key details (name, status).
+  * Quick Actions: Buttons for creating new projects or accessing settings.
+- Potential Improvements:
+  * Implement filtering and sorting options to help users find projects easily.
+  * Include a search bar for quicker access to specific projects.

@@ -9,4 +9,5 @@ class AppLightColors {
   static Color carInfoCardGredient1 = const Color(0xff5190F2);
   static Color carInfoCardGredient2 = const Color(0xff1B6FEE);
   static Color carInfoCardGredient3 = const Color(0xff1763D2);
+  static const Color greyColor = Color(0xffA0AEC0);
 }

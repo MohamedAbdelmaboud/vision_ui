@@ -1,7 +1,8 @@
-import '../../../../../../core/themes/app_dark_colors.dart';
-import '../../../../../../core/utils/app_images.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+
+import '../../../../../../core/themes/app_dark_colors.dart';
+import '../../../../../../core/utils/app_images.dart';
 
 class SatisfactionIndicatorBody extends StatelessWidget {
   const SatisfactionIndicatorBody({
